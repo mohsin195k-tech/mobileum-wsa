@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mobileum - NetworkDashboard-OpcocContribution</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- Latest compiled and minified bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- Latest compiled and minified font awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- fonts css -->
+  <link href="css/fonts.css" rel="stylesheet" />
+  <!-- style css -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header-main-wrapper">
+      <img src="images/header/header-img.png" class="header-img" alt="header-img">
+      <!-- <div class="header-left-menu flex-d">
+        <div class="head-logo">
+          <a href="javascript:void(0)">
+            <img src="images/header/logo.png" class="head-logo-img" alt="logo">
+          </a>
+        </div>
+        <div class="head-application flex-d">
+          <a href="javascript:void(0)">
+            <img src="images/header/logo.png" class="head-logo-img" alt="logo">
+            <p>Application</p>
+          </a>
+        </div>
+      </div>
+      <div class="header-left-menu">
+
+      </div> -->
+    </div>
+    <!--End of the header main wrapper-->
+  </header>
+  <main>
+    <!--Start of the main section wrapper-->
+    <div class="main-section-wrapper">
+      <!--Start of the inner section wrapper-->
+      <div class="inner-section-wrapper">
+        <div class="dashboard-main-wrapper">
+          <!--Start of the dashboard navbar wrapper-->
+            <div class="dasboard-navbar flex-d">
+            <div class="dasboard-nav-left">
+              <p class="navbar-head-txt">Wholesale Analytics</p>
+            </div>
+            <div class="dasboard-nav-right flex-d">
+              <div class="menuboard-wrap flex-d align-items-center active">
+                <span class="menu-icon">
+                  <img src="images/Dashboard grey.png" class="hide-gray-icon">
+                  <img src="images/dashboard_blue.png" class="hide-activex">
+                </span>
+                <div class="dropdown dropdownPosition">
+                  <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Dashboard</span>
+                  <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                    <a class="dropdown-item" href="summaryDashboard.html">Summary View</a>
+                    <a class="dropdown-item" href="networkDashboard.html">Network View</a>
+                    <a class="dropdown-item" href="countryDashboard.html">Country View</a>
+                    <a class="dropdown-item" href="reports.html">Reports</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="dealCreation.html">
+                  <span class="menu-icon">
+                    <img src="images/deal builder grey.png" class="hide-gray-iconx">
+                    <img src="images/deal builder blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Deal Builder</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="budgetSimulation.html">
+                  <span class="menu-icon">
+                    <img src="images/Budget Simulation grey.png" class="hide-gray-iconx">
+                    <img src="images/Budget Simulation blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Budget Simulation</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap flex-d align-items-center">
+                  <span class="menu-icon">
+                    <img src="images/Agreement Management grey.png" class="hide-gray-iconx">
+                    <img src="images/Agreement Management blue.png" class="hide-active">
+                  </span>
+                  <div class="dropdown dropdownPosition">
+                    <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Agreement Management</span>
+
+                    <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                        <a class="dropdown-item" href="agreementManagementDashboard.html">Manager Screen</a>
+                        <a class="dropdown-item" href="agreementMakerDashboard.html">Agreement Manager</a>
+                        <a class="dropdown-item" href="Deal_Manager.html">Deal Manager</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="settlementGenerate.html">
+                  <span class="menu-icon">
+                    <img src="images/settlement grey.png" class="hide-gray-iconx">
+                    <img src="images/settlement blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Settlement</span>
+                </a>
+              </div>
+            </div><!--dasboard-nav-right-->
+            <div class="menu-filter-box">
+              <img src="images/filter.png">
+              <img src="images/setting.png">
+            </div>
+          </div>
+          <!--End of the dashboard navbar wrapper-->
+          <div class="dashboard-all-content opco-contribution-wrap">
+            <div class="dashboard-navigation">
+              <ul class="page-breadcrumb flex-d">
+                <li><a href="javascript:void(0)">Dashboard</a></li>
+                <li><a href="javascript:void(0)">Network View</a></li>
+                <li class="active"><a href="javascript:void(0)">Opco Contribution</a></li>
+              </ul>
+            </div>
+            <!--Start of the search filter div-->
+            <div class="search-filters flex-d">
+              <div class="search-list-left flex-d">
+                <div class="filter-list-items list-1">
+                  <select class="list-partner">
+                    <option value="individual_partner">Individual Partner</option>
+                    <option value="group_partner">Group Partner</option>
+                  </select>
+                </div>
+
+                <div class="filter-list-items list-2">
+                  <select class="list-partner">
+                    <option value="fracne_1">France</option>
+                    <option value="fracne_2">France (FRAF2)</option>
+                  </select>
+                </div>
+
+                <div class="filter-list-items list-3">
+                  <select class="list-partner">
+                    <option value="orange">Orange</option>
+                    <option value="bouygues">Bouygues</option>
+                    <option value="SFR">SFR</option>
+                    <option value="Free mobile">Free mobile</option>
+                  </select>
+                </div>
+
+                <div class="btn-wrapper">
+                  <a href="javascript:void(0);" class="btn-div btn-ok">OK</a>
+                </div>
+              </div>
+
+              <div class="btn-wrapper">
+                <a href="dealCreation.html" class="btn-div btn-deal">Create New Deal</a>
+              </div>
+
+            </div>
+            <!--End of the search filter div-->
+            <div class="graph-details-wrapper">
+              <!--Start of the Opco contribution Cost graph-->
+              <div class="main-grap-wrap">
+                      <div class="title-with-radio flex-d">
+              
+                <h3 class="graph-title-txt">Opco contribution Cost</h3>
+                  
+                  <div class="diff-radio-list flex-d">
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">MO
+                        <input type="radio" checked="checked" name="opcocost">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">MT
+                        <input type="radio" name="opcocost">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">Data
+                        <input type="radio" name="opcocost">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">SMS
+                        <input type="radio" name="opcocost">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">Total
+                        <input type="radio" name="opcocost">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="ytd-box">
+                  <p class="ytd-para">
+                    Numbers in YTD
+                  </p>
+                </div>
+                  
+
+                <div id="container-opco-cost" class="graphs-div" ></div>
+
+              </div>
+              <!--End of the Opco contribution Cost graph-->
+
+              <!--Start of the Opco contribution Revenue graph-->
+              <div class="main-grap-wrap">
+                     <div class="title-with-radio flex-d">
+                <h3 class="graph-title-txt">Opco contribution Revenue</h3>
+                  
+                  <div class="diff-radio-list flex-d">
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">MO
+                        <input type="radio" checked="checked" name="opcocontri">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">MT
+                        <input type="radio" name="opcocontri">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">Data
+                        <input type="radio" name="opcocontri">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">SMS
+                        <input type="radio" name="opcocontri">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">Total
+                        <input type="radio" name="opcocontri">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="ytd-box">
+                  <p class="ytd-para">
+                    Numbers in YTD
+                  </p>
+                </div>
+  
+                <div class="graph-div-wrap">
+                  <div id="container-opco-revenue" class="graphs-div"></div>
+                </div>
+              </div>
+              <!--End of the Opco contribution Revenue graph-->
+
+              <!--Start of the Opco contribution Inbound graph-->
+              <div class="main-grap-wrap">
+                <div class="title-with-radio flex-d">
+                  <h3 class="graph-title-txt">Opco contribution Inbound</h3>
+                  <div class="diff-radio-list flex-d">
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">MO
+                        <input type="radio" checked="checked" name="inbound">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">MT
+                        <input type="radio" name="inbound">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">Data
+                        <input type="radio" name="inbound">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">SMS
+                        <input type="radio" name="inbound">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">Total
+                        <input type="radio" name="inbound">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="ytd-box">
+                  <p class="ytd-para">
+                    Numbers in YTD
+                  </p>
+                </div>
+
+                <div class="graph-div-wrap">
+                  <div id="container-opco-inbound" class="graphs-div"></div>
+                </div>
+              </div>
+              <!--End of the Opco contribution Inbound graph-->
+
+              <!--Start of the Opco contribution Outbound graph-->
+              <div class="main-grap-wrap">
+                <div class="title-with-radio flex-d">
+                  <h3 class="graph-title-txt">Opco contribution Outbound</h3>
+                  <div class="diff-radio-list flex-d">
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">MO
+                        <input type="radio" name="outbound">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">MT
+                        <input type="radio" name="outbound">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">DATA
+                        <input type="radio" name="outbound">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                      
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">SMS
+                        <input type="radio" checked="checked" name="outbound">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+
+                    <div class="custom-radio-btn">
+                      <label class="container-radio">Total
+                        <input type="radio" name="outbound">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="ytd-box">
+                  <p class="ytd-para">
+                    Numbers in YTD
+                  </p>
+                </div>
+
+                <div class="graph-div-wrap">
+                  <div id="container-opco-outbound" class="graphs-div"></div>
+                </div>
+              </div>
+              <!--End of the Opco contribution Outbound graph-->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of the inner section wrapper-->
+    </div>
+    <!--End of the main section wrapper-->
+  </main>
+  <footer>
+    <div class="footer-main-wrapper">
+    </div>
+    <!--End of the footer main wrapper-->
+  </footer>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified bootstrap js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/maps/modules/map.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+
+  <script src="js/graph.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <script>
+    $( document ).ready(function() {
+      $(".menuboard-wrap").click(function(){
+        $('.menuboard-wrap').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+  </script>
+</body>
+
+</html>

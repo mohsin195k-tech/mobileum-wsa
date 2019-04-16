@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mobileum - Country Dashboard</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- Latest compiled and minified bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- Latest compiled and minified font awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- fonts css -->
+  <link href="css/fonts.css" rel="stylesheet" />
+  <!-- style css -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/budgetsimulation.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+</head>
+<body>
+
+
+<!-- The Modal -->
+
+
+
+  <header>
+    <div class="header-main-wrapper">
+      <img src="images/header/header-img.png" class="header-img" alt="header-img" data-toggle="modal" data-target="#myModal2">
+    </div>
+    <!--End of the header main wrapper-->
+  </header>
+  <main>
+ <!--Start of the main section wrapper-->
+<div class="main-section-wrapper">
+    <div class="inner-section-wrapper">
+         <div class="dashboard-main-wrapper">
+          <!--Start of the dashboard navbar wrapper-->
+            <div class="dasboard-navbar flex-d">
+            <div class="dasboard-nav-left">
+              <p class="navbar-head-txt">Wholesale Analytics</p>
+            </div>
+            <div class="dasboard-nav-right flex-d">
+              <div class="menuboard-wrap flex-d align-items-center">
+                <span class="menu-icon">
+                  <img src="images/Dashboard grey.png" class="hide-gray-iconx">
+                  <img src="images/active1.png" class="hide-active">
+                </span>
+                <div class="dropdown dropdownPosition">
+                  <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Dashboard</span>
+                  <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                    <a class="dropdown-item" href="summaryDashboard.html">Summary View</a>
+                    <a class="dropdown-item" href="networkDashboard.html">Network View</a>
+                    <a class="dropdown-item" href="countryDashboard.html">Country View</a>
+                    <a class="dropdown-item" href="reports.html">Reports</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="dealCreation.html">
+                  <span class="menu-icon">
+                    <img src="images/deal builder grey.png" class="hide-gray-iconx">
+                    <img src="images/deal builder blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Deal Builder</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap active">
+                <a href="budgetSimulation.html">
+                  <span class="menu-icon">
+                    <img src="images/Budget Simulation grey.png" class="hide-gray-icon">
+                    <img src="images/Budget Simulation blue.png" class="hide-activex">
+                  </span>
+                  <span class="nav-txt">Budget Simulation</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap flex-d align-items-center">
+                  <span class="menu-icon">
+                    <img src="images/Agreement Management grey.png" class="hide-gray-iconx">
+                    <img src="images/agreement Agreement Management blue.png" class="hide-active">
+                  </span>
+                  <div class="dropdown dropdownPosition">
+                    <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Agreement Management</span>
+
+                    <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                        <a class="dropdown-item" href="agreementManagementDashboard.html">Manager Screen</a>
+                        <a class="dropdown-item" href="agreementMakerDashboard.html">Agreement Manager</a>
+                        <a class="dropdown-item" href="Deal_Manager.html">Deal Manager</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="settlementGenerate.html">
+                  <span class="menu-icon">
+                    <img src="images/settlement grey.png" class="hide-gray-iconx">
+                    <img src="images/settlement blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Settlement</span>
+                </a>
+              </div>
+            </div><!--dasboard-nav-right-->
+            <div class="menu-filter-box">
+              <img src="images/filter.png">
+              <img src="images/setting.png">
+            </div>
+          </div>
+          <!--End of the dashboard navbar wrapper-->
+      
+        <div class="dashboard-all-content budget-simulation-grp">
+           <div class="dashboard-navigation">
+              <ul class="page-breadcrumb flex-d">
+                <li><a href="javascript:void(0)">Budget Simulation</a></li>
+                <li class="active"><a href="javascript:void(0)">Dashboard</a></li>
+              </ul>
+            </div><!--End of the dashboard navigation-->
+        
+            <div class="budget-searchfilter flex-d">
+              <div class="leftsearch-budgetfilter flex-d">
+                <div class="filterdropdown-list">
+                    <select class="budget-yearlist">
+                    <option value="">Select Year</option>
+                    <option value="" >1 Year</option>
+                  </select>
+                </div><!--End of the filter dropdown list-->
+                <div class="filter-radiolist flex-d">
+                  <h6>Agreement Type</h6>
+                  <div class="custom-radio-box d-flex">
+                        <label class="radio-box">Regular
+                          <input type="radio" checked="checked" name="budgetradio">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-box">Regular (Without M2M)
+                          <input type="radio" name="budgetradio">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-box">M2M
+                          <input type="radio" name="budgetradio">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-box">Enterprise
+                          <input type="radio" name="budgetradio">
+                          <span class="checkmark"></span>
+                        </label>
+                       
+                      </div>
+                </div><!--End of the filter radio list-->
+              </div><!--End of the left search budget filter-->
+              <div class="rightsearch-budgetfilter   flex-d">
+                <div class=" budgetfilter-btnwrap btn-wrapper">
+                  <a href="Change-IOT-Rates.html" class="btn-div budgetchange-iot">
+                    Change IOT rate
+                    </a>
+                </div><!--End o fthe btn secondary budget btn wrap-->
+                <div class=" budgetfilter-btnwrap btn-wrapper">
+                  <a href="budgetChangeTraffic.html" class="btn-div budgetchange-iot">
+                    Change Traffic
+                    </a>
+                </div><!--End o fthe btn secondary budget btn wrap-->
+                  
+              </div><!--End of the right search budget filter-->
+            </div><!--End of the budget search filer-->
+            
+            <div class="budgetsimu-dashboard-wrapper">
+              <div class="budgetsim-tabtable-wrap">
+                <div class="budgetsim-tabswrap">    
+                    <ul class="nav nav-tabs commontabs-tablewrap" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#budgetmo">MO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"  href="javascript:void(0)">MT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"  href="javascript:void(0)">Data</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"  href="javascript:void(0)">SMS</a>
+                      </li>
+                        
+                  </ul>
+
+               <div class="budgetsim-tabscontent">
+                <div class="tab-content">
+                    <div id="budgetmo" class="tab-pane  active">
+                      <div class="budgetmo-innerwrapper">
+                    <div class="budgetmo-topsearch">
+                          <div class="budgetmo-typediv">
+                            <div class="custom-radio-box d-flex">
+                                <label class="radio-box">All
+                                  <input type="radio" checked="checked" name="budgetradiomo">
+                                  <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-box">Inbound
+                                  <input type="radio" name="budgetradiomo">
+                                  <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-box">Outbound
+                                  <input type="radio" name="budgetradiomo">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div> <!--End of teh custom radio box-->
+                          </div><!--End of the budget mo type div-->
+                           <div class="budgetmo-searchbox">
+                             <input type="text" class="form-control budgetsearch-input" placeholder="Search operator" />
+                                
+                           </div><!--End of the budget mo search box-->
+                        </div><!--End of the budget mo top search-->
+                        
+                      <div class="budgetcommon-fixtable commonbig-tablewrap flex-d">
+                          <div class="budgetfixed-tablewrap">
+                              <table class="table budgetfix-innertable commonbudget-tableinner">
+                                  <thead>
+                                      <tr>
+                                      <th>Operator</th>
+                                      <th>Country</th>
+                                      <th>Total</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td><a href="javascript:void(0)">AT&T</a></td>      
+                                    <td>USA</td>
+                                     <td>$232,339</td>
+                                </tr>
+                                   <tr>
+                                       <td><a href="javascript:void(0)">Etisalat </a></td>      
+                                    <td>UAE</td>
+                                     <td>$437,348</td>
+                                </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">EE</a></td>      
+                                    <td>UK</td>
+                                     <td>$247,324</td>
+                                </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">T-Mobile</a></td>      
+                                    <td>USA</td>
+                                     <td>$383,447</td>
+                                </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">China Mobile</a></td>      
+                                    <td>China</td>
+                                     <td>$348,349</td>
+                                </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">DTAG</a></td>      
+                                    <td>Germany</td>
+                                     <td>$43,474</td>
+                                </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">SFR</a></td>      
+                                    <td>France</td>
+                                     <td>$473,473</td>
+                                </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">Telstra</a></td>      
+                                    <td>Australia</td>
+                                     <td>$929,828</td>
+                                </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">NTT Docomo</a></td>      
+                                    <td>Japan</td>
+                                     <td>$43,464</td>
+                                </tr>
+                                    <tr>
+                                        <td><a href="javascript:void(0)">HKT</a></td>      
+                                    <td>Hongkong</td>
+                                     <td>$236,282</td>
+                                </tr>
+                                  </tbody>
+                              </table>
+                          </div><!--End of the budget fixed table wrap-->
+                          
+                          <div class="bugetscrollable-tablewrap">
+                              <table class="budgetscrollable-innertable table commonbudget-tableinner">
+                                <thead>
+                                    <tr>
+                                    <th>January</th>
+                                    <th>February</th>
+                                    <th>March</th>
+                                    <th>April</th>
+                                    <th>May</th>
+                                    <th>June</th>
+                                    <th>July</th>
+                                    <th>August</th>
+                                    <th>September</th>
+                                    <th>October</th>
+                                    <th>November</th>
+                                    <th>December</th>
+                                        
+                                    </tr>  
+                                </thead>
+                                  <tbody>
+                                   <tr>
+                                    <td>$232,339</td>
+                                    <td>$372,363</td>
+                                    <td>$512,387</td>
+                                    <td>$652,411</td>
+                                    <td>$792,435</td>
+                                    <td>$932,459</td>
+                                    <td>$107,248</td>
+                                    <td>$121,250</td>
+                                    <td>$135,253</td>
+                                    <td>$232,339</td>
+                                    <td>$372,363</td>
+                                    <td>$512,387</td>
+                                    </tr>
+                                   <tr>
+                                    <td>$437,348</td>
+                                    <td>$382,372</td>
+                                    <td>$327,396</td>
+                                    <td>$272,420</td>
+                                    <td>$217,444</td>
+                                    <td>$162,468</td>
+                                    <td>$107,492</td>
+                                    <td>$52,516</td>
+                                    <td>$313,222</td>
+                                    <td>$437,348</td>
+                                    <td>$382,372</td>
+                                    <td>$327,396</td>
+                                    </tr>
+                                   <tr>
+                                   <td>$247,324</td>
+                                    <td>$323,873</td>
+                                    <td>$400,422</td>
+                                    <td>$476,971</td>
+                                    <td>$553,520</td>
+                                    <td>$630,069</td>
+                                    <td>$706,618</td>
+                                    <td>$783,167</td>
+                                    <td>$859,716</td>
+                                     <td>$247,324</td>
+                                    <td>$323,873</td>
+                                    <td>$400,422</td>  
+                                    </tr>
+                                   <tr>
+                                    <td>$383,447</td>
+                                    <td>$104,747</td>
+                                    <td>$122,733</td>
+                                    <td>$237,552</td>
+                                    <td>$282,218</td>
+                                    <td>$370,357</td>
+                                    <td>$436,760</td>
+                                    <td>$503,162</td>
+                                    <td>$569,565</td>
+                                    <td>$383,447</td>
+                                    <td>$104,747</td>
+                                    <td>$122,733</td>
+                                    </tr>
+                                   <tr>
+                                    <td>$348,349</td>
+                                    <td>$372,363</td>
+                                    <td>$396,377</td>
+                                    <td>$420,391</td>
+                                    <td>$162,761</td>
+                                    <td>$468,419</td>
+                                    <td>$492,433</td>
+                                    <td>$516,447</td>
+                                    <td>$540,461</td> 
+                                    <td>$348,349</td>
+                                    <td>$372,363</td>
+                                    <td>$396,377</td>
+                                   </tr>
+                                   <tr>
+                                    <td>$43,474</td>
+                                    <td>$38,237</td>
+                                    <td>$33,000</td>
+                                    <td>$27,763</td>
+                                    <td>$43,303</td>
+                                    <td>$17,289</td>
+                                    <td>$12,052</td>
+                                    <td>$6,815</td>
+                                    <td>$1,578</td>
+                                    <td>$12,052</td>
+                                    <td>$6,815</td>
+                                    <td>$1,578</td>
+                                   </tr>
+                                   <tr>
+                                    <td>$473,473</td>
+                                    <td>$372,363</td>
+                                    <td>$271,253</td>
+                                    <td>$170,143</td>
+                                    <td>$38,746</td>
+                                    <td>$43,483</td>
+                                    <td>$43,498</td>
+                                    <td>$43,434</td>
+                                    <td>$43,433</td>
+                                    <td>$473,473</td>
+                                    <td>$372,363</td>
+                                    <td>$271,253</td>
+                                      
+                                   </tr>
+                                   <tr>
+                                    <td>$929,828</td>
+                                    <td>$327,373</td>
+                                    <td>$346,343</td>
+                                    <td>$283,723</td>
+                                    <td>$437,346</td>
+                                    <td>$472,364</td>
+                                    <td>$343,480</td>
+                                    <td>$343,433</td>
+                                    <td>$434,334</td>
+                                    <td>$929,828</td>
+                                    <td>$327,373</td>
+                                    <td>$346,343</td>
+                                   </tr>
+                                   <tr>
+                                    <td>$43,464</td>
+                                    <td>$37,236</td>
+                                    <td>$31,008</td>
+                                    <td>$24,780</td>
+                                    <td>$4,38,473</td>
+                                    <td>$12,324</td>
+                                    <td>$6,096</td>
+                                    <td>$434,334</td>
+                                    <td>$43,434</td>
+                                    <td>$43,464</td>
+                                    <td>$37,236</td>
+                                    <td>$31,008</td> 
+                                   </tr>
+                                   <tr>
+                                  <td>$236,282</td>
+                                  <td>$232,736</td>
+                                  <td>$229,190</td>
+                                  <td>$225,644</td>
+                                  <td>$349,840</td>
+                                  <td>$218,552</td>
+                                  <td>$215,006</td>
+                                  <td>$211,460</td>
+                                  <td>$207,914</td>
+                                  <td>$236,282</td>
+                                  <td>$232,736</td>
+                                  <td>$229,190</td>
+                                   </tr>
+                                      
+                                  </tbody>
+                              </table>
+                          </div><!--End of the budget scrollable table wrap-->
+                      </div><!--End of the budget common fixtable-->
+                        
+                     <div class="commonbudget-paginationwrap">
+                        <div class="budgetpagination-innerwrap">
+                            <ul class="pagination-wrapper">
+                                <li>
+                            <a href="javascript:void(0)" class="pagination-arrows">
+                                <i class="fa fa-angle-double-left"></i>
+                            </a>
+                                </li>
+                                <li>
+                            <a href="javascript:void(0)" class="pagination-arrows">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                                </li>
+                                
+                                <li>
+                                <a href="javascript:void(0)" class="pagination-num active">
+                                    1
+                                    </a>
+                                    
+                                </li>
+                                <li>
+                                <a href="javascript:void(0)" class="pagination-num">
+                                  2
+                                    </a>
+                                    
+                                </li>
+                                <li>
+                                <a href="javascript:void(0)" class="pagination-num">
+                                   3
+                                    </a>
+                                    
+                                </li>
+                                
+                                <li>
+                            <a href="javascript:void(0)" class="pagination-arrows active">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                                </li>
+                                <li>
+                            <a href="javascript:void(0)" class="pagination-arrows">
+                                <i class="fa fa-angle-double-right"></i>
+                            </a>
+                                </li>
+                            </ul>
+                            
+                         </div><!--End of the budget pagination inner wrap-->
+                    </div><!--End of the common budget pagination wrap-->
+                          
+                      </div><!--End of the budget mo inner wrapper-->
+                    </div><!--End of the budget mo tabs-->
+                    <div id="budgetmt" class="tab-pane fade">
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="budgetdata" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="budgetsms" class="tab-pane fade">
+                        <h3>Menu 3</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                   </div>   <!--End if the tab content-->
+                </div><!--End of the budget tabs content-->
+                </div><!--End of the budget tabs wrapper-->
+          
+                  <div class="budgetsave-btnwrap btn-wrapper">
+                    <a href="javascript:void(0) " class="btn-div budgetsave-btn">Save</a>
+                  </div><!--End of the budget save btn wrapper-->
+               
+            </div><!--End of the budget simu tabt table wrapper-->
+            
+            </div><!--End of the budget dashboard wrapper-->
+        </div><!--End of the dashboard all content-->
+      </div><!--End o fthe dashboard main wrapper-->
+    </div><!--End of the inner section wrapper-->
+</div><!--End of the main section wrapper-->
+  
+
+
+<footer>
+    <div class="footer-main-wrapper">
+    </div>
+    <!--End of the footer main wrapper-->
+  </footer>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified bootstrap js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/maps/modules/map.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/fr/fr-all.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+      
+    <script>
+    $(document).ready(function(){
+       $('.pagination-wrapper .pagination-arrows').click(function(){
+           $('.pagination-wrapper .pagination-arrows').removeClass('active');
+           $(this).addClass('active');
+           
+       });
+       $('.pagination-wrapper .pagination-num').click(function(){
+           $('.pagination-wrapper .pagination-num').removeClass('active');
+           $(this).addClass('active');
+           
+       });
+        
+        
+    });
+    $(window).on("load",function(){
+        $(".bugetscrollable-tablewrap").mCustomScrollbar({
+          axis:"x"
+        });
+    });
+
+    document.getElementById('get_file').onclick = function() {
+    document.getElementById('my_file').click();
+    };
+
+   </script>

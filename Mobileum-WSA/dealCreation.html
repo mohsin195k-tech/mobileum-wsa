@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mobileum - Deal Creation</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- Latest compiled and minified bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- Latest compiled and minified font awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+  <!-- fonts css -->
+  <link href="css/fonts.css" rel="stylesheet" />
+  <!-- style css -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header-main-wrapper">
+      <img src="images/header/header-img.png" class="header-img" alt="header-img">
+    </div>
+    <!--End of the header main wrapper-->
+  </header>
+  <main>
+    <!--Start of the main section wrapper-->
+    <div class="main-section-wrapper">
+      <!--Start of the inner section wrapper-->
+      <div class="inner-section-wrapper">
+        <div class="dashboard-main-wrapper">
+          <!--Start of the dashboard navbar wrapper-->
+            <div class="dasboard-navbar flex-d">
+            <div class="dasboard-nav-left">
+              <p class="navbar-head-txt">Wholesale Analytics</p>
+            </div>
+            <div class="dasboard-nav-right flex-d">
+              <div class="menuboard-wrap flex-d align-items-center">
+                <span class="menu-icon">
+                  <img src="images/Dashboard grey.png" class="hide-gray-iconx">
+                  <img src="images/active1.png" class="hide-active">
+                </span>
+                <div class="dropdown dropdownPosition">
+                  <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Dashboard</span>
+                  <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                    <a class="dropdown-item" href="summaryDashboard.html">Summary View</a>
+                    <a class="dropdown-item" href="networkDashboard.html">Network View</a>
+                    <a class="dropdown-item" href="countryDashboard.html">Country View</a>
+                    <a class="dropdown-item" href="reports.html">Reports</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menuboard-wrap active">
+                <a href="dealCreation.html">
+                  <span class="menu-icon">
+                    <img src="images/deal builder grey.png" class="hide-gray-icon">
+                    <img src="images/deal builder blue.png" class="hide-activex">
+                  </span>
+                  <span class="nav-txt">Deal Builder</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="budgetSimulation.html">
+                  <span class="menu-icon">
+                    <img src="images/Budget Simulation grey.png" class="hide-gray-iconx">
+                    <img src="images/Budget Simulation blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Budget Simulation</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap flex-d align-items-center">
+                  <span class="menu-icon">
+                    <img src="images/Agreement Management grey.png" class="hide-gray-iconx">
+                    <img src="images/agreement Agreement Management blue.png" class="hide-active">
+                  </span>
+                  <div class="dropdown dropdownPosition">
+                    <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Agreement Management</span>
+
+                    <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                        <a class="dropdown-item" href="agreementManagementDashboard.html">Manager Screen</a>
+                        <a class="dropdown-item" href="agreementMakerDashboard.html">Agreement Manager</a>
+                        <a class="dropdown-item" href="Deal_Manager.html">Deal Manager</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="settlementGenerate.html">
+                  <span class="menu-icon">
+                    <img src="images/settlement grey.png" class="hide-gray-iconx">
+                    <img src="images/settlement blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Settlement</span>
+                </a>
+              </div>
+            </div><!--dasboard-nav-right-->
+            <div class="menu-filter-box">
+              <img src="images/filter.png">
+              <img src="images/setting.png">
+            </div>
+          </div>
+          </div>
+          <!--End of the dashboard navbar wrapper-->
+          <div class="dashboard-all-content deal-build-div">
+            <div class="dashboard-navigation d-flex justify-content-between ">
+              <ul class="page-breadcrumb flex-d align-content">
+                <li><a href="javascript:void(0)">Deal Builder</a></li>
+                <li class="active"><a href="javascript:void(0)">New Deal</a></li>
+              </ul>
+              <div class="progress-box d-flex align-items-center">
+                <!-- CIRC1-START -->
+                <div class="comm-circle circ1 active">
+                  <div class="inner-circ active">           
+                  </div>
+                </div>
+                <div class="comm-bar bar1"></div>
+                <!-- CIRC1-END -->
+
+                <!-- CIRC2-START -->
+                <div class="comm-circle circ2">
+                  <div class="inner-circ">           
+                  </div>
+                </div>
+                <div class="comm-bar bar2"></div>
+                <!-- CIRC2-END -->
+
+
+                <!-- CIRC3-START -->
+                <div class="comm-circle circ3">
+                  <div class="inner-circ">           
+                  </div>
+                </div>
+                <!-- CIRC3-END -->                      
+              </div>              
+            </div>
+            
+            <!-- DEAL-BUILD-BOX START------------------>
+            <div class="deal-build-box white-bg">
+              <!-- DEAL-BUILD-INNER START------------------>
+              <div class="deal-build-inner d-flex">
+                <!-- LAST-DETAILS-BOX START------------------>
+                <div class="last-details-box">
+                  <div class="head-box">
+                    <h3 class="graph-title-txt">Last Deal Details</h3>
+                  </div>
+                  <!-- LAST-UPPER-BOX START ----->
+                  <div class="last-upper-box">
+
+                    <!-- INNER-CONT-1 START ------>
+                    <div class="inner-cont-1 d-flex">
+                      <div class="comm-box inner-box1">
+                        <h3 class="info-head">Start Date</h3>
+                        <p class="info-data">01/03/2018</p>
+                      </div>
+                      <div class="comm-box inner-box2">
+                        <h3 class="info-head">End Date</h3>
+                        <p class="info-data">28/02/2018</p>
+                      </div>
+                      <div class="comm-box inner-box3">
+                        <h3 class="info-head">Deal Type</h3>
+                        <p class="info-data">Tiered</p>
+                      </div>
+                      <div class="comm-box inner-box4">
+                        <h3 class="info-head">Deal Currency</h3>
+                        <p class="info-data">USD</p>
+                      </div>
+                    </div>
+                    <!-- INNER-CONT-1 END ------>
+
+                    <!-- INNER-CONT-2 START ------>
+                    <div class="inner-cont-2 d-flex">
+                      <div class="comm-box inner-box1">
+                        <h3 class="info-head">Auto Renewed</h3>
+                        <p class="info-data">28/02/2020 (2 Years)</p>
+                      </div>
+                      <div class="comm-box inner-box2 d-flex">
+                        <div class="comm-inner">
+                          <h3 class="info-head">HPMN</h3>
+                          <p class="info-data">XXX01</p>
+                        </div>
+                        <div class="comm-inner">
+                          <h3 class="info-head">VPMN</h3>
+                          <p class="info-data">FRAF1</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- INNER-CONT-2 END ------>
+
+                    <!-- INNER-CONT-3 START ------>
+                    <div class="inner-cont-3 d-flex">
+                      <div class="comm-box inner-box1">
+                          <h3 class="info-data deal-head-txt">
+                          Rate applied in TAP:
+                        </h3>
+                        <!-- BOUND-BOX START -->
+                        <div class="bound-box d-flex">
+                          <div class="comm-bound-box inbound-box">
+                            <p class="info-head">Inbound</p>
+                            <p class="info-head">MO: 0.06 USD</p>
+                            <p class="info-head">MT: 0.00 USD</p>
+                            <p class="info-head">Data: 0.04 USD</p>
+                            <p class="info-head">SMS: 0.08 USD</p>
+                          </div>
+                          <div class="comm-bound-box outbound-box">
+                            <p class="info-head">Outbound</p>
+                            <p class="info-head">MO: 0.05 EUR</p>
+                            <p class="info-head">MT: 0.00 EUR</p>
+                            <p class="info-head">Data: 0.03 EUR</p>
+                            <p class="info-head">SMS: 0.05 EUR</p>
+                          </div>
+                        </div>
+                        <!-- BOUND-BOX END---->
+
+                      </div>
+                      <div class="comm-box inner-box2 d-flex flex-column">
+                        <h3 class="info-data deal-head-txt">
+                          Deal terms
+                        </h3>
+                        <div class="deal-terms-1">
+                          <h3 class="info-head">
+                            Revenue Commitment
+                          </h3>
+                          <p class="info-data">
+                            150,000 USD
+                          </p>
+                        </div>
+                        <div class="deal-terms-2">
+                          <h3 class="info-head">
+                            Satellite & Premium No.
+                          </h3>
+                          <p class="info-data">
+                            Not Included
+                          </p>
+                        </div>
+                    </div>
+                    <!-- INNER-CONT-3 ENDT ------>
+
+
+                  </div>
+                  <!-- LAST-UPPER-BOX END ------->
+
+                  <!-- LAST-MIDDLE-BOX START-->
+                  <div class="last-middle-box">
+                    <div class="last-detail-table common-table-border">
+                      <table class="common-small-table">
+                        <thead>
+                          <tr class="">
+                            <th>Start Range</th>
+                            <th>End Range</th>
+                            <th class="subth1">MO (USD)</th>
+                            <th class="subth1">MT (USD)</th>
+                            <th>SMS (USD)</th>
+                            <th class="subth1">Data (USD)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>0</td>
+                              <td>500,001</td>
+                              <td>0.06</td>
+                              <td>0.00</td>
+                              <td>0.05</td>
+                              <td>0.04</td>
+                          </tr>
+                          <tr>
+                              <td>500,001</td>
+                              <td>1,000,000</td>
+                              <td>0.04</td>
+                              <td>0.00</td>
+                              <td>0.05</td>
+                              <td>0.02</td>
+                          </tr>
+                          <tr>
+                              <td>>1,000,000</td>
+                              <td></td>
+                              <td>0.03</td>
+                              <td>0.00</td>
+                              <td>0.05</td>
+                              <td>0.01</td>
+                          </tr>
+                        </tbody>               
+                      </table>
+                    </div>
+                  </div>
+                  <!-- LAST-MIDDLE-BOX END-->
+
+
+                  <!-- LAST-UPPER-BOX START-->
+                  <div class="last-upper-box">
+                      <div class="head-box">
+                        <h3 class="graph-title-txt">
+                          Saved Scenarios
+                        </h3>
+                      </div>
+                    <div class="last-detail-table common-table-border">
+                      <table class="common-small-table">
+                        <thead>
+                          <tr class="">
+                            <th>Name</th>
+                            <th>I/B Revenue</th>
+                            <th class="subth1">O/B Cost</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>ORANGE_FR_2019-20</td>
+                              <td>$254,226</td>
+                              <td>$110,229</td>
+                          </tr>
+                          <tr>
+                              <td>ORANGE_FR_2019-20-Scenario 2</td>
+                              <td>$283,473</td>
+                              <td>$167,380</td>
+                          </tr>
+
+                        </tbody>               
+                      </table>
+                    </div>
+                  </div>
+                  <!-- LAST-UPPER-BOX END-->
+                </div>
+              </div>
+                <!-- LAST-DETAILS-BOX END------------------>
+      
+
+                <!-- GENERAL-DETAILS-BOX DEAL 1START------------------>
+                <div class="general-details-box deal-1">
+                  <div class="head-box">
+                    <h3 class="graph-title-txt ">
+                    General Details</h3>
+                  </div>
+                  <div class="gr-det-box d-flex">
+                    <!-- AGREE-BOX START -->
+                    <div class="input-box agree-box">
+                      <input type="text" class="agree-input" placeholder="Agreement Name">
+                    </div>
+                    <!-- AGREE-BOX END -->
+
+                    <!-- DATE-START-BOX START -->
+                    <!-- <div class="input-box date-box date-box1">
+                      <input type="text" class="date-start-input" placeholder="Start Date">
+                    </div> -->
+                    <div class="input-group date input-box date-box date-box1" data-provide="datepicker">
+                        <input type="text" class="date-start-input" placeholder="Start Date">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                    <!-- DATE_START-BOX END -->
+
+
+                    <!-- DATE-END-BOX START -->
+
+
+                    <!-- <div class="input-box date-box date-box1">
+                      <input type="text" class="date-end-input" placeholder="End Date">
+                    </div> -->
+
+                    <div class="input-group date input-box date-box date-box1" data-provide="datepicker">
+                        <input type="text" class="date-start-input" placeholder="End Date">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                    <!-- DATE_END-BOX END -->
+                  </div>
+                  <div class="agreement-detail-box d-flex">
+                    <div class="agreement-owner-box">
+                      <div class="head-box">
+                        <h3 class="graph-title-txt sub-headd">
+                        Agreement Owner</h3>
+                      </div>
+                      <div class="custom-radio-box d-flex">
+                        <label class="radio-box">Individual
+                          <input type="radio" checked="checked" name="radio1">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-box">Group
+                          <input type="radi" name="radio1">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="search-list-left flex-d">
+
+
+                        <!-- SELECT-BOX START------------------>
+                        <div class="filter-list-items list-2 wd-md">
+                          <select class="list-partner">
+                            <option value="france">Country</option>
+                            <option value="france1">India</option>
+                          </select>
+                        </div>
+                        <!-- SELECT-BOX END------------------>
+                       
+                        <!-- SELECT-BOX START------------------>
+                        <div class="filter-list-items list-3 wd-md">
+                          <select class="list-partner">
+                            <option value="france">Operator</option>
+                            <option value="france1"></option>
+                          </select>
+                        </div>
+                        <!-- SELECT-BOX END------------------>
+                      </div>
+                      
+                      <!-- AUTO-RENEW-BOX START -->
+                      <div class="auto-renew-box">
+                        <!-- Rounded switch -->
+                        <div class="head-box">
+                          <h3 class="graph-title-txt sub-headd">
+                            Auto Renew
+                          </h3>
+                        </div>
+                        <div class="auto-renew-inner d-flex justify-content-between align-items-center">
+                          <div class="switch-box"> 
+                            <label class="switch">
+                              <input type="checkbox" class="switch-checkbox">  
+                              <span class="slider1 round"></span>
+                            </label>No
+                          </div>
+                          <div class="filter-list-items list-3 wd-md">
+                            <select class="list-partner">
+                              <option value="france">No. of years</option>
+                              <option value="france1">1</option>
+                              <option value="france2">2</option>
+                              <option value="france3">3</option>
+                              <option value="france4">4</option>
+                              <option value="france5">5</option>
+                                
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- AUTO-RENEW-BOX END -->
+
+                    </div>
+                    <div class="agreement-partner-box">
+                      <div class="head-box">
+                        <h3 class="graph-title-txt sub-headd">
+                        Agreement Partner</h3>
+                      </div>
+                      <div class="custom-radio-box d-flex">
+                        <label class="radio-box">Individual
+                          <input type="radio" checked="checked" name="radio2">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-box">Group
+                          <input type="radio" name="radio2">
+                          <span class="checkmark"></span>
+                        </label>
+                        <a href="javascript:void(0)" class="custom-link">
+                          Create Group
+                        </a>
+                      </div>
+                      <div class="search-list-left flex-d">
+
+
+                        <!-- SELECT-BOX START------------------>
+                        <div class="filter-list-items list-2 wd-md">
+                          <select class="list-partner">
+                            <option value="france">Country</option>
+                            <option value="france1">India</option>
+                          </select>
+                        </div>
+                        <!-- SELECT-BOX END------------------>
+                       
+                        <!-- SELECT-BOX START------------------>
+                        <div class="filter-list-items list-3 wd-md">
+                          <select class="list-partner">
+                            <option value="france">Operator</option>
+                            <option value="france1"></option>
+                          </select>
+                        </div>
+                        <!-- SELECT-BOX END------------------>
+                      </div>
+                      
+                      <!-- AUTO-RENEW-BOX START -->
+                      <div class="auto-renew-box">
+                        <!-- Rounded switch -->
+                        <div class="head-box">
+                          <h3 class="graph-title-txt sub-headd">
+                            Agreement Type
+                          </h3>
+                        </div>
+                        <div class="auto-renew-inner d-flex justify-content-between">
+                          <div class="custom-radio-box d-flex  flex-wrap">
+                            <label class="radio-box">Regular
+                              <input type="radio" checked="checked" name="radio">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="radio-box">Enterprise
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                            </label>
+
+                            <label class="radio-box">M2M
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                            </label>
+
+                            <label class="radio-box">Regular (Without M2M)
+                              <input type="radio" name="radio">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="btn-wrapper">
+
+                          <a href="javascript:void(0);" class="btn-div btn-search deal2-btn">Continue</a>
+                        </div>
+                      </div>
+                      <!-- AUTO-RENEW-BOX END -->
+                    </div>
+                  </div>
+                </div>
+                <!-- GENERAL-DETAILS-BOX DEAL 1 END------------------>
+
+                
+                <!-- GENERAL-DETAILS-BOX DEAL 2 START------------------>
+                <div class="general-details-box deal-usecase">
+                  <div class="head-box">
+                    <h3 class="graph-title-txt ">
+                    Deal Details</h3>
+                  </div>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Inbound</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#menu">Outbound</a>
+                    </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <!-- INBOUND-TAB-BOX START -->
+                    <div class="inbound-tab-box tab-pane active show container fade" id="home">
+                      <div class="deal-det-box d-flex">
+                        <!-- DATE-START-BOX START -->
+                        <div class="search-list-left flex-d">
+                            <!-- SELECT-BOX START------------------>
+                            <div class="filter-list-items list-2 wd-md">
+                              <select class="list-partner">
+                                <option value="france">Scheme Type</option>
+                                <option value="france1">India</option>
+                              </select>
+                            </div>
+                            <!-- SELECT-BOX END------------------>
+                           
+                            <!-- SELECT-BOX START------------------>
+                            <div class="filter-list-items list-3 wd-md">
+                              <select class="list-partner">
+                                <option value="france">Call Type</option>
+                                <option value="france1"></option>
+                              </select>
+                            </div>
+                            <!-- SELECT-BOX END------------------>
+                          </div>
+                      </div>
+                      <div class="satelite-box d-flex">
+                        <div class="premium-box sat-com d-flex align-items-baseline">
+                          <div class="head-box">
+                            <h3 class="graph-title-txt sub-headd">
+                              Exclude Satellite/Premium
+                            </h3>      
+                          </div>
+                          <div class="switch-box">
+                            <label class="switch">
+                              <input type="checkbox" class="switch-checkbox">asd
+                              <span class="slider1 round"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="blend-box sat-com d-flex align-items-baseline">
+                            <div class="head-box">
+                              <h3 class="graph-title-txt sub-headd">
+                                Blend Voice
+                              </h3>      
+                            </div>      
+                            <div class="switch-box">
+                              <label class="switch">
+                                <input type="checkbox" class="switch-checkbox">asd
+                                <span class="slider1 round"></span>
+                              </label>
+                            </div>
+                        </div>
+                      </div>
+
+                      <!-- SCHEME-SELECT-BOX-START -->
+                      <div class="scheme-select-box d-flex">
+                        <h3 class="graph-title-txt sub-headd">
+                          Choose Schemes for service type
+                        </h3>
+                        <div class="check-box box1">
+                          <label class="checkbox-container">Same for all
+                            <input type="checkbox" class="custom-check">
+                            <span class="checkmark-check"></span>
+                          </label>
+                        </div>
+                        <div class="check-box box2">
+                          <label class="checkbox-container">Other Cost
+                            <input type="checkbox" class="custom-check">
+                            <span class="checkmark-check"></span>
+                          </label>
+                        </div>
+                      </div>  
+                      <!-- SCHEME-SELECT-BOX-END -->
+                      
+
+                      <!-- MOB-STATS-BOX-START -->
+                      <div class="mob-stats-box d-flex">
+                        <div class="stats-box1 stats-box">
+                          <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              MO
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                          </label>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Increment unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Rate unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                        </div>
+                        <div class="stats-box2 stats-box">
+                          <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              MT
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                          </label>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Increment unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Rate unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                        </div>
+                        <div class="stats-box3 stats-box">
+                          <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Data
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                          </label>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Increment unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Rate unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                        </div>
+                        <div class="stats-box4 stats-box">
+                          <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              MT
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                          </label>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Increment unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Rate unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- MOB-STATS-BOX-END -->
+
+                      <!-- COMMITMENT-BOX-START -->
+                      <div class="commitment-box">
+
+                        <!-- COMMIT-UPPER-BOX-START -->
+                        <div class="commit-upper-box d-flex">
+                          <h3 class="graph-title-txt sub-headd">
+                            Commitment
+                          </h3>
+                          <div class="check-box box1">
+                            <label class="checkbox-container">Add commitment
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- COMMIT-UPPER-BOX-END -->
+
+                        <!-- COMMIT-LOWER-BOX-START -->
+                        <div class="commit-lower-box">
+                          <div class="auto-renew-inner d-flex justify-content-between">
+                            <div class="custom-radio-box d-flex  flex-wrap">
+                              <label class="radio-box disabled" disabled>None
+                                <input type="radio" name="radio" disabled>
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="radio-box">Revenue
+                                <input type="radio" name="radio" checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+
+                              <label class="radio-box">Volume
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="btn-wrapper">
+
+                          <a href="javascript:void(0);" class="btn-div btn-search deal3-btn">Continue</a>
+                        </div>
+                        <!-- COMMIT-LOWER-BOX-END -->
+
+                      </div>
+                      <!-- COMMITMENT-BOX-START -->
+
+                    </div>
+                    <!-- INBOUND-TAB-BOX END -->
+
+                    <!-- OUTBOUND-TAB-BOX START -->
+                    <div class="outbound-tab-box tab-pane container " id="menu">
+                    </div>
+                    <!-- OUTBOUND-TAB-BOX END -->
+
+                  </div>
+                </div>
+                <!-- GENERAL-DETAILS-BOX DEAL 2 END------------------>
+
+                <!-- GENERAL-DETAILS-BOX START------------------>
+                <div class="general-details-box deal-2">
+                  <div class="head-box">
+                    <h3 class="graph-title-txt ">
+                    Deal Details</h3>
+                  </div>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Inbound</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#menu">Outbound</a>
+                    </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <!-- INBOUND-TAB-BOX START -->
+                    <div class="inbound-tab-box tab-pane active show container fade" id="home">
+                      <div class="deal-det-box d-flex">
+                        <!-- DATE-START-BOX START -->
+                        <div class="search-list-left flex-d">
+                            <!-- SELECT-BOX START------------------>
+                            <div class="filter-list-items list-2 wd-md">
+                              <select class="list-partner">
+                                <option value="france">Scheme Type</option>
+                                <option value="france1">Flat</option>
+                                <option value="france1">Tiered</option>
+                                <option value="france1">Slide</option>
+                                <option value="france1">Balanced unbalanced</option>
+                                <option value="france1">Revenue Dependent</option>
+                                <option value="france1">MO Dependent</option>
+                              </select>
+                            </div>
+                            <!-- SELECT-BOX END------------------>
+                           
+                            <!-- SELECT-BOX START------------------>
+                            <div class="filter-list-items list-3 wd-md">
+                              <select class="list-partner">
+                                <option value="france">Call Type</option>
+                                 <option value="france1">MOC</option>
+                                  <option value="france1">MTC</option>
+                                   <option value="france1">SMS</option> <option value="france1">DATA</option>
+                                <option value="france1">MO Home</option>
+                                <option value="france1">MO Local</option>
+                                <option value="france1">MO RoW</option>
+                               
+                              </select>
+                            </div>
+                            <!-- SELECT-BOX END------------------>
+                          </div>
+                      </div>
+                      <div class="satelite-box d-flex">
+                        <div class="premium-box sat-com d-flex align-items-baseline">
+                          <div class="head-box">
+                            <h3 class="graph-title-txt sub-headd">
+                              Exclude Satellite/Premium
+                            </h3>      
+                          </div>
+                          <div class="switch-box">
+                            <label class="switch">
+                              <input type="checkbox" class="switch-checkbox">asd
+                              <span class="slider1 round"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="blend-box sat-com d-flex align-items-baseline">
+                            <div class="head-box">
+                              <h3 class="graph-title-txt sub-headd">
+                                Blend Voice
+                              </h3>      
+                            </div>      
+                            <div class="switch-box">
+                              <label class="switch">
+                                <input type="checkbox" class="switch-checkbox">asd
+                                <span class="slider1 round"></span>
+                              </label>
+                            </div>
+                        </div>
+                      </div>
+
+                      <!-- SCHEME-SELECT-BOX-START -->
+                      <div class="scheme-select-box d-flex">
+                        <h3 class="graph-title-txt sub-headd">
+                          Choose Schemes for service type
+                        </h3>
+                        <div class="check-box box1">
+                          <label class="checkbox-container">Same for all
+                            <input type="checkbox" class="custom-check">
+                            <span class="checkmark-check"></span>
+                          </label>
+                        </div>
+                        <div class="check-box box2">
+                          <label class="checkbox-container">Other Cost
+                            <input type="checkbox" class="custom-check">
+                            <span class="checkmark-check"></span>
+                          </label>
+                        </div>
+                      </div>  
+                      <!-- SCHEME-SELECT-BOX-END -->
+                      
+
+                      <!-- MOB-STATS-BOX-START -->
+                      <div class="mob-stats-box d-flex">
+                        <div class="stats-box1 stats-box">
+                            <h3 class="stats-head">
+                              MO
+                            </h3>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Increment unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Rate unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                        </div>
+                        <div class="stats-box2 stats-box">
+                            <h3 class="stats-head">
+                              MT
+                            </h3>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Increment unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Rate unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                        </div>
+                        <div class="stats-box3 stats-box">
+                            <h3 class="stats-head">
+                              Data
+                            </h3>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Increment unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Rate unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                        </div>
+                        <div class="stats-box4 stats-box">
+                            <h3 class="stats-head">
+                              MT
+                            </h3>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Increment unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                          <div class="inc-unit-box d-flex">
+                            <p class="inc-txt inc-com">Rate unit</p>
+                            <span class="inc-unit inc-com">1</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- MOB-STATS-BOX-END -->
+
+                      <!-- COMMITMENT-BOX-START -->
+                      <div class="commitment-box">
+
+                        <!-- COMMIT-UPPER-BOX-START -->
+                        <div class="commit-upper-box d-flex">
+                          <h3 class="graph-title-txt sub-headd">
+                            Commitment
+                          </h3>
+                          <div class="check-box box1">
+                            <label class="checkbox-container">Add commitment
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- COMMIT-UPPER-BOX-END -->
+
+                        <!-- COMMIT-LOWER-BOX-START -->
+                        <div class="commit-lower-box">
+                          <div class="auto-renew-inner d-flex justify-content-between">
+                            <div class="custom-radio-box d-flex  flex-wrap">
+                              <label class="radio-box" >None
+                                <input type="radio" name="radio"checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="radio-box">Revenue
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+
+                              <label class="radio-box">Volume
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="btn-wrapper">
+                          <a href="javascript:void(0);" class="btn-div btn-graph deal2-back-btn">BACk</a>
+                          <a href="javascript:void(0);" class="btn-div btn-search deal3-btn">Continue</a>
+                        </div>
+                        <!-- COMMIT-LOWER-BOX-END -->
+
+                      </div>
+                      <!-- COMMITMENT-BOX-START -->
+
+                    </div>
+                    <!-- INBOUND-TAB-BOX END -->
+
+                    <!-- OUTBOUND-TAB-BOX START -->
+                    <div class="outbound-tab-box tab-pane container " id="menu">
+                    </div>
+                    <!-- OUTBOUND-TAB-BOX END -->
+
+                  </div>
+                </div>
+                <!-- GENERAL-DETAILS-BOX END------------------>
+
+
+                <!-- GENERAL-DETAILS-BOX START------------------>
+                <div class="general-details-box deal-3">
+                  <div class="head-box">
+                    <h3 class="graph-title-txt ">
+                    Deal Values</h3>
+                  </div>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Inbound</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#menu">Outbound</a>
+                    </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <!-- INBOUND-TAB-BOX START -->
+                    <div class="inbound-tab-box tab-pane active show container fade" id="home">
+                      <div class="deal-det-box d-flex align-items-baseline">
+                        <!-- DATE-START-BOX START -->
+                        <div class="head-box">
+                          <h3 class="graph-title-txt sub-headd">
+                          Commitment ($)</h3>
+                        </div>
+                        <div class="input-box agree-box">
+                          <input type="text" class="agree-input">
+                        </div>
+                      </div>
+                      
+                      <!-- COMMITMENT TABLE START -->
+                      <div class="commitment-table common-table-border">
+                        <table class="common-small-table">
+                          <thead>
+                            <tr class="">
+                              <th>Start Range (Mins)</th>
+                              <th>End Range (Mins)</th>
+                              <th class="subth1">MO (Mins)</th>
+                              <th class="subth1">MT (Mins)</th>
+                              <th>SMS (Count)</th>
+                              <th class="subth1" colspan=2>Data (Mb)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <img src="images/icon-2.png" alt="" class="delete-img">
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-box agree-box">
+                                  <input type="text" class="agree-input">
+                                </div>
+                              </td>
+                              <td>
+                                <img src="images/icon-2.png" alt="" class="delete-img">
+                              </td>
+                            </tr>
+                          </tbody>               
+                        </table>
+                        <div class="add-logo-box">
+                          <img src="images/icon-3.png" alt="" class="add-logo">
+                        </div>
+                      </div>
+                      <div class="btn-wrapper">
+                                                  <a href="javascript:void(0);" class="btn-div btn-graph deal3-back-btn">BACk</a>
+                        <a href="dealbuilder-scenario.html" class="btn-div btn-search">Save</a>
+                      </div>
+                      <!-- COMMITMENT TABLE END -->
+
+                    </div>
+                    <!-- INBOUND-TAB-BOX END -->
+
+                    <!-- OUTBOUND-TAB-BOX START -->
+                    <div class="outbound-tab-box tab-pane container " id="menu">
+                    </div>
+                    <!-- OUTBOUND-TAB-BOX END -->
+
+                  </div>
+                </div>
+                <!-- GENERAL-DETAILS-BOX END------------------>
+              </div>
+              <!-- deal-build-INNER END------------------>
+            </div>
+            <!-- DEAL-BUILD-BOX END------------------>
+          </div>
+        </div>
+      </div>
+      <!--End of the inner section wrapper-->
+    </div>
+    <!--End of the main section wrapper-->
+  </main>
+  <footer>
+    <div class="footer-main-wrapper">
+    </div>
+    <!--End of the footer main wrapper-->
+  </footer>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified bootstrap js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/maps/modules/map.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/fr/fr-all.js"></script>
+
+  
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <script>
+
+        //container_france chart code starts here
+        var data = [
+        ['fr-t', 0],
+        ['fr-h', 1],
+        ['fr-e', 2],
+        ['fr-r', 3],
+        ['fr-u', 4],
+        ['fr-n', 5],
+        ['fr-p', 6],
+        ['fr-o', 7],
+        ['fr-v', 8],
+        ['fr-s', 9],
+        ['fr-g', 10],
+        ['fr-k', 11],
+        ['fr-a', 12],
+        ['fr-c', 13],
+        ['fr-f', 14],
+        ['fr-l', 15],
+        ['fr-d', 16],
+        ['fr-b', 17],
+        ['fr-i', 18],
+        ['fr-q', 19],
+        ['fr-j', 20],
+        ['fr-m', 21],
+        ['fr-re', 22],
+        ['fr-yt', 23],
+        ['fr-gf', 24],
+        ['fr-mq', 25],
+        ['fr-gp', 26],
+        ['undefined', 27]
+        ];
+
+        // Create the chart
+        Highcharts.mapChart('container-france-graph', {
+          chart: {
+            map: 'countries/fr/fr-all'
+          },
+
+          title: {
+            text: null
+          },
+
+          subtitle: {
+            text: null
+          },
+          credits: {
+            enabled: false
+          },
+          exporting: { enabled: false },
+          legend: {
+            enabled: false
+          },
+
+          mapNavigation: {
+            enabled: false,
+            buttonOptions: {
+              verticalAlign: 'bottom'
+            }
+          },
+
+          colorAxis: {
+            min: 0,
+            max: 1000,
+            minColor: '#e9efb8',
+            maxColor: '#e9efb8' 
+          },
+
+          series: [{
+            data: data,
+            showInLegend: false,
+            name: 'Random data',
+            borderColor: '#d5e84d',
+            borderWidth: 2,
+            states: {
+              hover: {
+                color: '#BADA55'
+              }
+            },
+            dataLabels: {
+              enabled: false,
+                    //format: '{point.name}'
+                  }
+                }, {
+                  name: 'Separators',
+                  type: 'mapline',
+                  data: Highcharts.geojson(Highcharts.maps['countries/fr/fr-all']),
+                  color: 'silver',
+                  showInLegend: false,
+                  enableMouseTracking: false
+                }]
+              });
+
+//container-month-position chart code starts here
+Highcharts.chart('container-month-position', {
+  title: {
+    text: null
+  },
+  credits: {
+    enabled: false
+  },
+  exporting: { enabled: false },
+  xAxis: [{
+    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    reversed: false,
+    labels: {
+      step: 1,
+      style: {
+        fontSize: '10px',
+        fontFamily: 'OpenSans-regular',
+        color: '#74829c'
+      }
+    }
+  }],
+  yAxis: {
+    title: {
+      text: 'USD',
+      style: {
+        fontSize: '10px',
+        fontFamily: 'OpenSans-regular',
+        color: '#74829c'
+      }
+    },
+    gridLineWidth: 0,
+    minorGridLineWidth: 0,
+            //min: 0,
+            //max: 70,
+            tickInterval:10,
+            labels:{
+              formatter: function() {
+                return Math.abs(this.value) + 'K';
+              },
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-regular',
+                color: '#74829c'
+              }
+            },
+          },
+
+          plotOptions: {
+            series: {
+              stacking: 'normal',
+              pointPadding: -0.2
+            }
+          },
+          legend: {
+            itemStyle: {
+              fontSize:'11px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c'
+            },
+            //margin: 60
+            
+          },
+
+          tooltip: {
+            formatter: function () {
+              return '<b>' + this.series.name + this.point.category + '</b><br/>' +
+              Highcharts.numberFormat(Math.abs(this.point.y), 0);
+            }
+          },
+
+          series: [{
+            type: 'column',
+            name: 'I/B Revenue',
+            data: [20, 38, 29, 11, 22, 32, 39, 18, 32, 21, 3, 23],
+            color: '#aeeac4',
+            //pointWidth: 60,
+            dataLabels: {
+              enabled: true,
+              fontSize: '12px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c',
+              inside: false,
+              align: 'center',
+              formatter: function() {
+                return Math.abs(this.y) + 'K';
+              },
+              y: 0, 
+              style: {
+                fontSize: '11px',
+                fontFamily: 'Verdana, sans-serif',
+                color: '#666',
+                fontWeight: 'normal',
+              } 
+
+            }
+          }, {
+            type: 'column',
+            name: 'O/B Cost',
+            data: [-10, -8, -20, -29, -19, -32, -26, -38, -27, -33, -19, -34],
+            color: '#ff7c7c',
+            //pointWidth: 60,
+            dataLabels: {
+              enabled: true,
+              fontSize: '12px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c',
+              inside: false,
+              align: 'center',
+              format: '{y}K', 
+              y: 0, 
+              style: {
+                fontSize: '11px',
+                fontFamily: 'Verdana, sans-serif',
+                color: '#666',
+                fontWeight: 'normal',
+              }
+            }
+          },{
+            type: 'line',
+            name: 'Net',
+            data: [0, 10, 13, 5, 6, 20, 22, 13, -10, -12, -13, -20],
+            zones: [{
+              dashStyle: 'shortDash'
+            }],
+            color: '#858bc4',
+            marker: {
+              lineWidth: 1,
+              lineColor: '#858bc4',
+              fillColor: '#858bc4'
+            }
+          }]
+        });
+        //container-month-position chart code ends here
+
+
+        //container-perfonce-lstyr chart code starts here
+        Highcharts.chart('container-perfonce-lstyr', {
+          title: {
+            text: null
+          },
+          credits: {
+            enabled: false
+          },
+          exporting: { enabled: false },
+          xAxis: {
+            type: 'category',
+            //tickLength: 0,
+            gridLineWidth: 0,
+            minorGridLineWidth: 0,
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            title: {
+              text: ''
+            },
+            labels: {
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-regular',
+                color: '#74829c'
+              }
+            }
+          },
+          yAxis: {
+            min: 0,
+            max: 70,
+            tickInterval:10,
+            labels:{format: '{value}K'},
+            gridLineWidth: 0,
+            minorGridLineWidth: 0,
+
+            title: {
+              text: 'USD',
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-regular',
+                color: '#74829c'
+              }
+            },
+            labels: {
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-regular',
+                color: '#74829c'
+              }
+            }
+          },
+          legend: {
+            itemStyle: {
+              fontSize:'11px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c'
+            }
+
+          },
+          plotOptions: {
+            series: {
+              pointPadding: 0
+            }
+          },
+          series: [{
+            type: 'column',
+            name: 'Current Year Revenue',
+            data: [60, 50, 40, 30, 50, 40, 20, 50, 60, 45, 55, 45],
+            color: '#f5e393',
+            //pointWidth: 25,
+            dataLabels: {
+              enabled: true,
+              fontSize: '12px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c',
+              align: 'center',
+              format: '{y}K', 
+              y: 0, 
+              style: {
+                fontSize: '11px',
+                fontFamily: 'Verdana, sans-serif',
+                color: '#666',
+                fontWeight: 'normal',
+              }
+            }
+          }, {
+            type: 'column',
+            name: 'Last Year Revenue',
+            data: [40, 30, 50, 20, 35, 55, 35, 45, 30, 60, 45, 30],
+            color: '#a3d0f4',
+            //pointWidth: 25,
+            dataLabels: {
+              enabled: true,
+              fontSize: '12px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c',
+              align: 'center',
+              format: '{y}K', 
+              y: 0, 
+              style: {
+                fontSize: '11px',
+                fontFamily: 'Verdana, sans-serif',
+                color: '#666',
+                fontWeight: 'normal',
+              }
+            }
+          }, {
+            type: 'line',
+            name: 'Growth Rate',
+            data: [40, 30, 40, 20, 35, 40, 20, 40, 30, 60, 40, 30],
+            zones: [{
+              dashStyle: 'shortDash'
+            }],
+            color: '#f190ba',
+            marker: {
+              lineWidth: 1,
+              lineColor: '#f190ba',
+              fillColor: '#f190ba'
+            }
+          }]
+        });
+        //container-perfonce-lstyr chart code ends here
+
+        //container-revenu-cost-grph chart code starts here
+        Highcharts.chart('container-revenu-cost-grph', {
+          chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+          },
+          credits: {
+            enabled: false
+          },
+          exporting: { enabled: false },
+          title: {
+            text: null
+          },
+          tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+          },
+          plotOptions: {
+            pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                enabled: false
+              },
+              showInLegend: true
+            }
+          },
+          legend: {
+            enabled: true,
+            //layout: 'vertical',
+            align: 'right',
+            width: 200,
+            verticalAlign: 'middle',
+            useHTML: true,
+            labelFormatter: function() {
+              return '<div style="display: flex; justify-content: flex-start;"><div>' + this.name + '</div><div style="width:40px; float:left;text-align:right;margin-bottom:10px;">' + '(' + this.y + '%)</div></div>';
+            },
+            itemStyle: {
+              fontSize: '13px',
+              fontFamily: 'OpenSans-Semibold',
+              color: '#2a3541'
+            },
+          },
+          series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+              name: 'Bouyges',
+              y: 36,
+              sliced: true,
+              selected: true,
+              color: '#ace9dd'
+            }, {
+              name: 'Orange',
+              y: 20,
+              color: '#f6d3af'
+            }, {
+              name: 'SFR',
+              y: 24,
+              color: '#fbeba5'
+            }, {
+              name: 'Free Mobile',
+              y: 20,
+              color: '#b7dcf4'
+            }]
+          }]
+        });
+        //container-revenu-cost-grph chart code ends here
+
+        //container-traffic-forecast chart code starts here
+        Highcharts.chart('container-traffic-forecast', {
+          chart: {
+            type: 'line'
+          },
+          title: {
+            text: null
+          },
+          credits: {
+            enabled: false
+          },
+          exporting: { enabled: false },
+          subtitle: {
+            text: ''
+          },
+          xAxis: {
+            //tickLength: 0,
+            gridLineWidth: 0,
+            minorGridLineWidth: 0,
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            labels: {
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-regular',
+                color: '#74829c'
+              }
+            }
+
+          },
+          yAxis: {
+            min: 0,
+            max: 700,
+            tickInterval: 100,
+            gridLineWidth: 0,
+            minorGridLineWidth: 0,
+            title: {
+              text: 'USD'
+            },
+            labels: {
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-regular',
+                color: '#74829c'
+              }
+            },
+          },
+          plotOptions: {
+            line: {
+              dataLabels: {
+                enabled: false
+              },
+              enableMouseTracking: false
+            },
+            series: {
+              marker: {
+                enabled: false
+              }
+            }
+          },
+          legend: {
+            itemStyle: {
+              fontSize:'11px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c'
+            },
+            //margin: 60
+            
+          },
+          series: [{
+            name: 'Budget',
+            data: [0, 100, 200, 300, 400, 300, 200, 100, 400, 300, 500, 700, 200, 100, 200, 300, 400, 300, 200, 100, 400, 300, 500, 700],
+            marker: {
+              symbol: 'triangle'
+            },
+            zones: [{
+              dashStyle: 'shortDash'
+            }],
+            color: '#f3c29e',
+          }, {
+            name: 'Forecast',
+            data: [400, 410, 420, 430, 440, 450, 460, 480, 300, 510, 520, 530, 540, 500, 400, 500, 300, 100, 500, 600, 500, 400, 300, 200],
+            color: '#44bee1',
+            
+            dashStyle: 'shortDash',
+            
+            zoneAxis: 'x',
+            zones: [{
+              value: 8
+            }, {
+              //lineWidth: 5,
+              dashStyle: 'solid',
+            }]
+            
+
+          }]
+        });
+        //container-traffic-forecast chart code starts here
+
+
+        //container-oprt-contribution chart code starts here
+        Highcharts.chart('container-oprt-contribution', {
+          chart: {
+            type: 'bar'
+          },
+          title: {
+            text: null
+          },
+          credits: {
+            enabled: false
+          },
+          exporting: { enabled: false },
+          subtitle: {
+            text: ''
+          },
+          xAxis: {
+            categories: ['Orange', 'SFR', 'Bouyges', 'Free Mobile'],
+            title: {
+              text: null
+            },
+            labels: {
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-Semibold',
+                color: '#44bee1'
+              }
+            }
+          },
+          yAxis: {
+            lineWidth: 1,
+            min: 0,
+            max: 100,
+            tickInterval:10,
+            labels:{format: '{value}K'},
+            gridLineWidth: 0,
+            minorGridLineWidth: 0,
+            title: {
+              text: null
+            },
+            labels: {
+              format: '{value}K',
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-regular',
+                color: '#74829c'
+              }
+            },
+          },
+          tooltip: {
+            valueSuffix: ' millions'
+          },
+          plotOptions: {
+            bar: {
+              dataLabels: {
+                enabled: true,
+              }
+            },
+            series: {
+              pointPadding: 0,
+              groupPadding: 0.1,
+            }
+          },
+          legend: {
+            itemStyle: {
+              fontSize:'11px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c'
+            },
+            //margin: 60
+            
+          },
+          series: [{
+            name: 'Current Year',
+            data: [93, 67, 63, 56],
+            color: '#b5efce',
+            dataLabels: {
+              enabled: true,
+              fontSize: '12px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c',
+              inside: false,
+              align: 'center',
+              format: '{y}K', 
+              x: 20, 
+              style: {
+                fontSize: '11px',
+                fontFamily: 'Verdana, sans-serif',
+                color: 'red',
+                fontWeight: 'normal',
+              }
+            }
+          }, {
+            name: 'Last Year',
+            data: [71, 36, 43, 33],
+            color: '#97d0f5',
+            dataLabels: {
+              enabled: true,
+              fontSize: '12px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c',
+              inside: false,
+              align: 'center',
+              format: '{y}K', 
+              x: 20, 
+              style: {
+                fontSize: '11px',
+                fontFamily: 'Verdana, sans-serif',
+                color: '#666',
+                fontWeight: 'normal',
+              }
+            }
+          }]
+        });
+        //container-oprt-contribution chart code ends here
+
+        //container-revenu-cost-grph chart code starts here
+        Highcharts.chart('container-volume-distbtn', {
+          chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+          },
+          credits: {
+            enabled: false
+          },
+          exporting: { enabled: false },
+          title: {
+            text: null
+          },
+          tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+          },
+          plotOptions: {
+            pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                enabled: false
+              },
+              showInLegend: true
+            }
+          },
+          legend: {
+            enabled: true,
+            //layout: 'vertical',
+            align: 'right',
+            width: 200,
+            verticalAlign: 'middle',
+            useHTML: true,
+            labelFormatter: function() {
+              return '<div style="display: flex; justify-content: flex-start;"><div>' + this.name + '</div><div style="width:40px; float:left;text-align:right;margin-bottom:10px;">' + '(' + this.y + '%)</div></div>';
+            },
+            itemStyle: {
+              fontSize: '13px',
+              fontFamily: 'OpenSans-Semibold',
+              color: '#2a3541'
+            },
+          },
+          series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+              name: 'Bouyges',
+              y: 36,
+              sliced: true,
+              selected: true,
+              color: '#ace9dd'
+            }, {
+              name: 'Orange',
+              y: 20,
+              color: '#f6d3af'
+            }, {
+              name: 'SFR',
+              y: 24,
+              color: '#fbeba5'
+            }, {
+              name: 'Free Mobile',
+              y: 20,
+              color: '#b7dcf4'
+            }]
+          }]
+        });
+        //container-revenu-cost-grph chart code ends here
+
+        //container-revene-contribution chart code starts here
+        Highcharts.chart('container-revene-contribution', {
+          chart: {
+            type: 'bar'
+          },
+          title: {
+            text: null
+          },
+          credits: {
+            enabled: false
+          },
+          exporting: { enabled: false },
+          xAxis: {
+            categories: ['Free Mobile', 'Bouyges', 'SFR', 'Oranges'],
+            title: {
+              text: 'USD',
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-regular',
+                color: '#74829c'
+              }
+            },
+            labels: {
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-Semibold',
+                color: '#44bee1'
+              }
+            }
+          },
+          yAxis: {
+            lineWidth: 1,
+            tickInterval: 10,
+            labels:{format: '{value}K'},
+            title: {
+              text: null
+            },
+            gridLineWidth: 0,
+            minorGridLineWidth: 0,
+            labels: {
+              formatter: function() {
+                return Math.abs(this.value) + 'K';
+              },
+              style: {
+                fontSize: '10px',
+                fontFamily: 'OpenSans-regular',
+                color: '#74829c'
+              }
+            },
+            
+          },
+
+          plotOptions: {
+            series: {
+              //stacking: 'normal'
+              pointPadding: 0,
+              groupPadding: 0.2
+            },
+            bar: {
+              grouping: false,
+              shadow: false,
+              borderWidth: 0
+            }
+          },
+          legend: {
+            itemStyle: {
+              fontSize:'11px',
+              fontFamily: 'OpenSans-regular',
+              color: '#74829c'
+            },
+            //margin: 60
+            
+          },
+
+          tooltip: {
+            formatter: function () {
+              return '<b>' + this.series.name + this.point.category + '</b><br/>' +
+              Highcharts.numberFormat(Math.abs(this.point.y), 0);
+            }
+          },
+
+          series: [{
+            name: 'Projected Revenue',
+            data: [30, 38, 29, 11],
+            color: 'rgba(159, 164, 172, 1)',
+            //pointPlacement: -0.3,
+            pointWidth: 10,
+            
+          }, {
+            name: 'Achived Revenue',
+            data: [25, 30, 25, 15],            
+            color: 'rgba(203, 208, 215, 0.5)',
+            dataLabels: {
+              enabled: false,
+              color: '#000',
+              align: 'center',
+              format: '{y}K',
+              y: 0,
+              style: {
+                fontSize: '11px',
+                fontFamily: 'Verdana, sans-serif',
+                color: '#666',
+                fontWeight: 'normal',
+              }
+            }
+            //pointPlacement: -0.15,
+            //pointWidth: 30
+            
+          }, {
+            name: 'Project Cost',
+            data: [-5, -1, -15, -25],
+            color: 'rgba(140, 203, 246, 1)',
+            //pointPlacement: 0.0,
+            pointWidth: 10
+            
+          }, {
+            name: 'Achived Cost',
+            data: [-10, -2, -20, -29],
+            color: 'rgba(189, 224, 248, 0.5)',
+            //pointPlacement: 0.15,
+            //pointWidth: 30
+            
+          }
+          ]
+        });
+        //container-revene-contribution chart code ends here
+
+
+
+      </script>
+    </body>
+
+    </html>

@@ -1,0 +1,1095 @@
+ p,span
+ {
+ 	font-size: 13px;
+    font-family: 'OpenSans-regular';
+    color:#2a3541;
+ }
+.openSansB
+{
+    font-family: 'OpenSans-bold' !important;
+}
+.openSansR
+{
+    font-family: 'OpenSans-regular';
+}
+.myriadFont
+{
+	font-family: 'Maven Pro', sans-serif;
+}
+.fontSize18
+{
+	font-size: 18px;
+}
+.fontSize26
+{
+	font-size: 26px;
+}
+.fontSize16
+{
+	font-size: 16px;
+}
+.fontSize13
+{
+	font-size: 13px;
+}
+.fontSize14
+{
+	font-size: 14px;
+}
+.fontSize30
+{
+	font-size: 30px;
+}
+.font11
+{
+	font-size: 11px;
+}
+.DLColor
+{
+	color:#44bee1;
+}
+ .noBorder
+ {
+ 	border: 0 !important;
+ }
+.cardContainer
+{
+	padding: 0;
+}
+ .cardStyle
+ {
+ 	background: white;
+ 	padding: 20px;
+ 	max-width:23%;
+ 	margin: 10px;
+ }
+ .cardStyle:nth-child(4)
+ {
+ 	margin-right: 0px;
+ }
+ .cardStyle > div:nth-child(1)
+ {
+ 	min-height: 60px;
+ }
+ .cardStyle > div > h2
+ {
+ 	font-size: 18px;
+ 	font-family: 'OpenSans-bold';
+ }
+ .cardStyle > p
+ {
+ 	line-height: 20px;
+ }
+.dateStyle {
+	box-shadow: none;
+	border-right: 0;
+	font-family: 'Maven Pro', sans-serif;
+}
+#datepickerStart
+{
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+}
+#datepickerStart > input
+{
+	border: 0;
+	height: 28px;
+}
+#datepickerStart > span > i
+{
+	padding: 6px;
+	padding-left: 0;
+}
+.orangeHeight200
+{
+  height: 200px !important;
+}
+#datepickerEnd
+{
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+}
+#datepickerEnd > input
+{
+	border: 0;
+	height: 28px;
+}
+#datepickerEnd > span > i
+{
+	padding: 6px;
+	padding-left: 0;
+}
+.leftDate
+{
+	margin-right: 12px;
+}
+.leftDate > p
+{
+	padding: 5px 0;
+}
+.rightDate > p
+{
+	padding: 5px 0;
+}
+.pb-20
+{
+	padding-bottom: 20px;
+}
+
+.rightSelectBox
+{
+	width: 75% !important;
+}
+
+.test > div
+{
+	width: 20%;
+}
+.lastDiv
+{
+	width: 30% !important;
+}
+.customizeBtn
+{
+	font-size: 14px;
+    font-family: 'OpenSans-regular';
+    background: #3384f3;
+    border: 1px solid #3384f3;
+}
+.SecondCard
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 35px 0;
+	background: #b1d5ff;
+  	box-shadow: 0.191px 0.982px 5px 0px rgba(0, 0, 1, 0.08);
+
+}
+
+.fourCards > div
+{
+	border-right: 1px solid lightgrey;
+}
+.firstCardFirstRow > div:nth-child(1)
+{
+	border-right: 1px solid lightgrey;
+}
+.firstCardFirstRow > div > p
+{
+	line-height: 30px;
+	text-align: left !important;
+}
+.firstCardFirstRow > div > h2
+{
+	text-align: left;
+}
+.borderRightM
+{
+	border-right: 1px solid lightgrey;	
+}
+.firstCardFirstRow > div
+{
+	width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.SecondCard2ndPart > div:nth-child(1)
+{
+	 border-right: 1px solid lightgrey;	
+}
+.SecondCard2ndPart > div
+{
+	 width: 50%;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+}
+.paddDiv
+{
+	padding: 13px 0 25px 0;
+}
+.footTable > thead > tr > th
+{
+	text-align: center;
+}
+.footTable > thead > tr:nth-child(1)
+{
+	background: #d0d2d4;
+}
+.footTable > thead > tr:nth-child(2)
+{
+	background: #efefef;
+}
+.footTable > thead > tr > th:nth-child(1)
+{
+	background: #f9f9f9;
+}
+.footTable > tbody > tr > td
+{
+	font-size: 13px;
+    font-family: 'OpenSans-regular';
+    color: #898f93;
+}
+.trafficForecast > span,
+.piechartsStyle span
+{
+	color: skyblue;
+}
+.trafficForecast > div
+{
+	height: 200px;
+}
+.piechartsStyle > div > h2
+{
+	color: skyblue;
+}
+.piechartsStyle > div > div
+{
+	height: 120px;
+	width: 260px;
+
+}
+.cardContainer .row
+{
+	display: flex;
+	padding-right: 10px;
+	justify-content: space-around;
+}
+.rangeTable
+{
+	width: 100%;
+    background: linear-gradient(to left, #ffa0a4 0%, #fff 50%, #8feb5d 100%)
+}
+.rangeTable > tbody > tr > td
+{
+	font-size: 11px;
+    font-family: 'OpenSans-regular';
+    width: 10%;
+    text-align: center;
+}
+
+.dealListingTable > thead > tr > th 
+{
+    font-family: 'OpenSans-bold';
+	font-size: 13px;
+	border: 0;
+}
+.dealListingTable > tbody > tr > td 
+{
+    font-family: 'OpenSans-regular';
+	font-size: 13px;
+	vertical-align: middle;
+	border: 0;
+}
+.dealListingTable > tbody > tr 
+{	
+	margin-bottom: 10px;
+	border-bottom: 5px solid lightgrey;
+}
+/*.dealListingTable
+{
+    border-collapse: separate;
+    border-spacing: 0 7px;
+}*/
+
+.fifthColumnDL > div
+{
+	 border-right: 2px solid lightgrey;
+}
+.width50
+{
+	width: 50%;
+}
+.leftSideManager
+{
+	width: 38%;
+}
+
+.rightSideManager
+{
+	width: 60%;
+}
+
+.rightSideManager2div .SecondCard2ndPart
+{
+	align-items: center;
+    vertical-align: middle;
+}
+.baselineM
+{
+	align-items: baseline; 
+}
+.nineColumnCards > div
+{
+	margin-top: 30px;
+    /*margin-right: 35px;*/
+}
+.nineColumnCards > div > div
+{
+	/*width: 75%;*/
+	/*border: 1px dashed lightgrey;*/
+	margin-bottom: 25px;
+}
+
+.columnSecond
+{
+	position: relative;
+}
+.columnSecond::before
+{
+	  content: "";
+    background: url(../images/cards/verticalBlue.png);
+    position: absolute;
+    left: -20px;
+    top: 19%;
+    height: 560px;
+    width: 2px;	
+}
+
+#dealImpactBefore::before
+{
+    top: 16% !important;
+    height: 66.5% !important;
+}
+.columnSecondDealConfirmation
+{
+	position: relative;
+}
+.columnSecondDealConfirmation::before
+{
+    content: "";
+    background: url(../images/cards/verticalBlue.png);
+    position: absolute;
+    left: -20px;
+    top: 172px;
+    height: 64% !important;
+    width: 2px;
+}
+
+.columnSecondDealConfirmation > div
+{
+	position: relative;
+}
+.columnSecondDealConfirmation > div::after
+{
+	content: "";
+    background: url(../images/cards/arrow_blue_half.png) no-repeat;
+    position: absolute;
+    left: -19px;
+    top: 50%;
+    height: 18px;
+    width: 30px;
+}
+
+.columnThirdDealConfirmation
+{
+	position: relative;
+}
+
+.columnThirdDealConfirmation::before
+{
+	content: "";
+    background: url(../images/cards/verticalGreen.png);
+    position: absolute;
+    left: -20px;
+    top: 14.5%;
+    height: 838px;
+    width: 2px;	
+}
+
+.columnThirdDealConfirmation > div
+{
+	position: relative;
+}
+.columnThirdDealConfirmation > div::after
+{
+	content: "";
+    background: url(../images/cards/arrow_green_half.png) no-repeat;
+    position: absolute;
+    left: -19px;
+    top: 50%;
+    height: 18px;
+    width: 18px;
+}
+
+.columnThirdnextStep
+{
+	position: relative;
+}
+
+.columnThirdnextStep::before
+{
+	content: "";
+    background: url(../images/cards/verticalRed.png);
+    position: absolute;
+    left: -20px;
+    top: 14.5%;
+    height: 838px;
+    width: 2px;	
+}
+
+.columnThirdnextStep > div
+{
+	position: relative;
+}
+.columnThirdnextStep > div::after
+{
+	content: "";
+    background: url(../images/cards/arrow_red_small.png) no-repeat;
+    position: absolute;
+    left: -19px;
+    top: 50%;
+    height: 18px;
+    width: 25px;
+}
+
+
+.columnSecond > div
+{
+	position: relative;
+}
+.columnSecond > div::after
+{
+	content: "";
+    background: url(../images/cards/arrow_red_small.png) no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    height: 18px;
+    width: 35px;
+}
+
+.columnThird
+{
+	position: relative;
+}
+.columnThird::before
+{
+	content: "";
+    background: url(../images/cards/verticalGreen.png) no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 19%;
+    height: 560px;
+    width: 2px;	
+}
+.columnThird > div
+{
+	position: relative;
+}
+.columnThird > div::after
+{
+	content: "";
+    background: url(../images/cards/arrow_green_half.png) no-repeat;
+    position: absolute;
+    left: -19px;
+    top: 50%;
+    height: 18px;
+    width: 30px;
+}
+.SecondColumnFirstCard
+{
+	position: relative;
+}
+.SecondColumnFirstCard::before
+{
+	content: "";
+    background: url(../images/cards/minus_box.png) no-repeat;
+    position: absolute;
+    left: 20px;
+    top: 19%;
+    height: 560px;
+    width: 2px;	
+}
+
+.transparentBack
+{
+    background: #fff !important;
+    color: #3384f3 !important;
+    border: 1px solid #3384f3 !important;
+    border-radius: 5px;
+}
+
+.dealImactRemoveAfter::before
+{
+	background: transparent;
+}
+
+
+.modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+}
+.modalClass {
+	display: flex;
+	justify-content: center;
+	padding: 10px 20px;
+	width: 100%;
+}
+
+.modalClass>button {
+	margin-right: 5px;
+	padding: 7px 23px;
+	border: 1px solid #5bc0de;
+	color: #5bc0de;
+}
+.changeText
+{
+	cursor: pointer;
+}
+
+.padding10
+{
+	padding: 10px;
+}
+
+#modalBodyChange
+{
+	padding-top: 0;border-top: 0;
+}
+#modalDialogWidth
+{
+	width: 345px;padding: 0	
+}
+.volumedistributionRightHeight
+{
+	height: 500px;
+	width: 100%;
+}
+.dropdownDM
+{
+	transform: translate3d(-100px, 16px, 0px) !important;
+}
+
+#dropdownMenu > a > div:nth-child(1)
+{
+	width: 30%;
+}
+#dropdownMenu > a > div:nth-child(2)
+{
+	width: 70%;
+	text-align: left
+}
+#dropdownMenu > a
+{
+	padding: 10px 10px;
+    text-align: center;
+}
+.dropdownPosition
+{
+	position: relative;
+	/*top: 5px;*/
+}
+.menuboard-wrap.active.menuboard-wrap a::after
+{
+	content: none;
+	background: transparent;
+}
+/* for scroll */
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+	background-color: #6dabd7;
+	filter: "alpha(opacity=90)";
+	-ms-filter: "alpha(opacity=90)";
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+	right: 12px !important;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+	background: transparent !important;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	/* the dragger element */
+	/*height: auto;*/
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background: #6dabd7 !important;
+}
+.header-img
+{
+	vertical-align: bottom;
+}
+.tool-span
+{
+	position: absolute;
+	right: 55px;
+	top: 15px;
+	width:20px;
+	height:20px;
+}
+.tool-span:hover .tool-box
+{
+	display: block;
+    top: -50px;
+    left: -40px;
+}
+.tool-span.last-span:hover .tool-box
+{
+    left: -30px;
+}
+
+.rangeGraphImage
+{
+	width: 100%;
+}
+.settingImageWidth
+{
+	width: 100%;
+	margin: 0 !important;
+}
+.zoomTable
+{
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+.zoomTable > thead > tr 
+{
+	background: #f9f9f9;
+}
+
+.zoomTable > thead > tr > th
+{
+    font-family: 'OpenSans-bold';
+	font-size: 13px;
+}
+.zoomTable > tbody > tr > td
+{
+    font-family: 'OpenSans-regular';
+	font-size: 13px;
+}
+#zoomModal  .modal-dialog 
+{
+	width: 600px;
+}
+.cursorPointer
+{
+	cursor: pointer;
+}
+.changeImage:focus
+{
+	background: url('../images/threeDotsBlue.png') no-repeat;
+}
+.settingPopupPosition
+{
+    transform: translate3d(-620px, 26px, 0px) !important;
+}
+.changeStucPopover #dropdownMenu
+{
+	position: absolute;
+    transform: translate3d(-600px, 26px, 0px) !important;
+    top: 0px;
+    right: 0px;
+    will-change: transform;
+    width: 682px;
+}
+
+.headDropdownTable
+{
+	border-top: 1px solid lightgrey;
+}
+.rightSideTable
+{
+	width: 70%;
+}
+.rightSideTable > div
+{
+
+}
+.leftSideTable
+{
+	left: 30%;
+}
+.leftSideTable > table
+{
+	border: 1px solid lightgrey;
+}
+.leftSideTable > table > tbody > tr > td
+{
+	width: 200px;
+	font-family: 14px;
+    font-family: 'OpenSans-bold' !important;
+
+}
+.tableBorder
+{
+	border-top: 1px solid lightgrey;
+}
+.mainDivTable
+{
+	width: 92%;margin: 0 auto;
+}
+
+.settingTable
+{
+
+}
+
+.rotateIcon
+{
+  transform: rotate(180deg);
+}
+section.range-slider {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  float: left;
+  text-align: center;
+}@mixin range-slider($width, $height, $input-top, $input-bg-color, $input-thumb-color, $float:none, $input-height:20px, $input-border-radius:14px) {
+  position: relative;
+  width: $width;
+  height: $height;
+  float: $float;
+  text-align: center;
+
+  input[type="range"] {
+    pointer-events: none;
+    position: absolute;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: $input-border-radius;
+    background: $input-bg-color;
+    box-shadow: inset 0 1px 0 0 darken($input-bg-color, 15%),
+      inset 0 -1px 0 0 darken($input-bg-color, 10%);
+    -webkit-box-shadow: inset 0 1px 0 0 darken($input-bg-color, 15%),
+      inset 0 -1px 0 0 darken($input-bg-color, 10%);
+    overflow: hidden;
+    left: 0;
+    top: $input-top;
+    width: $width;
+    outline: none;
+    height: $input-height;
+    margin: 0;
+    padding: 0;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+    -webkit-appearance: none;
+    width: $input-height;
+    height: $input-height;
+    border: none;
+    border-radius: $input-border-radius;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, lighten($input-thumb-color, 60%)),
+      color-stop(100%, $input-thumb-color)
+    ); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(
+      top,
+      lighten($input-thumb-color, 60%) 0,
+      $input-thumb-color 100%
+    ); /* older mobile safari and android > 2.2 */
+    background-image: linear-gradient(
+      to bottom,
+      lighten($input-thumb-color, 60%) 0,
+      $input-thumb-color 100%
+    ); /* W3C */
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: $input-height;
+    height: $input-height;
+    border: none;
+    border-radius: $input-border-radius;
+    background-image: linear-gradient(
+      to bottom,
+      lighten($input-thumb-color, 60%) 0,
+      $input-thumb-color 100%
+    ); /* W3C */
+  }
+
+  input[type="range"]::-ms-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -ms-appearance: none;
+    width: $input-height;
+    height: $input-height;
+    border-radius: $input-border-radius;
+    border: 0;
+    background-image: linear-gradient(
+      to bottom,
+      lighten($input-thumb-color, 60%) 0,
+      $input-thumb-color 100%
+    ); /* W3C */
+  }
+
+  input[type="range"]::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+  }
+
+  input[type="range"]:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+  }
+
+  input[type="range"]::-moz-focus-outer {
+    border: 0;
+  }
+}
+
+section.range-slider {
+  @include range-slider(300px, 300px, 50px, #F1EFEF, #413f41, left);
+}
+
+section.range-slider input[type="range"] {
+  pointer-events: none;
+  position: absolute;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 14px;
+  background: #F1EFEF;
+  box-shadow: inset 0 1px 0 0 #cdc6c6, inset 0 -1px 0 0 #d9d4d4;
+  -webkit-box-shadow: inset 0 1px 0 0 #cdc6c6, inset 0 -1px 0 0 #d9d4d4;
+  overflow: hidden;
+  left: 0;
+  top: 50px;
+  width: 300px;
+  outline: none;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+section.range-slider input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  position: relative;
+  z-index: 1;
+  outline: 0;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 14px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dad8da), color-stop(100%, #413F41));
+  /* android <= 2.2 */
+  background-image: -webkit-linear-gradient(top, #dad8da 0, #413F41 100%);
+  /* older mobile safari and android > 2.2 */
+  background-image: linear-gradient(to bottom, #dad8da 0, #413F41 100%);
+  /* W3C */
+}
+section.range-slider input[type="range"]::-moz-range-thumb {
+  pointer-events: all;
+  position: relative;
+  z-index: 10;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 14px;
+  background-image: linear-gradient(to bottom, #dad8da 0, #413F41 100%);
+  /* W3C */
+}
+section.range-slider input[type="range"]::-ms-thumb {
+  pointer-events: all;
+  position: relative;
+  z-index: 10;
+  -ms-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 14px;
+  border: 0;
+  background-image: linear-gradient(to bottom, #dad8da 0, #413F41 100%);
+  /* W3C */
+}
+section.range-slider input[type=range]::-moz-range-track {
+  position: relative;
+  z-index: -1;
+  background-color: black;
+  border: 0;
+}
+section.range-slider input[type=range]:last-of-type::-moz-range-track {
+  -moz-appearance: none;
+  background: none transparent;
+  border: 0;
+}
+section.range-slider input[type=range]::-moz-focus-outer {
+  border: 0;
+}
+
+
+
+
+
+
+
+ /* media queries section */
+
+ @media (min-width: 992px) and (max-width: 1200px)
+ {
+	 .cardStyle
+	 {
+	 	max-width:22%;
+	 }
+	 .piechartsStyle > div > div
+	{
+		height: 120px;
+		width: 230px;
+	}
+  .fontSize12
+  {
+    font-size: 12px;
+  }
+.columnFirst,.columnSecond,.columnThird,.columnSecondDealConfirmation,.columnThirdDealConfirmation,
+.columnThirdnextStep
+{
+	width:30%;
+}
+.nineColumnCards > div > div
+{
+	width:100%;
+ }
+ .nineColumnCards > div
+ {
+ 	margin-right:29px;
+ }
+}
+ @media only screen and (max-width: 1200px)
+{
+.columnSecondDealConfirmation::before {
+    content: "";
+    background: url(../images/cards/verticalBlue.png);
+    position: absolute;
+    left: -20px;
+    top: 152px;
+    height: 48.5%;
+    width: 2px;
+}
+.sec-main .columnSecondDealConfirmation::before
+{
+    top: 19.3%;	
+        height: 63.2% !important;
+}
+}
+ @media only screen and (max-width: 1024px)
+{
+.columnSecondDealConfirmation::before {
+    content: "";
+    background: url(../images/cards/verticalBlue.png);
+    position: absolute;
+    left: -20px;
+    top: 15%;
+    height: 62% !important;
+    width: 2px;
+}
+
+.sec-main .columnSecondDealConfirmation::before
+{
+    top: 20%;	
+}
+
+.dropdownDM
+{
+	transform: translate3d(-125px, 16px, 0px) !important;
+}
+
+#dealImpactBefore::before
+{
+    top: 15.5% !important;
+    height: 66.8% !important;
+}
+
+}
+ @media only screen and (max-width: 1920px)
+ {
+
+.columnThirdDealConfirmation::before {
+    content: "";
+    background: url(../images/cards/verticalGreen.png);
+    position: absolute;
+    left: -20px;
+    top: 11.8%;
+    height: 75.1%;
+    width: 2px;
+}
+#dealImpactFinalBefore::before
+{
+    height: 66.6% !important;
+    top: 16%;
+}
+.nineColumnCards .columnSecond::before
+{
+	content: "";
+    background: url(../images/cards/verticalBlue.png);
+    position: absolute;
+    left: -20px;
+    top: 20%;
+    height: 63.4%;
+    width: 2px;
+    background:red;
+}
+.sec-main .columnSecondDealConfirmation::before
+{
+height: 63.4%;
+}
+.main-third .columnThirdnextStep::before
+{
+	top: 14.9%;
+	height: 72.5%;	
+}
+#dealImpactNextStepBefore::before
+{
+top: 11.9% !important;
+    height: 75%;
+}
+.sec-main .columnThird::before {
+    content: "";
+    background: url(../images/cards/verticalGreen.png) no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 15.9%;
+    height: 66.6%;
+    width: 2px;
+    background: #92eb62;
+}
+.eyes-logo
+{
+      position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.columnSecondDealConfirmation::before
+{
+	        height: 49.9% !important;
+    top: 11.9%;
+}
+}
+
+
+@media (min-width: 1660px) and (max-width: 1920px)
+{
+  .dropdownDM
+  {
+    transform: translate3d(-60px, 16px, 0px) !important;
+  }
+  .orangeHeight200 {
+    height: 267px !important;
+}
+}

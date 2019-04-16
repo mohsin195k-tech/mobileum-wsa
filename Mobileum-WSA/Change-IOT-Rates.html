@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mobileum - Change IOT Rates</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- Latest compiled and minified bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- Latest compiled and minified font awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- fonts css -->
+  <link href="css/fonts.css" rel="stylesheet" />
+  <!-- style css -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/budgetsimulation.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-main-wrapper">
+      <img src="images/header/header-img.png" class="header-img" alt="header-img">
+    </div>
+    <!--End of the header main wrapper-->
+  </header>
+  <main>
+ <!--Start of the main section wrapper-->
+<div class="main-section-wrapper">
+  <div class="inner-section-wrapper">
+       <div class="dashboard-main-wrapper">
+        <!--Start of the dashboard navbar wrapper-->
+              <div class="dasboard-navbar flex-d">
+            <div class="dasboard-nav-left">
+              <p class="navbar-head-txt">Wholesale Analytics</p>
+            </div>
+            <div class="dasboard-nav-right flex-d">
+              <div class="menuboard-wrap flex-d align-items-center">
+                <span class="menu-icon">
+                  <img src="images/Dashboard grey.png" class="hide-gray-iconx">
+                  <img src="images/active1.png" class="hide-active">
+                </span>
+                <div class="dropdown dropdownPosition">
+                  <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Dashboard</span>
+                  <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                    <a class="dropdown-item" href="summaryDashboard.html">Summary View</a>
+                    <a class="dropdown-item" href="networkDashboard.html">Network View</a>
+                    <a class="dropdown-item" href="countryDashboard.html">Country View</a>
+                    <a class="dropdown-item" href="reports.html">Reports</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menuboard-wrap ">
+                <a href="dealCreation.html">
+                  <span class="menu-icon">
+                    <img src="images/deal builder grey.png" class="hide-gray-iconx">
+                    <img src="images/deal builder blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Deal Builder</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap active">
+                <a href="budgetSimulation.html">
+                  <span class="menu-icon">
+                    <img src="images/Budget Simulation grey.png" class="hide-gray-icon">
+                    <img src="images/Budget Simulation blue.png" class="hide-activex">
+                  </span>
+                  <span class="nav-txt">Budget Simulation</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap flex-d align-items-center">
+                  <span class="menu-icon">
+                    <img src="images/Agreement Management grey.png" class="hide-gray-iconx">
+                    <img src="images/agreement Agreement Management blue.png" class="hide-active">
+                  </span>
+                  <div class="dropdown dropdownPosition">
+                    <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Agreement Management</span>
+
+                    <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                        <a class="dropdown-item" href="agreementManagementDashboard.html">Manager Screen</a>
+                        <a class="dropdown-item" href="agreementMakerDashboard.html">Agreement Manager</a>
+                        <a class="dropdown-item" href="Deal_Manager.html">Deal Manager</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="settlementGenerate.html">
+                  <span class="menu-icon">
+                    <img src="images/settlement grey.png" class="hide-gray-iconx">
+                    <img src="images/settlement blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Settlement</span>
+                </a>
+              </div>
+            </div><!--dasboard-nav-right-->
+            <div class="menu-filter-box">
+              <img src="images/filter.png">
+              <img src="images/setting.png">
+            </div>
+          </div>
+        <!--End of the dashboard navbar wrapper-->
+      <div class="dashboard-all-content budget-simulation-grp">
+         <div class="dashboard-navigation">
+            <ul class="page-breadcrumb flex-d">
+              <li><a href="javascript:void(0)">Budget Simulation</a></li>
+              <li class="active"><a href="javascript:void(0)">Dashboard</a></li>
+            </ul>
+          </div><!--End of the dashboard navigation-->
+      
+          <div class="budget-searchfilter flex-d">
+            <div class="leftsearch-budgetfilter flex-d">
+              <div class="filterdropdown-list">
+                  <select class="budget-yearlist">
+                  <option value="">Select Year</option>
+                  <option value="" >1 Year</option>
+                </select>
+              </div><!--End of the filter dropdown list-->
+              <div class="filter-radiolist flex-d">
+                <h6>Agreement Type</h6>
+                <div class="custom-radio-box d-flex">
+                      <label class="radio-box">Regular
+                        <input type="radio" checked="checked" name="budgetradio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-box">Regular (Without M2M)
+                        <input type="radio" name="budgetradio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-box">M2M
+                        <input type="radio" name="budgetradio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-box">Enterprise
+                        <input type="radio" name="budgetradio">
+                        <span class="checkmark"></span>
+                      </label>
+                     
+                    </div>
+              </div><!--End of the filter radio list-->
+            </div><!--End of the left search budget filter-->
+            <div class="rightsearch-budgetfilter   flex-d">
+              <div class=" budgetfilter-btnwrap btn-wrapper">
+                <a href="javascript:void(0)" class="btn-div budgetchange-iot">
+                  Change IOT Rate
+                  </a>
+              </div><!--End o fthe btn secondary budget btn wrap-->
+              <div class=" budgetfilter-btnwrap btn-wrapper">
+                <a href="budgetChangeTraffic.html" class="btn-div budgetchange-iot">
+                  Change Traffic
+                  </a>
+              </div><!--End o fthe btn secondary budget btn wrap-->
+                
+            </div><!--End of the right search budget filter-->
+          </div><!--End of the budget search filer-->
+          
+          <div class="budgetsimu-dashboard-wrapper">
+            <div class="budgetsim-tabtable-wrap flex-d">
+
+              <div class="n-operators-box">
+                <div class="n-operators-frame">
+                  <h4 class="heading">operators</h4>
+                    <div class="filter-list-items list-2 w-100">
+                      <select class="list-partner">
+                        <option value="france">Select Manager</option>
+                        <option value="france1">India</option>
+                      </select>
+                    </div><!--filter-list-items-->
+                    <div class="operator-group-tab mt-15 curve-tab">
+                      <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#operator">Operator</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#group">Group</a>
+                        </li>
+                      </ul>             
+                      <div class="tab-content">
+                        <div id="operator" class=" tab-pane active"><br>
+                          <div class="n-operator-details operator-scroll">
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Select All
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Telestra
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Vodafone India
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Vodafone Global
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              AT & T
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Telestra
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Vodafone Global
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Vodafone India
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                          </div><!--n-operator-details-->  
+                        </div>
+                        <div id="group" class="tab-pane fade"><br>
+                          <div class="n-operator-details operator-scroll">
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              DTAG
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              MTN
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Tele2
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Telefonica
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Telenor
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                            <label class="checkbox-container">
+                            <h3 class="stats-head">
+                              Vodafone
+                            </h3>
+                              <input type="checkbox" class="custom-check">
+                              <span class="checkmark-check"></span>
+                            </label>
+                        
+                          </div><!--n-operator-details-->
+                        </div>
+                      </div><!--tab-content-->
+                    </div><!--operator-group-tab-->
+                </div><!--n-operators-frame-->  
+              </div><!--n-operators-box-->
+
+              <div class="budgetsim-tabswrap iot-rate-box"> 
+                <h4 class="heading">IOT Rates</h4>   
+                <ul class="nav nav-tabs commontabs-tablewrap" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#budgetmo">Inbound</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#budgetmt">Outbound</a>
+                  </li>
+                </ul><!--nav-tabs-->
+            
+                <div class="budgetsim-tabscontent">
+                  <div class="tab-content">
+                    <div id="budgetmo" class="tab-pane active p-20">
+                      <div class="n-package-box">
+                        <h4>MO</h4>
+                        <div class="flex-d">
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Currency">Currency</option>
+                              <option value="Currency">Currency</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Incremental Unit">Incremental Unit</option>
+                              <option value="Incremental Unit">Incremental Unit</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Rate Unit">Rate Unit</option>
+                              <option value="Rate Unit">Rate Unit</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                        </div><!--flex-d-->
+                        <div class="n-package-box-table mt-15">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Start Range Call Usage</th>
+                                <th>End Range Call Usage</th>
+                                <th>IOT (USD/min)</th>
+                                <th>Other Cost</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                              </tr>
+                              <tr>
+                                <td colspan="4">
+                                  <div class="flex-d add-remove">
+                                    <img src="images/icon-3.png">
+                                    <img src="images/icon-2.png">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div> 
+                      </div><!--n-package-box -->
+                      <div class="n-package-box">
+                        <h4>MT</h4>
+                        <div class="flex-d">
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Currency">Currency</option>
+                              <option value="Currency">Currency</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Incremental Unit">Incremental Unit</option>
+                              <option value="Incremental Unit">Incremental Unit</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Rate Unit">Rate Unit</option>
+                              <option value="Rate Unit">Rate Unit</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                        </div><!--flex-d-->
+                        <div class="n-package-box-table mt-15">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Start Range Call Usage</th>
+                                <th>End Range Call Usage</th>
+                                <th>IOT (USD/min)</th>
+                                <th>Other Cost</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                              </tr>
+                              <tr>
+                                <td colspan="4">
+                                  <div class="flex-d add-remove">
+                                    <img src="images/icon-3.png">
+                                    <img src="images/icon-2.png">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div> 
+                      </div><!--n-package-box -->
+                      <div class="n-package-box">
+                        <h4>Data</h4>
+                        <div class="flex-d">
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Currency">Currency</option>
+                              <option value="Currency">Currency</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Incremental Unit">Incremental Unit</option>
+                              <option value="Incremental Unit">Incremental Unit</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Rate Unit">Rate Unit</option>
+                              <option value="Rate Unit">Rate Unit</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                        </div><!--flex-d-->
+                        <div class="n-package-box-table mt-15">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Start Range Call Usage</th>
+                                <th>End Range Call Usage</th>
+                                <th>IOT (USD/Mb)</th>
+                                <th>Other Cost</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                              </tr>
+                              <tr>
+                                <td colspan="4">
+                                  <div class="flex-d add-remove">
+                                    <img src="images/icon-3.png">
+                                    <img src="images/icon-2.png">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div> 
+                      </div><!--n-package-box -->
+                      <div class="n-package-box">
+                        <h4>SMS</h4>
+                        <div class="flex-d">
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Currency">Currency</option>
+                              <option value="Currency">Currency</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Incremental Unit">Incremental Unit</option>
+                              <option value="Incremental Unit">Incremental Unit</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                          <div class="filter-list-items list-2 wd-md">
+                            <select class="list-partner">
+                              <option value="Rate Unit">Rate Unit</option>
+                              <option value="Rate Unit">Rate Unit</option>
+                            </select>
+                          </div><!--filter-list-items-->
+                        </div><!--flex-d-->
+                        <div class="n-package-box-table mt-15">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Start Range Call Usage</th>
+                                <th>End Range Call Usage</th>
+                                <th>IOT (USD/SMS)</th>
+                                <th>Other Cost</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                                <td><input type="text" name="" class="form-control"></td>
+                              </tr>
+                              <tr>
+                                <td colspan="4">
+                                  <div class="flex-d add-remove">
+                                    <img src="images/icon-3.png">
+                                    <img src="images/icon-2.png">
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div> 
+                      </div><!--n-package-box -->
+                    </div><!--End of the budget mo tabs-->
+                    <div id="budgetmt" class="tab-pane fade">
+                    </div>
+                  </div>   <!--End if the tab content-->
+                </div><!--budgetsim-tabscontent-->
+                <div class="btn-wrapper flex-d flex-ends mt-15">
+                  <a href="javascript:void(0);" class="btn-div btn-search">Continue</a>
+                </div>
+              </div><!--End of the budget tabs wrapper-->
+              
+            </div><!--End of the budget simu tabt table wrapper-->
+          
+          </div><!--End of the budget dashboard wrapper-->
+      </div><!--End of the dashboard all content-->
+    </div><!--End o fthe dashboard main wrapper-->
+  </div><!--End of the inner section wrapper-->
+</div><!--End of the main section wrapper-->
+  
+
+
+<footer>
+    <div class="footer-main-wrapper">
+    </div>
+    <!--End of the footer main wrapper-->
+  </footer>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified bootstrap js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/maps/modules/map.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+  <script src="https://code.highcharts.com/mapdata/countries/fr/fr-all.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+      
+    <script>
+    $(document).ready(function(){
+       $('.pagination-wrapper .pagination-arrows').click(function(){
+           $('.pagination-wrapper .pagination-arrows').removeClass('active');
+           $(this).addClass('active');
+           
+       });
+       $('.pagination-wrapper .pagination-num').click(function(){
+           $('.pagination-wrapper .pagination-num').removeClass('active');
+           $(this).addClass('active');
+           
+       });
+        
+        
+    });
+    $(window).on("load",function(){
+        $(".bugetscrollable-tablewrap").mCustomScrollbar({
+          axis:"x"
+        });
+    });
+
+    /****20 FEb****/
+    //$(".operator-scroll").mCustomScrollbar({
+    //setHeight: 230,
+    //});
+
+
+      </script>
