@@ -312,4 +312,3 @@ $('.n-imp-scenarios-2').click(function(){
       $('#getCountry').on('click',function(){
       		$('.hideFrance').removeClass('hideFrance').addClass('showFrance')
       })
-
