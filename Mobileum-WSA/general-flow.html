@@ -12,6 +12,7 @@
   <!-- fonts css -->
   <link href="css/fonts.css" rel="stylesheet" />
   <!-- style css -->
+  <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/mtn-style.css" rel="stylesheet" />
 </head>
@@ -102,7 +103,7 @@
           <!--End of the dashboard navbar wrapper-->
           <!-- DASHBOARD-CONTENT-START ----->
           <!-- GENERAL-CONTAINER-START -->
-          <div class="dashboard-content general-container d-none">
+          <div class="dashboard-content general-container">
             <div class="bread-box">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -221,6 +222,14 @@
                           <input type="radio" id="agreeementPartner12" name="agreement-partner">
                           <label for="agreeementPartner12" class="s-bold f-sz-13">Group</label>
                         </div>
+                        <div class="group-check">
+                          <div class="filter-list-items list-2 wd">
+                            <select class="list-partner">
+                              <option value="france">Select Group</option>
+                              <option value="france1">India</option>
+                            </select>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="agreement-box">
@@ -269,7 +278,7 @@
                 <!-- AGREEMENT-DETAIL-BOX-END -->
               </div>
               <div class="btn-box d-flex justify-content-center agree-next-btn">
-                <a href="javascript:void(0)" class="btn cust-btn pos-btn">
+                <a href="javascript:void(0)" class="btn cust-btn pos-btn bucket-btn">
                   NEXT
                 </a>
               </div>
@@ -299,9 +308,27 @@
               </div>
               <!-- GENERAL-DATA-BOX-START -->
               <div class="general-data-box data-box">
+                <!-- BILATERAL-BOX-START -->
+                <div class="bilateral-box d-flex justify-content-around act-bil">
+                  <div class="bil-inbound-box comm-bil-box active">
+                    <h3 class="bold f-sz-16">Inbound</h3>
+                    <div class="bil-comm-inner justify-content-around">
+                      <h3 class="f-sz-13 f-col white d-flex align-items-center done">Commitment <i class="sm-r-circle"></i></h3>
+                      <h3 class="f-sz-13 f-col white d-flex align-items-center">Rates(Mandatory) <i class="sm-r-circle"></i></h3>
+                    </div>
+                  </div>
+                  <div class="bil-outbound-box comm-bil-box">
+                    <h3 class="bold f-sz-16">Outbound</h3>
+                    <div class="bil-comm-inner justify-content-around">
+                      <h3 class="f-sz-13 f-col white d-flex align-items-center">Commitment <i class="sm-r-circle"></i></h3>
+                      <h3 class="f-sz-13 f-col white d-flex align-items-center">Rates(Mandatory) <i class="sm-r-circle"></i></h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- BILATERAL-BOX-END -->
                 <!-- MAIN-HEAD-BOX-START -->
                 <div class="data-box-head main-head-box">
-                  <h3 class="main-head add-serv-head f-col-black f-sz-18 bold d-none">
+                  <h3 class="main-head add-serv-head f-col-black f-sz-18 bold">
                     Add service types to commitment bucket
                   </h3>
                   <h3 class="main-head configure-head f-col-black f-sz-18 bold">
@@ -312,7 +339,7 @@
                 <!-- AGREEMENT-DETAIL-BOX-START -->
                 <div class="service-detail-box d-flex">
                   <!-- LEFT-AGREEMENT-DETAIL-START -->
-                  <section class="service-section common-left-box common-service-box d-none">
+                  <section class="service-section common-left-box common-service-box">
                     <div class="chocie-box" ondragover="pd(event)" ondrop="pd(event);drop(event)">
                       <span class="choice-span mo-span" id="myP1" draggable="true" ondragstart="drag(event)">MO</span>
                       <span class="choice-span mt-span" id="myP2" draggable="true" ondragstart="drag(event)">MT</span>
@@ -335,6 +362,11 @@
                           <div class="sop-field">
                             <input type="text" class="custom-inp form-control sop-inp" placeholder="Enter SOP Value">
                           </div>
+                          <div class="group-pop-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/goup-pop.png" alt="goup-pop.png" class="goup-pop">
+                            </a>
+                          </div>
                         </div>
                         <div class="mt-box comm-sop-box">
                           <div class="text-box">
@@ -342,6 +374,11 @@
                           </div>
                           <div class="sop-field">
                             <input type="text" class="custom-inp form-control sop-inp" placeholder="Enter SOP Value">
+                          </div>
+                          <div class="group-pop-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/goup-pop.png" alt="goup-pop.png" class="goup-pop">
+                            </a>
                           </div>
                         </div>
                         <div class="data-box comm-sop-box">
@@ -351,6 +388,11 @@
                           <div class="sop-field">
                             <input type="text" class="custom-inp form-control sop-inp" placeholder="Enter SOP Value">
                           </div>
+                          <div class="group-pop-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/goup-pop.png" alt="goup-pop.png" class="goup-pop">
+                            </a>
+                          </div>
                         </div>
                         <div class="sms-box comm-sop-box">
                           <div class="text-box">
@@ -358,6 +400,11 @@
                           </div>
                           <div class="sop-field">
                             <input type="text" class="custom-inp form-control sop-inp" placeholder="Enter SOP Value">
+                          </div>
+                          <div class="group-pop-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/goup-pop.png" alt="goup-pop.png" class="goup-pop">
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -378,6 +425,11 @@
                           <div class="sop-field">
                             <input type="text" class="custom-inp form-control sop-inp" placeholder="Enter SOP Value">
                           </div>
+                          <div class="group-pop-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/goup-pop.png" alt="goup-pop.png" class="goup-pop">
+                            </a>
+                          </div>
                         </div>
                         <div class="mt-box comm-sop-box">
                           <div class="text-box">
@@ -385,6 +437,11 @@
                           </div>
                           <div class="sop-field">
                             <input type="text" class="custom-inp form-control sop-inp" placeholder="Enter SOP Value">
+                          </div>
+                          <div class="group-pop-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/goup-pop.png" alt="goup-pop.png" class="goup-pop">
+                            </a>
                           </div>
                         </div>
                         <div class="data-box comm-sop-box">
@@ -394,6 +451,11 @@
                           <div class="sop-field">
                             <input type="text" class="custom-inp form-control sop-inp" placeholder="Enter SOP Value">
                           </div>
+                          <div class="group-pop-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/goup-pop.png" alt="goup-pop.png" class="goup-pop">
+                            </a>
+                          </div>
                         </div>
                         <div class="sms-box comm-sop-box">
                           <div class="text-box">
@@ -402,6 +464,11 @@
                           <div class="sop-field">
                             <input type="text" class="custom-inp form-control sop-inp" placeholder="Enter SOP Value">
                           </div>
+                          <div class="group-pop-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/goup-pop.png" alt="goup-pop.png" class="goup-pop">
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -409,7 +476,7 @@
                       <a href="javascript:void(0)" class="btn cust-btn neg-btn">
                         BACK
                       </a>
-                      <a href="javascript:void(0)" class="btn cust-btn pos-btn">
+                      <a href="javascript:void(0)" class="btn cust-btn pos-btn configure-btn">
                         NEXT
                       </a>
                     </div>
@@ -420,7 +487,10 @@
                       <!-- Nav tabs -->
                       <ul class="nav nav-tabs">
                         <li class="nav-item">
-                          <a class="nav-link active" data-toggle="tab" href="#current-deal">MO+MT</a>
+                          <a class="nav-link active" data-toggle="tab" href="#current-deal">MO<span class="merge-tab">+MT</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-toggle="tab" href="#last-deal">MT</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" data-toggle="tab" href="#last-deal">DATA</a>
@@ -431,8 +501,13 @@
                       </ul>
                       <!-- Tab panes -->
                       <div class="tab-content">
+                        <p class="imp-para d-flex align-items-center justify-content-end">
+                          <i class="sm-r-circle"></i>
+                          Required Configuration: MO, MT, DATA & SMS
+                        </p>
                         <!-- CURRENT-DEAL-START -->
                         <div class="tab-pane container active" id="current-deal">
+                          <!-- top-box-START -->
                           <div class="top-box d-flex">
                             <!-- CONFIGURE-INNER-ITEMS-START -->
                             <div class="configure-inner-items">
@@ -447,18 +522,658 @@
                             <!-- CONFIGURE-INNER-ITEMS-END -->
                             <!-- CONFIGURE-INNER-ITEMS-START -->
                             <div class="configure-inner-items">
-                              <h3 class="s-bold f-sz-14 f-col-black">Scheme Type</h3>
+                              <h3 class="s-bold f-sz-14 f-col-black">Sub-Scheme Type</h3>
+                              <div class="filter-list-items list-2 wd-md">
+                                <select class="list-partner">
+                                  <option value="france">Country</option>
+                                  <option value="france1">India</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!-- CONFIGURE-INNER-ITEMS-END -->
+                            <!-- CONFIGURE-INNER-ITEMS-START -->
+                            <div class="configure-inner-items">
+                              <h3 class="s-bold f-sz-14 f-col-black">Belnded Voice</h3>
                               <div class="list-2 wd-md">
                                 <div class="switch-box">
+                                  Yes
                                   <label class="switch">
-                                    <input type="checkbox" class="switch-checkbox">
+                                    <input type="checkbox" class="switch-checkbox" name="blend-voice">
                                     <span class="slider1 round"></span>
                                   </label>No
                                 </div>
                               </div>
                             </div>
                             <!-- CONFIGURE-INNER-ITEMS-END -->
+                            <!-- CONFIGURE-INNER-ITEMS-START -->
+                            <div class="configure-inner-items align-self-center">
+                              <div class="check-box box1">
+                                <label class="checkbox-container f-sz-14 f-col-black s-bold">Split MO
+                                  <input type="checkbox" class="custom-check">
+                                  <span class="checkmark-check"></span>
+                                </label>
+                              </div>
+                            </div>
+                            <!-- CONFIGURE-INNER-ITEMS-END -->
                           </div>
+                          <!-- TOP-BOX-END -->
+                          <!-- top-box-START -->
+                          <div class="top-box d-flex scheme-tab-choice">
+                            <!-- CONFIGURE-INNER-ITEMS-START -->
+                            <div class="configure-inner-items">
+                              <h3 class="s-bold f-sz-14 f-col-black">Scheme Type</h3>
+                              <div class=" list-2 wd-md">
+                                <div class="chocie-box">
+                                  <span class="choice-span mo-span active">MO</span>
+                                  <span class="choice-span mt-span">MT</span>
+                                  <span class="choice-span data-span">DATA</span>
+                                  <span class="choice-span sms-span">SMS</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- CONFIGURE-INNER-ITEMS-END -->
+                            <!-- CONFIGURE-INNER-ITEMS-END -->
+                            <div class="configure-inner-items thresh-val-box">
+                              <h3 class="s-bold f-sz-14 f-col-black">Threshold Value</h3>
+                              <div class="input-box agree-box">
+                                <input type="text" class="agree-input" value="Enter Threshold Value">
+                              </div>
+                            </div>
+                            <!-- CONFIGURE-INNER-ITEMS-END -->
+                          </div>
+                          <!-- TOP-BOX-END -->
+                          <!-- top-box-START -->
+                          <div class="top-box d-flex r-cur-box">
+                            <!-- CONFIGURE-INNER-ITEMS-START -->
+                            <div class="configure-inner-items">
+                              <h3 class="s-bold f-sz-14 f-col-black">Rate Currency</h3>
+                              <div class="filter-list-items list-2 wd-md">
+                                <select class="list-partner">
+                                  <option value="france">Country</option>
+                                  <option value="france1">India</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!-- CONFIGURE-INNER-ITEMS-END -->
+                            <!-- CONFIGURE-INNER-ITEMS-START -->
+                            <div class="configure-inner-items">
+                              <h3 class="s-bold f-sz-14 f-col-black">Set Unit For</h3>
+                              <div class="filter-list-items list-2 wd-md">
+                                <select class="list-partner">
+                                  <option value="france">Data</option>
+                                  <option value="france1">India</option>
+                                </select>
+                              </div>
+                            </div>
+                            <!-- CONFIGURE-INNER-ITEMS-END -->
+                            <!-- CONFIGURE-INNER-ITEMS-START -->
+                            <div class="configure-inner-items  incre-unit">
+                              <h3 class="s-bold f-sz-14 f-col-black">Incremental-Unit</h3>
+                              <div class="agree-data-box d-flex align-items-center">
+                                <div class="input-box">
+                                  <input type="text" class="custom-inp agree-name form-control f-sz-13" placeholder="1">
+                                </div>
+                                <div class="tab-btn-box">
+                                  <a href="javascript:void(0)" class="tab-btn active f-sz-13">
+                                    Sec
+                                  </a>
+                                  <a href="javascript:void(0)" class="tab-btn f-sz-13">
+                                    Min
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- CONFIGURE-INNER-ITEMS-END -->
+                            <!-- CONFIGURE-INNER-ITEMS-START -->
+                            <div class="configure-inner-items  incre-unit">
+                              <h3 class="s-bold f-sz-14 f-col-black">Rate-Unit</h3>
+                              <div class="agree-data-box d-flex align-items-center">
+                                <div class="input-box">
+                                  <input type="text" class="custom-inp agree-name form-control f-sz-13" placeholder="1">
+                                </div>
+                                <div class="tab-btn-box">
+                                  <a href="javascript:void(0)" class="tab-btn active f-sz-13">
+                                    Sec
+                                  </a>
+                                  <a href="javascript:void(0)" class="tab-btn f-sz-13">
+                                    Min
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- CONFIGURE-INNER-ITEMS-END -->
+                          </div>
+                          <!-- TOP-BOX-END -->
+                          <!-- top-box-START -->
+                          <div class="top-box d-flex table-box">
+                            <table class="common-small-table">
+                              <thead>
+                                <tr class="">
+                                  <th>Start Range Call-Usage</th>
+                                  <th>End Range Call-Usage</th>
+                                  <th class="subth1">Cost(CNY/1sec)</th>
+                                  <th class="subth1">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="input-box agree-box single-inp-box">
+                                      <input type="text" class="agree-input" value="0">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box agree-box single-inp-box">
+                                      <input type="text" class="agree-input" value="50,000">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <img src="images/icon-2.png" alt="" class="delete-img">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="input-box agree-box single-inp-box">
+                                      <input type="text" class="agree-input" value="0">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box agree-box single-inp-box">
+                                      <input type="text" class="agree-input" value="50,000">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <img src="images/icon-2.png" alt="" class="delete-img">
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="add-table-btn-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/add-rect.png" alt="add-rect.png" class="add-rect png">
+                            </a>
+                          </div>
+                          <!-- TOP-BOX-END -->
+                          <div class="top-box d-flex table-box">
+                            <table class="common-small-table">
+                              <thead>
+                                <tr class="">
+                                  <th>Set-Up Charge</th>
+                                  <th>Additional Charge</th>
+                                  <th class="subth1">Cost(CNY/1sec)</th>
+                                  <th class="subth1">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="input-box agree-box">
+                                      <input type="text" class="agree-input">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box agree-box">
+                                      <input type="text" class="agree-input">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box agree-box">
+                                      <input type="text" class="agree-input">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <img src="images/icon-2.png" alt="" class="delete-img">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="input-box agree-box">
+                                      <input type="text" class="agree-input">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box agree-box">
+                                      <input type="text" class="agree-input">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box agree-box">
+                                      <input type="text" class="agree-input">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <img src="images/icon-2.png" alt="" class="delete-img">
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="add-table-btn-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/add-rect.png" alt="add-rect.png" class="add-rect png">
+                            </a>
+                          </div>
+                          <!-- TOP-BOX-END -->
+                          <!-- TOP-BOX-END -->
+                          <div class="top-box d-flex table-box balanced-table-box">
+                            <table class="common-small-table">
+                              <thead>
+                                <tr class="">
+                                  <th></th>
+                                  <th>Additional Charge</th>
+                                  <th class="subth1">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="input-box agree-box f-sz-13 bold f-col-black">
+                                      Balanced Cost
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <img src="images/icon-2.png" alt="" class="delete-img">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="input-box agree-box f-sz-13 bold f-col-black">
+                                      Unbalanced Cost
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <img src="images/icon-2.png" alt="" class="delete-img">
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="add-table-btn-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/add-rect.png" alt="add-rect.png" class="add-rect png">
+                            </a>
+                          </div>
+                          <!-- TOP-BOX-END -->
+                          <!-- TOP-BOX-END -->
+                          <div class="top-box d-flex table-box mo-dep-box active">
+                            <div class="left comm-control"><a href="javascript:void(0)">
+                                <</a> </div> <div class="right comm-control"><a href="javascript:void(0)">></a></div>
+                            <table class="common-small-table">
+                              <thead>
+                                <tr class="">
+                                  <th>Start Range Call-Usage</th>
+                                  <th>End Range Call-Usage</th>
+                                  <th class="subth1 mm-bt">MO IOT(CNY/1sec)</th>
+                                  <th class="subth1 mm-bt">MT IOT(CNY/1sec)</th>
+                                  <th class="subth1 ds-bt">DATA IOT(CNY/1sec)</th>
+                                  <th class="subth1 ds-bt">SMS IOT(CNY/1sec)</th>
+                                  <th class="subth1">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="input-box agree-box single-inp-box">
+                                      <input type="text" class="agree-input" value="0">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box agree-box single-inp-box">
+                                      <input type="text" class="agree-input" value="50,000">
+                                    </div>
+                                  </td>
+                                  <td class="mm-bt">
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="mm-bt">
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="ds-bt">
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="ds-bt">
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <img src="images/icon-2.png" alt="" class="delete-img">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="input-box agree-box single-inp-box">
+                                      <input type="text" class="agree-input" value="0">
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="input-box agree-box single-inp-box">
+                                      <input type="text" class="agree-input" value="50,000">
+                                    </div>
+                                  </td>
+                                  <td class="mm-bt">
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="mm-bt">
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="ds-bt">
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="ds-bt">
+                                    <div class="input-box iot-box agree-box">
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">IOT Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                      <div class="inner-iot-box">
+                                        <span class="inner-iot-label">Add Cost</span>
+                                        <input type="text" class="agree-input">
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <img src="images/icon-2.png" alt="" class="delete-img">
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="add-table-btn-box">
+                            <a href="javascript:void(0)">
+                              <img src="images/mtn/add-rect.png" alt="add-rect.png" class="add-rect png">
+                            </a>
+                          </div>
+                          <!-- TOP-BOX-END -->
+                          <!-- TOP-BOX-END -->
+                          <div class="top-box d-flex table-box group-check-detail-box">
+                            <div class="common-cost-cur-box">
+                              <a href="javascript:void(0)" class="cust-btn pos-btn">Add common cost and rate curency for all</a>
+                            </div>
+                            <div class="group-table">
+                              <table>
+                                <thead>
+                                  <tr>
+                                    <th class="bold f-col-black f-sz-12" rowspan="2">Partner</th>
+                                    <th class="bold f-col-black f-sz-12" colspan="5">Owner</th>
+                                  </tr>
+                                  <tr>
+                                    <th class="bold f-col-black f-sz-12 whit-bg">Orange</th>
+                                    <th class="bold f-col-black f-sz-12">Orange</th>
+                                    <th class="bold f-col-black f-sz-12">Orange</th>
+                                    <th class="bold f-col-black f-sz-12">Orange</th>
+                                    <th class="bold f-col-black f-sz-12">Orange</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="bold f-col-black f-sz-12">H3G</td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="bold f-col-black f-sz-12">Vodafone</td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="bold f-col-black f-sz-12">Verizon</td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="bold f-col-black f-sz-12">AT&T</td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                    <td class="bold f-col-black f-sz-12"><div class="group-inp-iner"> 
+                                      <input type="text" class="group-tab-inp custom-inp"><img src="images/mtn/three-r-btn.png" alt="three-r-btn.png" class="group-three-btn"></div>
+                                    </td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <!-- TOP-BOX-END -->
                         </div>
                         <!-- CURRENT-DEAL-END -->
                         <!-- LAST-DEAL-START -->
@@ -466,6 +1181,14 @@
                         </div>
                         <!-- LAST-DEAL-END -->
                       </div>
+                    </div>
+                    <div class="btn-box config-btn-box d-flex justify-content-center align-self-end">
+                      <a href="javascript:void(0)" class="btn cust-btn f-sz-14 pos-btn">
+                        Set MO Rates
+                      </a>
+                      <a href="javascript:void(0)" class="btn cust-btn f-sz-14 disabled">
+                        Submit Agreement
+                      </a>
                     </div>
                   </section>
                   <!-- CONFIGURE-SECTION -->
@@ -488,48 +1211,157 @@
                       <!-- Tab panes -->
                       <div class="tab-content right-deal-pane">
                         <!-- CURRENT-DEAL-START -->
-                        <div class="tab-pane container active" id="current-deal">
-                          <div class="main-heading d-flex justify-content-between align-items-start">
-                            <h3 class="f-sz-16 f-col-black sub-head">Agreement Name:
-                              <span class="f-sz-16 s-bold f-col-black">Orange_2017</span>
-                            </h3>
-                            <img src="images/mtn/edit-field-icon.png" alt="edit-field-icon" class="edit-field-icon">
-                          </div>
-                          <div class="deal-data-box">
-                            <div class="deal-data-inner">
-                              <h3 class="deal-label f-col-grey f-sz-13">Start Date</h3>
-                              <p class="deal-data s-bold f-col-black f-sz-13">01/03/2018</p>
+                        <!-- DEAL-PANE-INNER-START -->
+                        <div class="deal-pane-inner deal-pane-inner1">
+                          <div class="tab-pane container active" id="current-deal">
+                            <div class="main-heading d-flex justify-content-between align-items-start">
+                              <h3 class="f-sz-16 f-col-black sub-head">Agreement Name:
+                                <span class="f-sz-16 s-bold f-col-black">Orange_2017</span>
+                              </h3>
+                              <img src="images/mtn/edit-field-icon.png" alt="edit-field-icon" class="edit-field-icon">
                             </div>
-                            <div class="deal-data-inner">
-                              <h3 class="deal-label f-col-grey f-sz-13">End Date</h3>
-                              <p class="deal-data s-bold f-col-black f-sz-13">28/02/2019</p>
-                            </div>
-                            <div class="deal-data-inner">
-                              <h3 class="deal-label f-col-grey f-sz-13">Agreement Owner</h3>
-                              <p class="deal-data s-bold f-col-black f-sz-13">Individual</p>
-                            </div>
-                            <div class="deal-data-inner">
-                              <h3 class="deal-label f-col-grey f-sz-13">Agreement Partner</h3>
-                              <p class="deal-data s-bold f-col-black f-sz-13">Group</p>
-                            </div>
-                            <div class="deal-data-inner">
-                              <h3 class="deal-label f-col-grey f-sz-13">Agreement Type</h3>
-                              <p class="deal-data s-bold f-col-black f-sz-13">M2M</p>
-                            </div>
-                            <div class="deal-data-inner">
-                              <h3 class="deal-label f-col-grey f-sz-13">Included satellite/Premium</h3>
-                              <p class="deal-data s-bold f-col-black f-sz-13">01/03/2018</p>
-                            </div>
-                            <div class="deal-data-inner">
-                              <h3 class="deal-label f-col-grey f-sz-13">Direction</h3>
-                              <p class="deal-data s-bold f-col-black f-sz-13">Inbound</p>
-                            </div>
-                            <div class="deal-data-inner">
-                              <h3 class="deal-label f-col-grey f-sz-13">Spot Agreement</h3>
-                              <p class="deal-data s-bold f-col-black f-sz-13">None</p>
+                            <div class="deal-data-box">
+                              <div class="deal-data-inner">
+                                <h3 class="deal-label f-col-grey f-sz-13">Start Date</h3>
+                                <p class="deal-data s-bold f-col-black f-sz-13">01/03/2018</p>
+                              </div>
+                              <div class="deal-data-inner">
+                                <h3 class="deal-label f-col-grey f-sz-13">End Date</h3>
+                                <p class="deal-data s-bold f-col-black f-sz-13">28/02/2019</p>
+                              </div>
+                              <div class="deal-data-inner">
+                                <h3 class="deal-label f-col-grey f-sz-13">Agreement Owner</h3>
+                                <p class="deal-data s-bold f-col-black f-sz-13">Individual</p>
+                              </div>
+                              <div class="deal-data-inner">
+                                <h3 class="deal-label f-col-grey f-sz-13">Agreement Partner</h3>
+                                <p class="deal-data s-bold f-col-black f-sz-13">Group</p>
+                              </div>
+                              <div class="deal-data-inner">
+                                <h3 class="deal-label f-col-grey f-sz-13">Agreement Type</h3>
+                                <p class="deal-data s-bold f-col-black f-sz-13">M2M</p>
+                              </div>
+                              <div class="deal-data-inner">
+                                <h3 class="deal-label f-col-grey f-sz-13">Included satellite/Premium</h3>
+                                <p class="deal-data s-bold f-col-black f-sz-13">01/03/2018</p>
+                              </div>
+                              <div class="deal-data-inner">
+                                <h3 class="deal-label f-col-grey f-sz-13">Direction</h3>
+                                <p class="deal-data s-bold f-col-black f-sz-13">Inbound</p>
+                              </div>
+                              <div class="deal-data-inner">
+                                <h3 class="deal-label f-col-grey f-sz-13">Spot Agreement</h3>
+                                <p class="deal-data s-bold f-col-black f-sz-13">None</p>
+                              </div>
                             </div>
                           </div>
                         </div>
+                        <!-- DEAL-PANE-INNER-END -->
+                        <!-- DEAL-PANE-INNER-START -->
+                        <div class="deal-pane-inner deal-commitment">
+                          <div class="tab-pane tab-nf-child container active" id="current-deal">
+                            <div class="main-heading d-flex justify-content-between align-items-start">
+                              <div class="deal-data-inner">
+                                <h3 class="deal-label f-col-grey f-sz-13">Deal Commitment</h3>
+                                <p class="deal-data s-bold f-col-black f-sz-13">DATA,SMS (Revenue Commitment)</p>
+                              </div>
+                              <img src="images/mtn/edit-field-icon.png" alt="edit-field-icon" class="edit-field-icon">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- DEAL-PANE-INNER-END -->
+                        <!-- DEAL-PANE-INNER-START -->
+                        <div class="deal-pane-inner shared-commitment">
+                          <div class="tab-pane tab-nf-child container active" id="current-deal">
+                            <div class="main-heading d-flex justify-content-between align-items-start">
+                              <div class="deal-data-inner">
+                                <h3 class="deal-label f-col-grey f-sz-13">Shared Commitment:</h3>
+                                <p class="deal-data s-bold f-col-black f-sz-13">MO,MT (Revenue Commitment) <br>
+                                  SOP Value:10000 Currency: SDR
+                                </p>
+                              </div>
+                              <img src="images/mtn/edit-field-icon.png" alt="edit-field-icon" class="edit-field-icon">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- DEAL-PANE-INNER-END -->
+                        <!-- DEAL-PANE-INNER-START -->
+                        <div class="deal-pane-inner mo-config">
+                          <div class="summary-card configuration">
+                            <h2 class="sec-header d-flex justify-content-between">Configuration For MO
+                              <a href="#!" class="edit-icon">
+                                <img src="images/mtn/edit-field-icon.png" alt="">
+                              </a>
+                            </h2>
+                            <ul class="summary-list">
+                              <li class="summary-blk list-item1">
+                                <div class="lable">Scheme Type</div>
+                                <div class="info">None</div>
+                              </li>
+                              <li class="summary-blk list-item2">
+                                <div class="lable">Call Type</div>
+                                <div class="info">None</div>
+                              </li>
+                              <li class="summary-blk list-item3">
+                                <div class="lable">Rate Currency</div>
+                                <div class="info">SDR</div>
+                              </li>
+                            </ul>
+                            <!-- configuration-table Strat -->
+                            <div class="config-table-box">
+                              <table class="configuration-table">
+                                <thead>
+                                  <tr class="">
+                                    <th>Start Range <br> Call-Usage</th>
+                                    <th>End Range <br> Call-Usage</th>
+                                    <th>IOT <br> (CNY/1sec)</th>
+                                    <th>IOT <br> (CNY/1sec)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>0.00</td>
+                                    <td>500,001</td>
+                                    <td>0.06</td>
+                                    <td>0.02</td>
+                                  </tr>
+                                  <tr>
+                                    <td>500,001</td>
+                                    <td>1,000,000</td>
+                                    <td>0.04</td>
+                                    <td>0.05</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- configuration-table End -->
+                          </div>
+                          <div class="bilateral-deal-pane">
+                            <ul class="nav nav-tabs">
+                              <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#bil-inbound">Inbound</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#bil-outbound">Outbound</a>
+                              </li>
+                            </ul>
+                            <div class="tab-pane container active" id="bil-inbound">
+                              <div class="deal-pane-inner deal-commitment">
+                                <div class="tab-pane tab-nf-child container active" id="current-deal">
+                                  <div class="main-heading d-flex justify-content-between align-items-start">
+                                    <div class="deal-data-inner">
+                                      <h3 class="deal-label f-col-grey f-sz-13">Deal Commitment</h3>
+                                      <p class="deal-data s-bold f-col-black f-sz-13">MO,MT (Volume Commitment) DATA,SMS
+                                        (Revenue Commitment)</p>
+                                    </div>
+                                    <img src="images/mtn/edit-field-icon.png" alt="edit-field-icon" class="edit-field-icon">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- DEAL-PANE-INNER-END -->
                         <!-- CURRENT-DEAL-END -->
                         <!-- LAST-DEAL-START -->
                         <div class="tab-pane container fade" id="last-deal">
@@ -567,6 +1399,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <!-- custom js -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/custom.js"></script>
   <script>
   //Prevent Default Browser Actions on Drag Over and on Drop .
@@ -610,8 +1443,32 @@
 
     }
   }
+
+
+  $(document).ready(function() {
+    $(".comm-control").click(function() {
+      $(this).closest(".mo-dep-box").toggleClass("active");
+    });
+    $(".scheme-tab-choice .choice-span").click(function() {
+      $(this).toggleClass("active");
+    });
+    $(".bucket-btn").click(function(){
+      $(".general-container").hide();
+      $(".add-service-container").show();
+    });
+
+    $(".configure-btn").click(function(){
+      $(".service-section").hide();
+      $(".configure-section").show();
+    });
+    
+  });
+             $(window).on("load",function(){
+            $(".right-deal-detail.common-service-box .tab-content.right-deal-pane").mCustomScrollbar({
+    axis:"y" // horizontal scrollbar
+});
+        });
   </script>
-  }
 </body>
 
 </html>
