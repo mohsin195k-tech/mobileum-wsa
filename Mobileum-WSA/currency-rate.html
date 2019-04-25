@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mobileum - Country Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Latest compiled and minified bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Latest compiled and minified font awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- fonts css -->
+    <link href="css/fonts.css" rel="stylesheet" />
+    <!-- style css -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- date picker -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-main-wrapper">
+            <img src="images/header/header-img.png" class="header-img" alt="header-img">
+        </div>
+        <!--End of the header main wrapper-->
+    </header>
+    <main>
+        <!--Start of the main section wrapper-->
+        <div class="main-section-wrapper">
+            <!--Start of the inner section wrapper-->
+            <div class="inner-section-wrapper">
+                <div class="dashboard-main-wrapper">
+                    <!--Start of the dashboard navbar wrapper-->
+                    <div class="dasboard-navbar flex-d">
+                        <div class="dasboard-nav-left">
+                            <p class="navbar-head-txt">Wholesale Analytics</p>
+                        </div>
+                        <div class="dasboard-nav-right flex-d">
+                            <div class="menuboard-wrap flex-d align-items-center ">
+                                <span class="menu-icon">
+                                    <img src="images/Dashboard grey.png" class="hide-gray-iconx">
+                                    <img src="images/dashboard_blue.png" class="hide-active">
+                                </span>
+                                <div class="dropdown dropdownPosition">
+                                    <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Dashboard</span>
+                                    <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                                        <a class="dropdown-item" href="summaryDashboard.html">Summary View</a>
+                                        <a class="dropdown-item" href="networkDashboard.html">Network View</a>
+                                        <a class="dropdown-item" href="countryDashboard.html">Country View</a>
+                                        <a class="dropdown-item" href="reports.html">Reports</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menuboard-wrap flex-d align-items-center ">
+                                <span class="menu-icon">
+                                    <img src="images/Dashboard grey.png" class="hide-gray-iconx">
+                                    <img src="images/dashboard_blue.png" class="hide-active">
+                                </span>
+                                <div class="dropdown dropdownPosition">
+                                    <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Report</span>
+                                    <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                                        <a class="dropdown-item" href="#!">Month View</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menuboard-wrap active">
+                                <a href="dealCreation.html">
+                                    <span class="menu-icon">
+                                        <img src="images/deal builder grey.png" class="hide-gray-icon">
+                                        <img src="images/deal builder blue.png" class="hide-activex">
+                                    </span>
+                                    <span class="nav-txt">Deal Builder</span>
+                                </a>
+                            </div>
+                            <div class="menuboard-wrap">
+                                <a href="budgetSimulation.html">
+                                    <span class="menu-icon">
+                                        <img src="images/Budget Simulation grey.png" class="hide-gray-iconx">
+                                        <img src="images/Budget Simulation blue.png" class="hide-active">
+                                    </span>
+                                    <span class="nav-txt">Budget Simulation</span>
+                                </a>
+                            </div>
+                            <!-- <div class="menuboard-wrap flex-d align-items-center">
+                                <span class="menu-icon">
+                                    <img src="images/Agreement Management grey.png" class="hide-gray-iconx">
+                                    <img src="images/agreement Agreement Management blue.png" class="hide-active">
+                                </span>
+                                <div class="dropdown dropdownPosition">
+                                    <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Agreement Management</span>
+                                    <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                                        <a class="dropdown-item" href="agreementManagementDashboard.html">Manager Screen</a>
+                                        <a class="dropdown-item" href="agreementMakerDashboard.html">Agreement Manager</a>
+                                        <a class="dropdown-item" href="Deal_Manager.html">Deal Manager</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="menuboard-wrap">
+                                <a href="settlementGenerate.html">
+                                    <span class="menu-icon">
+                                        <img src="images/settlement grey.png" class="hide-gray-iconx">
+                                        <img src="images/settlement blue.png" class="hide-active">
+                                    </span>
+                                    <span class="nav-txt">Settlement</span>
+                                </a>
+                            </div>
+                            <div class="menuboard-wrap flex-d align-items-center ">
+                                <span class="menu-icon">
+                                    <img src="images/Dashboard grey.png" class="hide-gray-iconx">
+                                    <img src="images/dashboard_blue.png" class="hide-active">
+                                </span>
+                                <div class="dropdown dropdownPosition">
+                                    <span class="nav-txt dropdown-toggle" data-toggle="dropdown">System Preferences</span>
+                                    <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                                        <a class="dropdown-item" href="currency-rate.html">Currency Rates</a>
+                                        <a class="dropdown-item" href="aa-14-configure-rates.html">AA14 Configuration</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--dasboard-nav-right-->
+                        <div class="menu-filter-box">
+                            <img src="images/filter.png">
+                            <img src="images/setting.png">
+                        </div>
+                    </div>
+                    <!--End of the dashboard navbar wrapper-->
+                    <div class="dashboard-all-content settlement-dashboard-div">
+                        <!-- <div class="dashboard-navigation noBorder">
+                            <ul class="page-breadcrumb flex-d">
+                                <li><a href="javascript:void(0)">Currency Rate</a></li>
+                                 <li class="active"><a href="javascript:void(0)"> New Deal</a></li>
+                            </ul>
+                        </div> -->
+                        <!-- Currency Rate card start -->
+                        <div class="container-fluid cardContainer">
+                            <div class="currency-rate-wrapper">
+                                <div class="currency-header">
+                                    <!-- <h2 class="heading-new">Currency Rate</h2> -->
+                                </div>
+                                <div class="currency-details">
+                                    <div class="currency-filter">
+                                        <!-- <h2 class="sec-header">Filters</h2> -->
+                                        <div class="c-filter flex-d">
+                                            <div class="c-filter-left flex-d">
+                                                <div class="filter-list-items list-3 wd-md">
+                                                    <select class="list-partner">
+                                                        <option value="2019" selected="selected">Base Currency</option>
+                                                        <option value="2018">Orange France</option>
+                                                    </select>
+                                                </div>
+                                                <div class="filter-list-items list-3 wd-md">
+                                                    <select class="list-partner">
+                                                        <option value="2019" selected="selected">Base Currency</option>
+                                                        <option value="2018">Other Currency</option>
+                                                    </select>
+                                                </div>
+                                                <div class="filter-list-items settlementdate-filter list-3">
+                                                    <div class="input-group date input-box date-box settlementdate date-box1" data-provide="datepicker">
+                                                        <input id="datepickerStart" class="date-start-input" placeholder="Start Date">
+                                                        <div class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-th"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-list-items settlementdate-filter list-3">
+                                                    <div class="input-group date input-box date-box settlementdate date-box1" data-provide="datepicker">
+                                                        <input id="datepickerEnd" class="date-start-input" placeholder="End Date">
+                                                        <div class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-th"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-list-items list-3 wd-md">
+                                                    <select class="list-partner">
+                                                        <option value="Month" selected="selected">Month</option>
+                                                        <option value="12">12</option>
+                                                        <option value="24">24</option>
+                                                        <option value="36">36</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="c-filter-right btn-wrapper">
+                                                <a href="javascript:void(0);" class="btn-div btn-graph">Show</a>
+                                                <a href="javascript:void(0) " class="btn-div btn-graph-fill">Reset</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="currency-search-result">
+                                        <div class="currency-search-header d-flex">
+                                            <h3 class="sub-heading-new"><span>Search Results:</span> Currency Rates / MAD</h3>
+                                            <div class="c-filter-right btn-wrapper">
+                                                <a href="javascript:void(0);" class="btn-div btn-graph">Download to CSV</a>
+                                            </div>
+                                        </div>
+                                        <div class="currency-search-details">
+                                            <div class="usage-distri-table common-table-border">
+                                                <table class="common-small-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="filter-icon">Currency</th>
+                                                            <th>Oct 2017</th>
+                                                            <th>Nov 2017</th>
+                                                            <th>Dec 2017</th>
+                                                            <th>Jan 2018</th>
+                                                            <th>Feb 2018</th>
+                                                            <th>Mar 2018</th>
+                                                            <th>Apr 2018</th>
+                                                            <th>May 2018</th>
+                                                            <th>Jun 2018</th>
+                                                            <th>Jul 2018</th>
+                                                            <th>Aug 2018</th>
+                                                            <th>Sep 2018</th>
+                                                            <th>Graph</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>EUR</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td><a href="javascript:void(0);" data-toggle="modal" data-target="#graph-popup"><img src="images/graph-icon.svg" alt=""></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>GBP</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td><a href="javascript:void(0);" data-toggle="modal" data-target="#graph-popup"><img src="images/graph-icon.svg" alt=""></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>USD</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td>0.09</td>
+                                                            <td><a href="javascript:void(0);" data-toggle="modal" data-target="#graph-popup"><img src="images/graph-icon.svg" alt=""></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div><!-- odb-landing-table  -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Currency Rate card end -->
+                    </div>
+                </div>
+                <!--End of the inner section wrapper-->
+            </div>
+            <!--End of the main section wrapper-->
+            <!-- The Modal recommend-->
+            <div class="modal recommend recom1" id="graph-popup">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div id="currency-rate-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="footer-main-wrapper">
+        </div>
+        <!--End of the footer main wrapper-->
+    </footer>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("#datepickerStart").datepicker({
+            autoclose: true,
+            todayHighlight: true
+        }).datepicker();
+    });
+    $(function() {
+        $("#datepickerEnd").datepicker({
+            autoclose: true,
+            todayHighlight: true
+        }).datepicker();
+    });
+
+    //Currency Rate Chart Strat
+    Highcharts.chart('currency-rate-chart', {
+
+        title: {
+            text: ''
+        },
+
+        subtitle: {
+            text: ''
+        },
+
+         credits: {
+            enabled: false
+        },
+        chart: {
+            type: 'line'
+        },
+
+        xAxis: {
+            lineWidth: 0,
+   minorGridLineWidth: 0,
+   lineColor: 'transparent',
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            labels: {
+                enabled: true,
+                style: {
+                    fontSize: '10px',
+                    fontFamily: 'OpenSans-regular',
+                    color: '#74829c'
+                }
+            }
+        },
+
+        
+
+        yAxis: {
+            lineWidth: 1,
+            min: 0.0,
+            max: 0.9,
+            tickInterval: 0.1,
+            title: {
+                text: 'EUR / USD',
+                style: {
+                    fontSize: '10px',
+                    fontFamily: 'OpenSans-regular',
+                    color: '#74829c'
+                }
+            }
+        },
+        legend: {
+            enabled: false,
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle'
+        },
+
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: false
+                }
+            }
+        },
+
+        series: [{
+            //name: '',
+            data: [0.9, 0.89, 0.87, 0.85, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02, 0.02]
+        }]
+
+    });
+    //Currency Rate Chart End
+    </script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
