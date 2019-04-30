@@ -1215,3 +1215,11 @@ width: auto;
   display: flex;
   justify-content: center;
  }
+ .grp-opco .filter-list-items
+ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  max-width: 100%;
+ }
