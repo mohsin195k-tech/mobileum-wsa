@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="css/reports.css">
     <!-- date picker -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+    <link href="css/mtn-style.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -180,38 +182,17 @@
                                         <!-- Agremeent Owner Box End -->
                                         <!-- Deal Commitment Box Start -->
                                         <div class="summary-card">
-                                            <a href="#!" class="edit-icon">
-                                                <img src="images/edit-icon.png" alt="" />
-                                            </a>
-                                            <ul class="summary-list">
-                                                <li class="summary-blk">
-                                                    <div class="lable">Deal Commitment</div>
-                                                    <div class="info">MO,MT,DATA,SMS <span>(Revenue Commitment)</span></div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                      <div class="main-heading d-flex justify-content-between align-items-start">
+                        <div class="deal-data-inner">
+                          <h3 class="deal-label f-col-grey f-sz-13">Commitment</h3>
+                          <p class="deal-data s-bold f-col-black f-sz-13">DATA,SMS (Revenue Commitment)</p>
+                          <p class="deal-data s-bold f-col-black f-sz-13">MO+MT (Revenue Commitment) <br>
+                            SOP Value:10000 Currency: SDR
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                                         <!-- Deal Commitment Box Start -->
-                                        <!-- Shared Commitment Box Start -->
-                                        <div class="summary-card shared-commitment">
-                                            <a href="#!" class="edit-icon">
-                                                <img src="images/edit-icon.png" alt="" />
-                                            </a>
-                                            <ul class="summary-list">
-                                                <li class="summary-blk list-item1">
-                                                    <div class="lable">Shared Commitment</div>
-                                                    <div class="info">MO,MT <span>(Revenue Commitment)</span></div>
-                                                </li>
-                                                <li class="summary-blk list-item2">
-                                                    <div class="lable">SOP Value</div>
-                                                    <div class="info">10000 </div>
-                                                </li>
-                                                <li class="summary-blk list-item3">
-                                                    <div class="lable">Currency</div>
-                                                    <div class="info">SDR</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Shared Commitment Box Start -->
                                         <!-- Configuration For Data  Box Start -->
                                         <div class="summary-card configuration">
                                             <a href="#!" class="edit-icon">
@@ -264,7 +245,11 @@
                                     <!-- Inbound Box End -->
                                     <!-- Outbound Box Start -->
                                     <div class="outbound-box">
-                                        <h2 class="sec-header">Outbound</h2>
+                                        <h2 class="sec-header">Outbound 
+                                            <a href="javascript:void(0)" class="btn cust-btn pos-btn reset" data-toggle="modal" data-target="#reset-pop">
+                                              RESET
+                                            </a>
+                                        </h2>
                                         <!-- Agremeent Owner Box Start -->
                                         <div class="summary-card">
                                             <a href="#!" class="edit-icon">
@@ -299,36 +284,15 @@
                                         <!-- Agremeent Owner Box End -->
                                         <!-- Deal Commitment Box Start -->
                                         <div class="summary-card">
-                                            <a href="#!" class="edit-icon">
-                                                <img src="images/edit-icon.png" alt="" />
-                                            </a>
-                                            <ul class="summary-list">
-                                                <li class="summary-blk">
-                                                    <div class="lable">Deal Commitment</div>
-                                                    <div class="info">MO,MT,DATA,SMS <span>(Revenue Commitment)</span></div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- Deal Commitment Box Start -->
-                                        <!-- Shared Commitment Box Start -->
-                                        <div class="summary-card shared-commitment">
-                                            <a href="#!" class="edit-icon">
-                                                <img src="images/edit-icon.png" alt="" />
-                                            </a>
-                                            <ul class="summary-list">
-                                                <li class="summary-blk list-item1">
-                                                    <div class="lable">Shared Commitment</div>
-                                                    <div class="info">MO,MT <span>(Revenue Commitment)</span></div>
-                                                </li>
-                                                <li class="summary-blk list-item2">
-                                                    <div class="lable">SOP Value</div>
-                                                    <div class="info">10000 </div>
-                                                </li>
-                                                <li class="summary-blk list-item3">
-                                                    <div class="lable">Currency</div>
-                                                    <div class="info">SDR</div>
-                                                </li>
-                                            </ul>
+                                          <div class="main-heading d-flex justify-content-between align-items-start">
+                                            <div class="deal-data-inner">
+                                              <h3 class="deal-label f-col-grey f-sz-13">Commitment</h3>
+                                              <p class="deal-data s-bold f-col-black f-sz-13">DATA,SMS (Revenue Commitment)</p>
+                                              <p class="deal-data s-bold f-col-black f-sz-13">MO+MT (Revenue Commitment) <br>
+                                                SOP Value:10000 Currency: SDR
+                                              </p>
+                                            </div>
+                                          </div>
                                         </div>
                                         <!-- Shared Commitment Box Start -->
                                         <!-- Configuration For Data  Box Start -->
@@ -384,7 +348,7 @@
                                 </div>
                                 <div class="nd-summary-footer btn-wrapper">
                                     <a href="javascript:void(0);" class="btn-div btn-graph">BACK</a>
-                                    <a href="javascript:void(0) " class="btn-div btn-graph-fill">Confirm</a>
+                                    <a href="dealbuilder-scenario.html" class="btn-div btn-graph-fill">Confirm</a>
                                 </div>
                             </div>
                         </div>
@@ -400,6 +364,31 @@
         </div>
         <!--End of the footer main wrapper-->
     </footer>
+
+<!-- The Modal -->
+<div class="modal" id="reset-pop">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h2 class="heading-new">Reset</h2>
+        <p class="sec-header">        
+            Reset will remove all the configuration for outbound
+        </p>
+        <div class="btn-box d-flex justify-content-center align-self-end">
+          <a href="javascript:void(0)" class="btn cust-btn neg-btn" data-dismiss="modal">
+            CANCEL
+          </a>
+          <a href="dealCreation.html" class="btn cust-btn pos-btn">
+            PROCEED
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled and minified bootstrap js -->

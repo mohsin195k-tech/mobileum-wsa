@@ -256,20 +256,25 @@ $('.n-imp-scenarios-2').click(function(){
           $('.settlementOrangeCountryPopupFlag').slideUp('fast');
 
       })
-      $('#showCountryFlagPopup').on('click',function(){
+      $('#showCountryFlagPopup').on('click',function(e){
+      	 
           $('.countryPopupFlag').slideToggle('slow');
           $('.orangeCountryPopupFlag').slideUp('fast');
           $('#countryPopup').slideUp('fast');
       })
 
-      $('#settlementShowCountryFlagPopup').on('click',function(){
+      $('#settlementShowCountryFlagPopup').on('click',function(e){
+          e.stopImmediatePropagation();
+            e.preventDefault();
           $('.settlementCountryPopupFlag').slideToggle('slow');
           $('.settlementOrangeCountryPopupFlag').slideUp('fast');
           $('#countryPopup').slideUp('fast');
 
       })
 
-	  $('#settlementShowOrangeFlagPopup').on('click',function(){
+	  $('#settlementShowOrangeFlagPopup').on('click',function(e){
+	  	e.stopImmediatePropagation();
+            e.preventDefault();
           $('.settlementCountryPopupFlag').slideUp('fast');
           $('.settlementOrangeCountryPopupFlag').slideToggle('slow');
           $('#countryPopup').slideUp('fast');
