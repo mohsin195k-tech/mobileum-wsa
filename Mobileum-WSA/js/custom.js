@@ -248,7 +248,9 @@ $('.n-imp-scenarios-2').click(function(){
 
 // ---------- jeelani 25 March
 
- 	  $('.rightTopDropdown').on('click',function(){
+ 	  $('.rightTopDropdown').on('click',function(e){
+ 	  	e.stopImmediatePropagation();
+      e.preventDefault();
           $('#countryPopup').slideToggle('slow');
           $('.countryPopupFlag').slideUp('fast');
           $('.orangeCountryPopupFlag').slideUp('fast');
@@ -257,13 +259,23 @@ $('.n-imp-scenarios-2').click(function(){
 
       })
       $('#showCountryFlagPopup').on('click',function(e){
-      	 
+      	 e.stopImmediatePropagation();
+            e.preventDefault();
           $('.countryPopupFlag').slideToggle('slow');
           $('.orangeCountryPopupFlag').slideUp('fast');
           $('#countryPopup').slideUp('fast');
       })
 
-      $('#settlementShowCountryFlagPopup').on('click',function(e){
+      $('#settlementShowCountryFlagPopup').on('click',function(e){ 
+          e.stopImmediatePropagation();
+            e.preventDefault();
+          $('.settlementCountryPopupFlag').slideToggle('slow');
+          $('.settlementOrangeCountryPopupFlag').slideUp('fast');
+          $('#countryPopup').slideUp('fast');
+
+      })
+            $('#settlementShowCountryFlagPopup1').on('click',function(e){ 
+      	alert(1);
           e.stopImmediatePropagation();
             e.preventDefault();
           $('.settlementCountryPopupFlag').slideToggle('slow');

@@ -159,15 +159,206 @@
                     <div class="agreement-box grp-opco">
                       <h3 class="agree-head bold f-sz-16 ">Agreement Owner</h3>
                       <div class="agree-data-box d-flex">
-                        <div class="filter-list-items list-2 wd-md">
+                        <div class="list-2 wd-md d-flex flex-column">
                           <label for="agreeementPartner2" class="s-bold f-sz-13">Group</label>
-                          <div class="list-3 multiselect-dropdowns deal-creation-multi">
-                            <select class="list-partner" id="multi-dropdown-list" multiple="multiple">
-                              <option value="select-btn">Select OPCO</option>
-                              <option value="AFGAR">AFGAR</option>
-                              <option value="CYPOC">CYPOC</option>
-                              <option value="LBRLC">LBRLC</option>
-                            </select>
+                          <div class="opco-drp">
+                            <ul class="rightTopDropdownUl pull-right">
+                                <li class="active text-center">
+                                    <a href="javascript:void(0)" class="rightTopDropdown">OPCO <span class="badgeIcon">4</span><span class="fa fa-angle-down"></span> </a>
+                                </li>
+                            </ul>
+                            <div class="container-fluid" id="countryPopup">
+                                  <div class="row">
+                                      <div class="col-md-12 mb-3">
+                                          <span class="searchOperator">
+                                              <input type="text" placeholder="Search operator" class="mr-auto">
+                                              <img src="images/search.png" class="pr-1">
+                                          </span>
+                                          <span class="pull-right">
+                                              <input type="button" value="APPLY" class="btn blueButton">
+                                              <input type="button" value="CANCEL" class="btn whiteButton">
+                                          </span>
+                                      </div>
+                                      <div class="container-fluid d-flex justify-content-between countryPopupMainDiv gb-horizontal-scroll">
+                                          <!-- first column -->
+                                          <div>
+                                              <div class="width15 width15Active">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/afghanistan.png" class="mr-3">
+                                                      <span class="mr-auto">AFGAR</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15 width15Active">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/benin.png" class="mr-3">
+                                                      <span class="mr-auto">BENSP</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/botswana.png" class="mr-3">
+                                                      <span class="mr-auto">BWAGA</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/cameroon.png" class="mr-3">
+                                                      <span class="mr-auto">CMRMT</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/democratic-republic-of-congo.png" class="mr-3">
+                                                      <span class="mr-auto">COGLB</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- 2nd column -->
+                                          <div>
+                                              <div class="width15 width15Active">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/cyprus.png" class="mr-3">
+                                                      <span class="mr-auto">CYPOC</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15 width15Active">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/ghana.png" class="mr-3">
+                                                      <span class="mr-auto">GHASC</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/guinea-bissau.png" class="mr-3">
+                                                      <span class="mr-auto">GNBSB</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/guinea.png" class="mr-3">
+                                                      <span class="mr-auto">GINAG</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/ivory-coast.png" class="mr-3">
+                                                      <span class="mr-auto">CIVTL</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- 3rd column -->
+                                          <div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/liberia.png" class="mr-3">
+                                                      <span class="mr-auto">LBRLC</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15 ">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/nigeria.png" class="mr-3">
+                                                      <span class="mr-auto">NGAMN</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/rwanda.png" class="mr-3">
+                                                      <span class="mr-auto">RWAMN</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/sudan.png" class="mr-3">
+                                                      <span class="mr-auto">SDNBT</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/south-africa.png" class="mr-3">
+                                                      <span class="mr-auto">ZAFMN</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- 4th column -->
+                                          <div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/south-africa.png" class="mr-3">
+                                                      <span class="mr-auto">ZAFMM</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/south-sudan.png" class="mr-3">
+                                                      <span class="mr-auto">SSDMN</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/swaziland.png" class="mr-3">
+                                                      <span class="mr-auto">SWZMN</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/uganda.png" class="mr-3">
+                                                      <span class="mr-auto">UGAMN</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/zambia.png" class="mr-3">
+                                                      <span class="mr-auto">ZMB02</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <!-- 5th column -->
+                                          <div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/yemen.png" class="mr-3">
+                                                      <span class="mr-auto">YEMSP</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15 ">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/iran.png" class="mr-3">
+                                                      <span class="mr-auto">IRNMI</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                              <div class="width15">
+                                                  <div class="d-flex align-items-center">
+                                                      <img src="images/flags/syria.png" class="mr-3">
+                                                      <span class="mr-auto">SYRSP</span>
+                                                      <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -259,720 +450,721 @@
                         <div class="check-container">
                           <input type="radio" id="agreeementPartner1" name="agreement-partner" value="indi" checked>
                           <label for="agreeementPartner1" class="s-bold f-sz-13">Individual</label>
-                        </div>
-                        <!-- INDIVIDUAL DROPS -->
-                        <div class="individual-group-check d-flex">
-                          <div class="filter-list-items list-2 flagDropdownTrigger" id="settlementShowCountryFlagPopup">
-                            <option value="">France</option>
-                            <!-- ---- France pop up ---------- -->
-                            <div class="container-fluid settlementCountryPopupFlag">
-                              <div class="row">
-                                <div class="col-md-12 mb-3">
-                                  <span class="searchOperator">
-                                    <input type="text" placeholder="Search operator" class="mr-auto">
-                                    <img src="images/search.png" class="pr-1">
-                                  </span>
-                                  <span class="pull-right">
-                                    <input type="button" value="APPLY" class="btn blueButton">
-                                    <input type="button" value="CANCEL" class="btn whiteButton whiteCountryFlag">
-                                  </span>
+                          <!-- INDIVIDUAL DROPS -->
+                          <div class="individual-group-check d-flex align-items-baseline">
+                            <div class="filter-list-items list-2 flagDropdownTrigger" id="settlementShowCountryFlagPopup">
+                              <option value="">France</option>
+                              <!-- ---- France pop up ---------- -->
+                              <div class="container-fluid settlementCountryPopupFlag">
+                                <div class="row">
+                                  <div class="col-md-12 mb-3">
+                                    <span class="searchOperator">
+                                      <input type="text" placeholder="Search operator" class="mr-auto">
+                                      <img src="images/search.png" class="pr-1">
+                                    </span>
+                                    <span class="pull-right">
+                                      <input type="button" value="APPLY" class="btn blueButton">
+                                      <input type="button" value="CANCEL" class="btn whiteButton whiteCountryFlag">
+                                    </span>
+                                  </div>
+                                  <div class="container-fluid d-flex justify-content-between countryPopupMainDiv gb-horizontal-scroll countryFlagDiv">
+                                    <!-- first column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/spain.png" class="mr-3">
+                                          <span class="mr-auto">Spain</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/germany.png" class="mr-3">
+                                          <span class="mr-auto">Germany</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15 width15Active">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/france.png" class="mr-3">
+                                          <span class="mr-auto">France</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/russia.png" class="mr-3">
+                                          <span class="mr-auto">Russia</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/united-kingdom.png" class="mr-3">
+                                          <span class="mr-auto">UK</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/united-nations.png" class="mr-3">
+                                          <span class="mr-auto">US</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/italy.png" class="mr-3">
+                                          <span class="mr-auto">Italy</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 2nd column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/china.png" class="mr-3">
+                                          <span class="mr-auto">China</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/thailand.png" class="mr-3">
+                                          <span class="mr-auto">Thailand</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/belgium.png" class="mr-3">
+                                          <span class="mr-auto">Belgium</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/south-africa.png" class="mr-3">
+                                          <span class="mr-auto">South Africa</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/afghanistan.png" class="mr-3">
+                                          <span class="mr-auto">Afghanistan</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/abkhazia.png" class="mr-3">
+                                          <span class="mr-auto">Abkhazia</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/algeria.png" class="mr-3">
+                                          <span class="mr-auto">Algeria</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 3rd column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/spain.png" class="mr-3">
+                                          <span class="mr-auto">Spain</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15 ">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/germany.png" class="mr-3">
+                                          <span class="mr-auto">Germany</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/france.png" class="mr-3">
+                                          <span class="mr-auto">France</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/russia.png" class="mr-3">
+                                          <span class="mr-auto">Russia</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/united-kingdom.png" class="mr-3">
+                                          <span class="mr-auto">UK</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/united-nations.png" class="mr-3">
+                                          <span class="mr-auto">US</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/italy.png" class="mr-3">
+                                          <span class="mr-auto">Italy</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 4th column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/china.png" class="mr-3">
+                                          <span class="mr-auto">China</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/thailand.png" class="mr-3">
+                                          <span class="mr-auto">Thailand</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/belgium.png" class="mr-3">
+                                          <span class="mr-auto">Belgium</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/italy.png" class="mr-3">
+                                          <span class="mr-auto">Italy</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/afghanistan.png" class="mr-3">
+                                          <span class="mr-auto">Afghanistan</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/abkhazia.png" class="mr-3">
+                                          <span class="mr-auto">Abkhazia</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/algeria.png" class="mr-3">
+                                          <span class="mr-auto">Algeria</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 5th column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/spain.png" class="mr-3">
+                                          <span class="mr-auto">Spain</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15 ">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/germany.png" class="mr-3">
+                                          <span class="mr-auto">Germany</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/france.png" class="mr-3">
+                                          <span class="mr-auto">France</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/russia.png" class="mr-3">
+                                          <span class="mr-auto">Russia</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/united-kingdom.png" class="mr-3">
+                                          <span class="mr-auto">UK</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/united-nations.png" class="mr-3">
+                                          <span class="mr-auto">US</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/italy.png" class="mr-3">
+                                          <span class="mr-auto">Italy</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 6th column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/china.png" class="mr-3">
+                                          <span class="mr-auto">China</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/thailand.png" class="mr-3">
+                                          <span class="mr-auto">Thailand</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/belgium.png" class="mr-3">
+                                          <span class="mr-auto">Belgium</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/south-africa.png" class="mr-3">
+                                          <span class="mr-auto">South Africa</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/afghanistan.png" class="mr-3">
+                                          <span class="mr-auto">Afghanistan</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/abkhazia.png" class="mr-3">
+                                          <span class="mr-auto">Abkhazia</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/algeria.png" class="mr-3">
+                                          <span class="mr-auto">Algeria</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 7th column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/spain.png" class="mr-3">
+                                          <span class="mr-auto">Spain</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15 ">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/germany.png" class="mr-3">
+                                          <span class="mr-auto">Germany</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/france.png" class="mr-3">
+                                          <span class="mr-auto">France</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/russia.png" class="mr-3">
+                                          <span class="mr-auto">Russia</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/united-kingdom.png" class="mr-3">
+                                          <span class="mr-auto">UK</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/united-nations.png" class="mr-3">
+                                          <span class="mr-auto">US</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/italy.png" class="mr-3">
+                                          <span class="mr-auto">Italy</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- 8th column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/china.png" class="mr-3">
+                                          <span class="mr-auto">China</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/thailand.png" class="mr-3">
+                                          <span class="mr-auto">Thailand</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/belgium.png" class="mr-3">
+                                          <span class="mr-auto">Belgium</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/belgium.png" class="mr-3">
+                                          <span class="mr-auto">Belgium</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/afghanistan.png" class="mr-3">
+                                          <span class="mr-auto">Afghanistan</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/abkhazia.png" class="mr-3">
+                                          <span class="mr-auto">Abkhazia</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/flags/algeria.png" class="mr-3">
+                                          <span class="mr-auto">Algeria</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div class="container-fluid d-flex justify-content-between countryPopupMainDiv gb-horizontal-scroll countryFlagDiv">
-                                  <!-- first column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/spain.png" class="mr-3">
-                                        <span class="mr-auto">Spain</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/germany.png" class="mr-3">
-                                        <span class="mr-auto">Germany</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15 width15Active">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/france.png" class="mr-3">
-                                        <span class="mr-auto">France</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/russia.png" class="mr-3">
-                                        <span class="mr-auto">Russia</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/united-kingdom.png" class="mr-3">
-                                        <span class="mr-auto">UK</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/united-nations.png" class="mr-3">
-                                        <span class="mr-auto">US</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/italy.png" class="mr-3">
-                                        <span class="mr-auto">Italy</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
+                              </div>
+                              <!-- ----------  settlement orange pop up --------------- -->
+                            </div>
+                            <div class="filter-list-items list-2 orangeDropdownTrigger" id="settlementShowOrangeFlagPopup">
+                              <option value="">Orange</option>
+                              <!-- dropdown ORANGE popup of countries  -->
+                              <div class="container-fluid settlementOrangeCountryPopupFlag">
+                                <div class="row">
+                                  <div class="col-md-12 mb-3">
+                                    <span class="searchOperator">
+                                      <input type="text" placeholder="Search operator" class="mr-auto">
+                                      <img src="images/search.png" class="pr-1">
+                                    </span>
+                                    <span class="pull-right">
+                                      <input type="button" value="APPLY" class="btn blueButton">
+                                      <input type="button" value="CANCEL" class="btn whiteButton whiteCountryFlag">
+                                    </span>
                                   </div>
-                                  <!-- 2nd column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/china.png" class="mr-3">
-                                        <span class="mr-auto">China</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                  <div class="container-fluid d-flex justify-content-between countryPopupMainDiv gb-horizontal-scroll countryFlagDiv">
+                                    <!-- first column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Airtel</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">AT &amp; T</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Vodafone</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Airtel</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Idea</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Verizon</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">T-Mobile</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">JIO</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
                                     </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/thailand.png" class="mr-3">
-                                        <span class="mr-auto">Thailand</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                    <!-- 2nd column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Vodafone</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15 width15Active">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Orange</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">BSNL</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Oreedoo</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Vodafone</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Airtel</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Idea</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Verizon</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
                                     </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/belgium.png" class="mr-3">
-                                        <span class="mr-auto">Belgium</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                    <!-- 3rd column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Airtel</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15 ">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">AT &amp; T</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Vodafone</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Airtel</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Idea</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Verizon</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">T-Mobile</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
+                                      </div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">JIO</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
                                     </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/south-africa.png" class="mr-3">
-                                        <span class="mr-auto">South Africa</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                    <!-- 4th column -->
+                                    <div>
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Vodafone</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/afghanistan.png" class="mr-3">
-                                        <span class="mr-auto">Afghanistan</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Orange</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/abkhazia.png" class="mr-3">
-                                        <span class="mr-auto">Abkhazia</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">BSNL</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/algeria.png" class="mr-3">
-                                        <span class="mr-auto">Algeria</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Oreedoo</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
-                                    </div>
-                                  </div>
-                                  <!-- 3rd column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/spain.png" class="mr-3">
-                                        <span class="mr-auto">Spain</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Vodafone</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="width15 ">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/germany.png" class="mr-3">
-                                        <span class="mr-auto">Germany</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Airtel</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/france.png" class="mr-3">
-                                        <span class="mr-auto">France</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Idea</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/russia.png" class="mr-3">
-                                        <span class="mr-auto">Russia</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/united-kingdom.png" class="mr-3">
-                                        <span class="mr-auto">UK</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/united-nations.png" class="mr-3">
-                                        <span class="mr-auto">US</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/italy.png" class="mr-3">
-                                        <span class="mr-auto">Italy</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- 4th column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/china.png" class="mr-3">
-                                        <span class="mr-auto">China</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/thailand.png" class="mr-3">
-                                        <span class="mr-auto">Thailand</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/belgium.png" class="mr-3">
-                                        <span class="mr-auto">Belgium</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/italy.png" class="mr-3">
-                                        <span class="mr-auto">Italy</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/afghanistan.png" class="mr-3">
-                                        <span class="mr-auto">Afghanistan</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/abkhazia.png" class="mr-3">
-                                        <span class="mr-auto">Abkhazia</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/algeria.png" class="mr-3">
-                                        <span class="mr-auto">Algeria</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- 5th column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/spain.png" class="mr-3">
-                                        <span class="mr-auto">Spain</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15 ">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/germany.png" class="mr-3">
-                                        <span class="mr-auto">Germany</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/france.png" class="mr-3">
-                                        <span class="mr-auto">France</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/russia.png" class="mr-3">
-                                        <span class="mr-auto">Russia</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/united-kingdom.png" class="mr-3">
-                                        <span class="mr-auto">UK</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/united-nations.png" class="mr-3">
-                                        <span class="mr-auto">US</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/italy.png" class="mr-3">
-                                        <span class="mr-auto">Italy</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- 6th column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/china.png" class="mr-3">
-                                        <span class="mr-auto">China</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/thailand.png" class="mr-3">
-                                        <span class="mr-auto">Thailand</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/belgium.png" class="mr-3">
-                                        <span class="mr-auto">Belgium</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/south-africa.png" class="mr-3">
-                                        <span class="mr-auto">South Africa</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/afghanistan.png" class="mr-3">
-                                        <span class="mr-auto">Afghanistan</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/abkhazia.png" class="mr-3">
-                                        <span class="mr-auto">Abkhazia</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/algeria.png" class="mr-3">
-                                        <span class="mr-auto">Algeria</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- 7th column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/spain.png" class="mr-3">
-                                        <span class="mr-auto">Spain</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15 ">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/germany.png" class="mr-3">
-                                        <span class="mr-auto">Germany</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/france.png" class="mr-3">
-                                        <span class="mr-auto">France</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/russia.png" class="mr-3">
-                                        <span class="mr-auto">Russia</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/united-kingdom.png" class="mr-3">
-                                        <span class="mr-auto">UK</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/united-nations.png" class="mr-3">
-                                        <span class="mr-auto">US</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/italy.png" class="mr-3">
-                                        <span class="mr-auto">Italy</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- 8th column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/china.png" class="mr-3">
-                                        <span class="mr-auto">China</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/thailand.png" class="mr-3">
-                                        <span class="mr-auto">Thailand</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/belgium.png" class="mr-3">
-                                        <span class="mr-auto">Belgium</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/belgium.png" class="mr-3">
-                                        <span class="mr-auto">Belgium</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/afghanistan.png" class="mr-3">
-                                        <span class="mr-auto">Afghanistan</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/abkhazia.png" class="mr-3">
-                                        <span class="mr-auto">Abkhazia</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/flags/algeria.png" class="mr-3">
-                                        <span class="mr-auto">Algeria</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                      <div class="width15">
+                                        <div class="d-flex align-items-center">
+                                          <img src="images/tower.png" class="mr-3">
+                                          <span class="mr-auto">Verizon</span>
+                                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <!-- ----------  settlement orange pop up --------------- -->
-                          </div>
-                          <div class="filter-list-items list-2 orangeDropdownTrigger" id="settlementShowOrangeFlagPopup">
-                            <option value="">Orange</option>
-                            <!-- dropdown ORANGE popup of countries  -->
-                            <div class="container-fluid settlementOrangeCountryPopupFlag">
-                              <div class="row">
-                                <div class="col-md-12 mb-3">
-                                  <span class="searchOperator">
-                                    <input type="text" placeholder="Search operator" class="mr-auto">
-                                    <img src="images/search.png" class="pr-1">
-                                  </span>
-                                  <span class="pull-right">
-                                    <input type="button" value="APPLY" class="btn blueButton">
-                                    <input type="button" value="CANCEL" class="btn whiteButton whiteCountryFlag">
-                                  </span>
-                                </div>
-                                <div class="container-fluid d-flex justify-content-between countryPopupMainDiv gb-horizontal-scroll countryFlagDiv">
-                                  <!-- first column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Airtel</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">AT &amp; T</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Vodafone</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Airtel</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Idea</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Verizon</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">T-Mobile</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">JIO</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- 2nd column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Vodafone</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15 width15Active">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Orange</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">BSNL</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Oreedoo</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Vodafone</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Airtel</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Idea</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Verizon</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- 3rd column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Airtel</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15 ">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">AT &amp; T</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Vodafone</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Airtel</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Idea</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Verizon</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">T-Mobile</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">JIO</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- 4th column -->
-                                  <div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Vodafone</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Orange</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">BSNL</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Oreedoo</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Vodafone</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Airtel</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Idea</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                    <div class="width15">
-                                      <div class="d-flex align-items-center">
-                                        <img src="images/tower.png" class="mr-3">
-                                        <span class="mr-auto">Verizon</span>
-                                        <!-- <img src="images/cross.png" class="crossIcon"> -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                            <span class="s-bold f-sz-13 clr-grey or-span">OR</span>
+                            <div class="filter-list-items list-3 deal-part">
+                              <select class="list-partner">
+                                <option value="france">TADIG</option>
+                                <option value="france1">FRAF1</option>
+                              </select>
                             </div>
                           </div>
-                          <div class="filter-list-items list-3 deal-part">
-                            <select class="list-partner">
-                              <option value="france">TADIG</option>
-                              <option value="france1">FRAF1</option>
-                            </select>
-                          </div>
+                          <!-- INDIVIDUAL DROPS -->
                         </div>
-                        <!-- INDIVIDUAL DROPS -->
                         <div class="check-container">
                           <input type="radio" id="agreeementPartner2" name="agreement-partner" value="group">
                           <label for="agreeementPartner2" class="s-bold f-sz-13">Group</label>
-                        </div>
-                        <div class="group-check">
-                          <div class="filter-list-items list-2 wd">
-                            <select class="list-partner">
-                              <option value="france">Select Group</option>
-                              <option value="france1">India</option>
-                            </select>
+                          <div class="group-check">
+                            <div class="filter-list-items list-2 wd">
+                              <select class="list-partner">
+                                <option value="france">Select Group</option>
+                                <option value="france1">India</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1459,20 +1651,6 @@
                             </div>
                             <!-- CONFIGURE-INNER-ITEMS-END -->
                             <!-- CONFIGURE-INNER-ITEMS-START -->
-                            <div class="configure-inner-items blend-box">
-                              <h3 class="s-bold f-sz-14 f-col-black">Blended Voice</h3>
-                              <div class="list-2 wd-md">
-                                <div class="switch-box">
-                                  Yes
-                                  <label class="switch">
-                                    <input type="checkbox" class="switch-checkbox" name="blend-voice">
-                                    <span class="slider1 round"></span>
-                                  </label>No
-                                </div>
-                              </div>
-                            </div>
-                            <!-- CONFIGURE-INNER-ITEMS-END -->
-                            <!-- CONFIGURE-INNER-ITEMS-START -->
                             <div class="configure-inner-items align-self-center split-mo-box">
                               <div class="check-box box1">
                                 <label class="checkbox-container f-sz-14 f-col-black s-bold">Split MO
@@ -1655,7 +1833,25 @@
                           </div>
                           <!-- TOP-BOX-END -->
                           <div class="top-box table-box flat-table">
-                            <div class="group-table">
+                            <div class="common-cost-cur-box">
+                              <a href="javascript:void(0)" class="cust-btn pos-btn" data-toggle="modal" data-target="#cost-rate-pop">Add common cost and rate curency for all</a>
+                            </div>
+                            <div class="top-box operator-tab-choice">
+                              <!-- CONFIGURE-INNER-ITEMS-START -->
+                              <div class="configure-inner-items ">
+                                <h3 class="s-bold f-sz-14 f-col-black">Select Partner</h3>
+                                <div class=" list-2 wd-md">
+                                  <div class="chocie-box">
+                                    <span class="choice-span mo-span active">Operator 1</span>
+                                    <span class="choice-span mt-span">Operator 2</span>
+                                    <span class="choice-span data-span">Operator 3</span>
+                                    <span class="choice-span sms-span">Operator 4</span>
+                                    <span class="choice-span sms-span">+3</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="group-table d-none">
                               <table>
                                 <thead>
                                   <tr>
@@ -1758,6 +1954,124 @@
                                 </tbody>
                               </table>
                             </div>
+
+                            <!-- TARRIF-TABLE-BOX-START -->
+                            <div class="tarrif-table-box d-block">
+                              <table>
+                                <!-- THEAD-START -->
+                                <thead>
+                                  <tr>
+                                    <th class="bold f-col-black f-sz-12 head-tr" rowspan="2">Owner</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="home">MO Home</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="local">MO Local</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="row">MO Row</th>
+                                  </tr>
+                                  <tr class="sub-row-head">
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="home">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="home">Charge</th>
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="local">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="local">Charge</th>
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="row">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="row">Charge</th>
+                                  </tr>
+                                </thead>
+                                <!-- THEAD-START -->
+
+                                <!-- THEAD-BODY START-->
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <h3 class="f-sz-12">OPCO</h3>
+                                      <div class="drp-box d-flex flex-column justify-content-between">
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12 rate-drp">
+                                            <option value="france">Rate Currency</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12">
+                                            <option value="france">Increemental Unit</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12 rate-drp">
+                                            <option value="france">Rate Currency</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                      </div>
+                                    </td>
+                                    <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                    </td>
+                                    <td class="charge-td" data-charge="home">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div>                                    
+                                  </td>
+                                  <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                    </td>
+                                    <td class="charge-td" data-charge="local">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div>                                    
+                                  </td>
+                                  <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                      <a href="javascript:void(0)" data-toggle="modal" data-target="#cost-currency" class="cost-currency-anch">Define High<br> Cost Destination</a>
+                                    </td>
+                                    <td class="charge-td" data-charge="row">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div> 
+
+                                  </td>
+                                  </tr>
+                                </tbody>
+                                <!-- THEAD-BODY END-->
+
+                              </table>
+                            </div>  
+                            <!-- TARRIF-TABLE-BOX-END -->
                           </div>
                           <!-- TOP-BOX-END -->
                           <!-- TOP-BOX-END -->
@@ -2499,20 +2813,6 @@
                             </div>
                             <!-- CONFIGURE-INNER-ITEMS-END -->
                             <!-- CONFIGURE-INNER-ITEMS-START -->
-                            <div class="configure-inner-items blend-box">
-                              <h3 class="s-bold f-sz-14 f-col-black">Blended Voice</h3>
-                              <div class="list-2 wd-md">
-                                <div class="switch-box">
-                                  Yes
-                                  <label class="switch">
-                                    <input type="checkbox" class="switch-checkbox" name="blend-voice">
-                                    <span class="slider1 round"></span>
-                                  </label>No
-                                </div>
-                              </div>
-                            </div>
-                            <!-- CONFIGURE-INNER-ITEMS-END -->
-                            <!-- CONFIGURE-INNER-ITEMS-START -->
                             <div class="configure-inner-items align-self-center split-mo-box">
                               <div class="check-box box1">
                                 <label class="checkbox-container f-sz-14 f-col-black s-bold">Split MO
@@ -2726,8 +3026,27 @@
                             </div>
                           </div>
                           <!-- TOP-BOX-END -->
+                                                    <!-- TOP-BOX-END -->
                           <div class="top-box table-box flat-table">
-                            <div class="group-table">
+                            <div class="common-cost-cur-box">
+                              <a href="javascript:void(0)" class="cust-btn pos-btn" data-toggle="modal" data-target="#cost-rate-pop">Add common cost and rate curency for all</a>
+                            </div>
+                            <div class="top-box operator-tab-choice">
+                              <!-- CONFIGURE-INNER-ITEMS-START -->
+                              <div class="configure-inner-items ">
+                                <h3 class="s-bold f-sz-14 f-col-black">Select Partner</h3>
+                                <div class=" list-2 wd-md">
+                                  <div class="chocie-box">
+                                    <span class="choice-span mo-span active">Operator 1</span>
+                                    <span class="choice-span mt-span">Operator 2</span>
+                                    <span class="choice-span data-span">Operator 3</span>
+                                    <span class="choice-span sms-span">Operator 4</span>
+                                    <span class="choice-span sms-span">+3</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="group-table d-none">
                               <table>
                                 <thead>
                                   <tr>
@@ -2830,6 +3149,124 @@
                                 </tbody>
                               </table>
                             </div>
+
+                            <!-- TARRIF-TABLE-BOX-START -->
+                            <div class="tarrif-table-box d-block">
+                              <table>
+                                <!-- THEAD-START -->
+                                <thead>
+                                  <tr>
+                                    <th class="bold f-col-black f-sz-12 head-tr" rowspan="2">Owner</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="home">MO Home</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="local">MO Local</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="row">MO Row</th>
+                                  </tr>
+                                  <tr class="sub-row-head">
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="home">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="home">Charge</th>
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="local">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="local">Charge</th>
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="row">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="row">Charge</th>
+                                  </tr>
+                                </thead>
+                                <!-- THEAD-START -->
+
+                                <!-- THEAD-BODY START-->
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <h3 class="f-sz-12">OPCO</h3>
+                                      <div class="drp-box d-flex flex-column justify-content-between">
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12 rate-drp">
+                                            <option value="france">Rate Currency</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12">
+                                            <option value="france">Increemental Unit</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12 rate-drp">
+                                            <option value="france">Rate Currency</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                      </div>
+                                    </td>
+                                    <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                    </td>
+                                    <td class="charge-td" data-charge="home">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div>                                    
+                                  </td>
+                                  <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                    </td>
+                                    <td class="charge-td" data-charge="local">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div>                                    
+                                  </td>
+                                  <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                      <a href="javascript:void(0)" data-toggle="modal" data-target="#cost-currency" class="cost-currency-anch">Define High<br> Cost Destination</a>
+                                    </td>
+                                    <td class="charge-td" data-charge="row">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div> 
+
+                                  </td>
+                                  </tr>
+                                </tbody>
+                                <!-- THEAD-BODY END-->
+
+                              </table>
+                            </div>  
+                            <!-- TARRIF-TABLE-BOX-END -->
                           </div>
                           <!-- TOP-BOX-END -->
                           <!-- TOP-BOX-END -->
@@ -3572,20 +4009,6 @@
                             </div>
                             <!-- CONFIGURE-INNER-ITEMS-END -->
                             <!-- CONFIGURE-INNER-ITEMS-START -->
-                            <div class="configure-inner-items blend-box">
-                              <h3 class="s-bold f-sz-14 f-col-black">Blended Voice</h3>
-                              <div class="list-2 wd-md">
-                                <div class="switch-box">
-                                  Yes
-                                  <label class="switch">
-                                    <input type="checkbox" class="switch-checkbox" name="blend-voice">
-                                    <span class="slider1 round"></span>
-                                  </label>No
-                                </div>
-                              </div>
-                            </div>
-                            <!-- CONFIGURE-INNER-ITEMS-END -->
-                            <!-- CONFIGURE-INNER-ITEMS-START -->
                             <div class="configure-inner-items align-self-center split-mo-box">
                               <div class="check-box box1">
                                 <label class="checkbox-container f-sz-14 f-col-black s-bold">Split MO
@@ -3714,7 +4137,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -3730,7 +4153,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -3761,7 +4184,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -3777,7 +4200,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -3799,8 +4222,27 @@
                             </div>
                           </div>
                           <!-- TOP-BOX-END -->
+                                                    <!-- TOP-BOX-END -->
                           <div class="top-box table-box flat-table">
-                            <div class="group-table">
+                            <div class="common-cost-cur-box">
+                              <a href="javascript:void(0)" class="cust-btn pos-btn" data-toggle="modal" data-target="#cost-rate-pop">Add common cost and rate curency for all</a>
+                            </div>
+                            <div class="top-box operator-tab-choice">
+                              <!-- CONFIGURE-INNER-ITEMS-START -->
+                              <div class="configure-inner-items ">
+                                <h3 class="s-bold f-sz-14 f-col-black">Select Partner</h3>
+                                <div class=" list-2 wd-md">
+                                  <div class="chocie-box">
+                                    <span class="choice-span mo-span active">Operator 1</span>
+                                    <span class="choice-span mt-span">Operator 2</span>
+                                    <span class="choice-span data-span">Operator 3</span>
+                                    <span class="choice-span sms-span">Operator 4</span>
+                                    <span class="choice-span sms-span">+3</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="group-table d-none">
                               <table>
                                 <thead>
                                   <tr>
@@ -3903,6 +4345,124 @@
                                 </tbody>
                               </table>
                             </div>
+
+                            <!-- TARRIF-TABLE-BOX-START -->
+                            <div class="tarrif-table-box d-block">
+                              <table>
+                                <!-- THEAD-START -->
+                                <thead>
+                                  <tr>
+                                    <th class="bold f-col-black f-sz-12 head-tr" rowspan="2">Owner</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="home">MO Home</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="local">MO Local</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="row">MO Row</th>
+                                  </tr>
+                                  <tr class="sub-row-head">
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="home">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="home">Charge</th>
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="local">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="local">Charge</th>
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="row">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="row">Charge</th>
+                                  </tr>
+                                </thead>
+                                <!-- THEAD-START -->
+
+                                <!-- THEAD-BODY START-->
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <h3 class="f-sz-12">OPCO</h3>
+                                      <div class="drp-box d-flex flex-column justify-content-between">
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12 rate-drp">
+                                            <option value="france">Rate Currency</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12">
+                                            <option value="france">Increemental Unit</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12 rate-drp">
+                                            <option value="france">Rate Currency</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                      </div>
+                                    </td>
+                                    <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                    </td>
+                                    <td class="charge-td" data-charge="home">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div>                                    
+                                  </td>
+                                  <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                    </td>
+                                    <td class="charge-td" data-charge="local">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div>                                    
+                                  </td>
+                                  <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                      <a href="javascript:void(0)" data-toggle="modal" data-target="#cost-currency" class="cost-currency-anch">Define High<br> Cost Destination</a>
+                                    </td>
+                                    <td class="charge-td" data-charge="row">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div> 
+
+                                  </td>
+                                  </tr>
+                                </tbody>
+                                <!-- THEAD-BODY END-->
+
+                              </table>
+                            </div>  
+                            <!-- TARRIF-TABLE-BOX-END -->
                           </div>
                           <!-- TOP-BOX-END -->
                           <!-- TOP-BOX-END -->
@@ -3929,7 +4489,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -3955,7 +4515,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -3981,7 +4541,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4047,7 +4607,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4063,7 +4623,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4079,7 +4639,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4095,7 +4655,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4126,7 +4686,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4142,7 +4702,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4158,7 +4718,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4174,7 +4734,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4358,7 +4918,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4374,7 +4934,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4420,7 +4980,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4446,7 +5006,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4472,7 +5032,7 @@
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
-                                        <span class="inner-iot-label">Set-up Cost</span>
+                                        <span class="inner-iot-label">PDP Activation Cost</span>
                                         <input type="text" class="agree-input">
                                       </div>
                                       <div class="inner-iot-box">
@@ -4640,20 +5200,6 @@
                                   <option value="tiered">Monthly</option>
                                   <option value="slide">Yearly</option>
                                 </select>
-                              </div>
-                            </div>
-                            <!-- CONFIGURE-INNER-ITEMS-END -->
-                            <!-- CONFIGURE-INNER-ITEMS-START -->
-                            <div class="configure-inner-items blend-box">
-                              <h3 class="s-bold f-sz-14 f-col-black">Blended Voice</h3>
-                              <div class="list-2 wd-md">
-                                <div class="switch-box">
-                                  Yes
-                                  <label class="switch">
-                                    <input type="checkbox" class="switch-checkbox" name="blend-voice">
-                                    <span class="slider1 round"></span>
-                                  </label>No
-                                </div>
                               </div>
                             </div>
                             <!-- CONFIGURE-INNER-ITEMS-END -->
@@ -4871,8 +5417,27 @@
                             </div>
                           </div>
                           <!-- TOP-BOX-END -->
+                                                    <!-- TOP-BOX-END -->
                           <div class="top-box table-box flat-table">
-                            <div class="group-table">
+                            <div class="common-cost-cur-box">
+                              <a href="javascript:void(0)" class="cust-btn pos-btn" data-toggle="modal" data-target="#cost-rate-pop">Add common cost and rate curency for all</a>
+                            </div>
+                            <div class="top-box operator-tab-choice">
+                              <!-- CONFIGURE-INNER-ITEMS-START -->
+                              <div class="configure-inner-items ">
+                                <h3 class="s-bold f-sz-14 f-col-black">Select Partner</h3>
+                                <div class=" list-2 wd-md">
+                                  <div class="chocie-box">
+                                    <span class="choice-span mo-span active">Operator 1</span>
+                                    <span class="choice-span mt-span">Operator 2</span>
+                                    <span class="choice-span data-span">Operator 3</span>
+                                    <span class="choice-span sms-span">Operator 4</span>
+                                    <span class="choice-span sms-span">+3</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="group-table d-none">
                               <table>
                                 <thead>
                                   <tr>
@@ -4975,6 +5540,124 @@
                                 </tbody>
                               </table>
                             </div>
+
+                            <!-- TARRIF-TABLE-BOX-START -->
+                            <div class="tarrif-table-box d-block">
+                              <table>
+                                <!-- THEAD-START -->
+                                <thead>
+                                  <tr>
+                                    <th class="bold f-col-black f-sz-12 head-tr" rowspan="2">Owner</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="home">MO Home</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="local">MO Local</th>
+                                    <th class="bold f-col-black f-sz-12 head-tr" colspan="" data-col="row">MO Row</th>
+                                  </tr>
+                                  <tr class="sub-row-head">
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="home">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="home">Charge</th>
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="local">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="local">Charge</th>
+                                    <th class="f-col-black f-sz-12 l-pad-0" data-tarrif="row">Tariff <a href="javascript:void(0)" class="tarrif-icon"></a></th>
+                                    <th class="f-col-black f-sz-12 charge-td" data-charge="row">Charge</th>
+                                  </tr>
+                                </thead>
+                                <!-- THEAD-START -->
+
+                                <!-- THEAD-BODY START-->
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <h3 class="f-sz-12">OPCO</h3>
+                                      <div class="drp-box d-flex flex-column justify-content-between">
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12 rate-drp">
+                                            <option value="france">Rate Currency</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12">
+                                            <option value="france">Increemental Unit</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                        <!-- FILTER-LIST-ITEMS-START -->
+                                        <div class="filter-list-items list-2 wd-md">
+                                          <select class="list-partner f-sz-12 rate-drp">
+                                            <option value="france">Rate Currency</option>
+                                          </select>
+                                        </div>
+                                        <!-- FILTER-LIST-ITEMS-END -->
+
+                                      </div>
+                                    </td>
+                                    <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                    </td>
+                                    <td class="charge-td" data-charge="home">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div>                                    
+                                  </td>
+                                  <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                    </td>
+                                    <td class="charge-td" data-charge="local">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div>                                    
+                                  </td>
+                                  <td class="tarrif-td">
+                                      <div class="group-inp-iner">
+                                        <span class="f-sz-12">IOT</span>
+                                        <input type="text" class="group-tab-inp custom-inp">
+                                      </div>
+                                      <a href="javascript:void(0)" data-toggle="modal" data-target="#cost-currency" class="cost-currency-anch">Define High<br> Cost Destination</a>
+                                    </td>
+                                    <td class="charge-td" data-charge="row">
+                                      <div class="input-box iot-box agree-box">
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Set-up</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                        <div class="inner-iot-box">
+                                          <span class="inner-iot-label f-sz-12">Add</span>
+                                          <input type="text" class="agree-input">
+                                        </div>
+                                    </div> 
+
+                                  </td>
+                                  </tr>
+                                </tbody>
+                                <!-- THEAD-BODY END-->
+
+                              </table>
+                            </div>  
+                            <!-- TARRIF-TABLE-BOX-END -->
                           </div>
                           <!-- TOP-BOX-END -->
                           <!-- TOP-BOX-END -->
@@ -5739,12 +6422,17 @@
                           </div>
                         </div>
                         <!-- DEAL-PANE-INNER-END -->
+                        
                         <!-- DEAL-PANE-INNER-START -->
+
                         <div class="deal-pane-inner deal-commitment">
                           <div class="tab-pane tab-nf-child container active" id="current-deal">
                             <div class="main-heading d-flex justify-content-between align-items-start">
                               <div class="deal-data-inner">
                                 <h3 class="f-sz-16 f-col-black sub-head">Commitment</h3>
+                                <div class="blended-com-text">
+                                  <h3 class="f-sz-13 f-col-black sub-head">Blended</h3>
+                                </div>
                                 <h3 class="deal-label f-col-grey f-sz-12">Revenue</h3>
                                 <div class="comittment-box">
                                   <div class="mo-commit">
@@ -6234,6 +6922,209 @@
       </div>
     </div>
   </div>
+
+    <!-- The Modal -->
+  <div class="modal cost-currency-modal" id="cost-currency">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <h3 class="f-sz-18 bold high-cost-head">High Cost Destination</h3>
+        <div class="inner-main-box d-flex justify-content-between">  
+          <div class="inner-box deal-st">
+            <div class="list-3 multiselect-dropdowns deal-creation-multi d-flex align-items-end">
+              <h3 class="f-sz-14 bold">Country</h3>
+              <select class="list-partner" id="multi-dropdown-list" multiple="multiple">
+                <option value="AFGAR">Spain</option>
+                <option value="CYPOC">Brazil</option>
+              </select>
+            </div>
+          </div>
+          <div class="inner-box deal-st">
+            <div class="list-3 multiselect-dropdowns deal-creation-multi d-flex align-items-end">
+              <h3 class="f-sz-14 bold">IOT(AED)</h3>
+              <select class="list-partner" id="multi-dropdown-list" multiple="multiple">
+                <option value="AFGAR">Spain</option>
+                <option value="CYPOC">Brazil</option>
+              </select>
+            </div>
+          </div>
+          <div class="inner-box deal-st">
+            <div class="check-box box1">
+              <label class="checkbox-container f-sz-13 f-col-black bold">Standard IOT Rates
+                <input type="checkbox" class="custom-check">
+                <span class="checkmark-check"></span>
+              </label>
+            </div>
+          </div>
+          <div class="btn-box d-flex justify-content-center">
+            <a href="javascript:void(0)" class="btn cust-btn f-sz-14 pos-btn count-table">
+              Apply
+            </a>
+          </div>
+        </div>
+        <div class="pop-tab d-none"> 
+          <div class="top-box table-box d-block">
+            <table class="common-small-table">
+              <thead>
+                <tr class="">
+                  <th>
+                    <div class="check-box box1">
+                      <div class="check-box box1">
+                      <h3 class="checkbox-container f-sz-13 f-col-black bold">Country
+                      </h3>
+                    </div>
+                    </div>
+                  </th>
+                  <th class="subth1" colspan="1">Cost</th>
+                  <th class="subth1" colspan="2">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="check-box box1">
+                      <h3 class="checkbox-container f-sz-13 f-col-black bold">Afghanistan
+                      </h3>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-box agree-box">
+                      <input type="text" class="agree-input">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="check-box box1">
+                      <label class="checkbox-container f-sz-13 f-col-black bold">Add Other Cost
+                        <input type="checkbox" class="custom-check">
+                        <span class="checkmark-check"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <img src="images/icon-2.png" alt="" class="delete-img">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="check-box box1">
+                      <h3 class="checkbox-container f-sz-13 f-col-black bold">Bahrain
+                      </h3>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-box agree-box">
+                      <input type="text" class="agree-input">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="check-box box1">
+                      <label class="checkbox-container f-sz-13 f-col-black bold">Add Other Cost
+                        <input type="checkbox" class="custom-check">
+                        <span class="checkmark-check"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <img src="images/icon-2.png" alt="" class="delete-img">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- The Modal -->
+  <div class="modal" id="cost-rate-pop">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <h3 class="f-sz-18 bold high-cost-head">Add common cost & currency</h3>
+        <div class="cost-cont-box">
+          <div class="const-cont-inner">
+            <div class="inner-box deal-st">
+              <div class="list-3 multiselect-dropdowns deal-creation-multi d-flex align-items-end">
+                <h3 class="f-sz-14 bold">MO Home</h3>
+                <select class="list-partner" id="multi-dropdown-list" multiple="multiple">
+                  <option value="AFGAR" selected>Rate Currency</option>
+                  <option value="CYPOC">Brazil</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-box d-flex justify-content-between">
+                <div class="inner-iot-box d-flex flex-column">
+                  <span class="inner-iot-label f-sz-12 s-bold">IOT</span>
+                  <input type="text" class="agree-input">
+                </div>
+                <div class="inner-iot-box d-flex flex-column">
+                  <span class="inner-iot-label f-sz-12 s-bold">Set-up Charge</span>
+                  <input type="text" class="agree-input">
+                </div>
+                <div class="inner-iot-box d-flex flex-column">
+                  <span class="inner-iot-label f-sz-12 s-bold">Additional Charge</span>
+                  <input type="text" class="agree-input">
+                </div>
+            </div>
+          </div>
+          <div class="const-cont-inner">
+            <div class="inner-box deal-st">
+              <div class="list-3 multiselect-dropdowns deal-creation-multi d-flex align-items-end">
+                <h3 class="f-sz-14 bold">MO Home</h3>
+                <select class="list-partner" id="multi-dropdown-list" multiple="multiple">
+                  <option value="AFGAR" selected>Rate Currency</option>
+                  <option value="CYPOC">Brazil</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-box d-flex justify-content-between">
+                <div class="inner-iot-box d-flex flex-column">
+                  <span class="inner-iot-label f-sz-12 s-bold">IOT</span>
+                  <input type="text" class="agree-input">
+                </div>
+                <div class="inner-iot-box d-flex flex-column">
+                  <span class="inner-iot-label f-sz-12 s-bold">Set-up Charge</span>
+                  <input type="text" class="agree-input">
+                </div>
+                <div class="inner-iot-box d-flex flex-column">
+                  <span class="inner-iot-label f-sz-12 s-bold">Additional Charge</span>
+                  <input type="text" class="agree-input">
+                </div>
+            </div>
+          </div>
+          <div class="const-cont-inner">
+            <div class="inner-box deal-st">
+              <div class="list-3 multiselect-dropdowns deal-creation-multi d-flex align-items-end">
+                <h3 class="f-sz-14 bold">MO Home</h3>
+                <select class="list-partner" id="multi-dropdown-list" multiple="multiple">
+                  <option value="AFGAR" selected>Rate Currency</option>
+                  <option value="CYPOC">Brazil</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-box d-flex justify-content-between">
+                <div class="inner-iot-box d-flex flex-column">
+                  <span class="inner-iot-label f-sz-12 s-bold">IOT</span>
+                  <input type="text" class="agree-input">
+                </div>
+                <div class="inner-iot-box d-flex flex-column">
+                  <span class="inner-iot-label f-sz-12 s-bold">Set-up Charge</span>
+                  <input type="text" class="agree-input">
+                </div>
+                <div class="inner-iot-box d-flex flex-column">
+                  <span class="inner-iot-label f-sz-12 s-bold">Additional Charge</span>
+                  <input type="text" class="agree-input">
+                </div>
+            </div>
+          </div>
+          <div class="btn-box d-flex justify-content-center">
+            <a href="javascript:void(0)" class="btn cust-btn f-sz-14 pos-btn count-table">
+              Apply
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Latest compiled and minified bootstrap js -->
@@ -6489,12 +7380,14 @@
         $(".individual-group-check").removeClass("d-flex");
         $(".individual-group-check").addClass("d-none");
         $(".comm-drag-container").addClass("group-icon-show");
+        $(".deal-st").addClass("group-icon-show");
+
       } else if (radioValue == "indi") {
         $(".group-check").hide();
         $(".individual-group-check").addClass("d-flex");
         $(".individual-group-check").removeClass("d-none");
 
-        $(".comm-drag-container").removeClass("group-icon-show");
+        $(".deal-st").removeClass("group-icon-show");
       }
     }
 
@@ -6564,7 +7457,11 @@
       $(".mt-span").removeClass("d-none");
       $(".mo-span").addClass("d-flex");
       $(".mt-span").addClass("d-flex");
-      
+
+      $(".mo-deal-tab-btn").find(".merge-tab").hide();
+      $(".mt-deal-tab-btn").find(".merge-tab").show();
+      $(".blended-com-text").hide();
+            
     } else {
       $(".mo-mt-span").removeClass("d-none");
       $(".mo-mt-span").addClass("d-flex");
@@ -6575,13 +7472,20 @@
       $(".mt-span").addClass("d-none");
       $(".mt-span").removeClass("d-flex");
       
+      
+      $(".mo-deal-tab-btn").find(".merge-tab").show();
+      $(".mt-deal-tab-btn").find(".merge-tab").hide();
+
+      $(".blended-com-text").show();
+
     }
   });
 
 
   $(document).ready(function() {
-    $('#multi-dropdown-list').multiselect({
+    $('div [multiple]').multiselect({
       includeSelectAllOption: true,
+      nonSelectedText: 'Select Countries',
       numberDisplayed: 1,
       templates: { // Use the Awesome Bootstrap Checkbox structure
         li: '<li class="checkList"><a tabindex="0"><div class="aweCheckbox aweCheckbox-danger"><label for=""></label></div></a></li>'
@@ -6608,7 +7512,17 @@
       });
 
     });
+    $(".tarrif-icon").click(function(){
+      var data = $(this).closest("th").data("tarrif");
+      $("th[data-col]").prop("colspan","1");
+      $(".charge-td[data-charge]").hide();
+      $("th[data-col="+data+"]").prop("colspan","2");
+      $(".charge-td[data-charge="+data+"]").show();
+    });
+  });
 
+  $(".count-table").click(function(){
+    $(".pop-tab").removeClass("d-none").addClass("d-block");
   });
   </script>
 </body>

@@ -88,7 +88,6 @@
   top: 4px;
   left: 4px;
   border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -218,7 +217,6 @@
 /*DRAGGABLE CONTAINER START*/
 .drag-head-box
 {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -287,7 +285,6 @@
   width: 47.4%;
   border-radius: 5px;
   border: 1px solid #e6e5e5;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -349,7 +346,6 @@
 .comm-drag-container.data-show .data-box,
 .comm-drag-container.mo-mt-show .mo-mt-box
  {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -389,7 +385,6 @@
 }
 
 .deal-data-box {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -431,7 +426,8 @@
   height: 10px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
 }
 
 /*CONFIGURE-BOX-START*/
@@ -849,14 +845,14 @@ width: auto;
 /*group-flow*/
   .group-check .filter-list-items .list-partner{
     width: 120px;
-    padding: 6px 12px 7px 15px;}
+    padding: 8px 12px 8px 15px;
+  }
 .group-check-detail-box
 {
   flex-direction: column;
 }
 .group-inp-iner
 {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -903,10 +899,13 @@ width: auto;
 }
 .group-check-detail-box table tr td,
 .group-check-detail-box table tr th,
-.flat-table table tr td,
 .flat-table table tr th
 {border:1px solid #e6e5e5;
   background:#f5f5f5; 
+}
+.flat-table table tr td
+{
+  border:1px solid #e6e5e5;
 }
 .group-check-detail-box table tbody td,
 .flat-table table tbody td
@@ -948,7 +947,6 @@ width: auto;
 }
 .table-box.active
 {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -978,7 +976,6 @@ width: auto;
 .general-data-box.data-box.iot-select .split-mo-box,
 .general-data-box.data-box.slide-select .split-mo-box
 {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1038,7 +1035,8 @@ width: auto;
   top:-10px;
   font-size: 10px;
   left:80%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 1;
 }
 .limit-box:after
@@ -1050,7 +1048,8 @@ width: auto;
   position: absolute;
   left: 50%;
     position: absolute;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 .progress-bar:after
 {
@@ -1059,7 +1058,8 @@ width: auto;
     top: -10px;
     color: #000;
     left: 100%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     font-size: 10px;
 
 }
@@ -1085,7 +1085,6 @@ width: auto;
 }
 .inp-box-vp
 {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1116,7 +1115,6 @@ width: auto;
 }
 .opco-mid-box
 {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1131,7 +1129,6 @@ width: auto;
 
 .opco-lower-box
 {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1235,7 +1232,6 @@ width: auto;
  }
  .own-drp
  {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1339,7 +1335,6 @@ width: auto;
 }
 .general-data-box.data-box .r-cur-box
 {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1375,7 +1370,6 @@ width: auto;
 .general-data-box.data-box.rev-th-select .scheme-tab-choice,
 .general-data-box.data-box.mo-dep-select .scheme-tab-choice
 {
-display: -webkit-flex;
 display: -moz-flex;
 display: -ms-flex;
 display: -o-flex;
@@ -1405,26 +1399,35 @@ display: flex;
         border-radius: 5px;
   }
 .deal-st .settlementCountryPopupFlag,
-.deal-st .settlementOrangeCountryPopupFlag
+.deal-st .settlementOrangeCountryPopupFlag,
+.deal-st #countryPopup
 {
       position: absolute;
     top: 40px;
-    left: -600px;
+    left: -350px;
     width:800px;
 }
-.deal-st .settlementCountryPopupFlag  #mCSB_1_container,
-.deal-st .settlementOrangeCountryPopupFlag #mCSB_2_container
+.deal-st .countryFlagDiv  .mCSB_container,
+.deal-st .countryFlagDiv .mCSB_container,
+.deal-st #countryPopup .mCSB_container
 {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
   justify-content: space-between;
 }
-.deal-st .settlementCountryPopupFlag  #mCSB_1_container>div
+.deal-st .countryPopupMainDiv
+{
+  overflow: hidden;
+}
+.deal-st .countryFlagDiv  .mCSB_container > div
 {
   margin-right:20px;
+}
+.deal-st .settlementCountryPopupFlag::before
+{
+  left:50%;
 }
 .deal-st .settlementOrangeCountryPopupFlag
 {
@@ -1487,7 +1490,6 @@ display: flex;
 {
   width: 100%;
   border:none;
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1537,7 +1539,6 @@ text-align: center;
 }
 .mo-commit
 {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1558,3 +1559,215 @@ text-align: center;
  {
   display: none;
  }
+ .or-span
+ {
+  margin-right:10px;
+ }
+ .opco-drp
+ {
+  position: relative;
+    margin-top: 15px;
+
+ }
+  .opco-drp #countryPopup::before
+  {
+    right:auto;
+    left:20px;
+  }
+  .deal-st #countryPopup
+  {
+    left: 10px;
+  }
+  .deal-st .rightTopDropdownUl
+  {
+    border: 1px solid lightgrey;
+    padding: 12px 10px 9px 10px;
+    cursor: pointer;
+    color: #888888;
+    font-size: 13px;
+    font-family: 'OpenSans-regular';
+    height: 30px;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 0;
+    margin-top: -7px;
+  }
+
+
+  /*BLended-TEXT*/
+  .blended-com-text
+  {
+    display: none;
+  }
+ .tarrif-table-box .drp-box .filter-list-items
+ {
+  max-width:100%;
+  margin-bottom:10px;
+ }
+ .tarrif-table-box .filter-list-items .list-partner
+ {
+  width: 145px;
+  padding-right:20px
+ }
+
+ .tarrif-table-box .filter-list-items .list-partner::after
+{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: url(../images/sprite.png) no-repeat;
+    background-position: -311px -17px;
+    top: 8px;
+    right: 13px;
+    pointer-events: none;
+}
+.tarrif-table-box .group-inp-iner
+{
+  padding:0 10px;
+}
+.tarrif-table-box .filter-list-items::after
+{
+  right: 21%;
+}
+.charge-td
+{
+  display: none;
+}
+.group-inp-iner
+{
+  display: flex;
+  justify-content: space-around;
+}
+.group-inp-iner
+{
+  flex-direction: column;
+}
+.group-inp-iner span
+{
+  margin-bottom:10px;
+}
+.tarrif-icon
+{
+ position: relative; 
+ width:10px;
+ height:10px;
+ background: red;
+}
+.tarrif-icon:after
+{
+ position: absolute; 
+  content:"";
+  width: 8px;
+  height: 8px;
+  left:10px;
+  border-top:1px solid #11151c;
+  border-right:1px solid #11151c;
+  opacity: 0.2;
+  transform: rotate(45deg);
+  top:5px;
+
+}
+.top-box.table-box .tarrif-table-box .charge-td
+{
+  padding:0 10px;
+}
+.cost-currency-anch
+{
+   color: #3484f3;
+   font-size: 11px;
+   position: absolute;
+       width: 100%;
+    left: 0;
+    bottom: 20px;
+}
+.tarrif-td
+{
+  position: relative;
+}
+.flat-table .pos-btn
+{
+  font-size: 14px;
+}
+
+/*HIGH-COST-POP*/
+.high-cost-head
+{
+      padding-bottom: 20px;
+      margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+    border-bottom:1px solid #c8c9ca;
+  }
+.cost-currency-modal .multiselect-dropdowns .btn
+{
+  padding: 5px 12px 4px 15px;
+   font-size: 13px;
+}
+.inner-box.deal-st h3
+{
+  margin-right:10px;
+}
+.cost-currency-modal .modal-dialog
+{
+  max-width: 895px;
+}
+.cost-currency-modal .modal-content
+{
+  padding:0 40px;
+  padding-bottom:30px;
+}
+.cost-currency-modal .btn-box
+{
+  margin:0;
+}
+.cost-currency-modal .checkbox-container
+{
+  margin-left:0;
+}
+#cost-rate-pop .modal-content
+{
+  padding:0px 20px 20px;
+}
+.const-cont-inner
+{
+  padding-bottom:10px;
+  margin-bottom:20px;
+  border-bottom:1px solid #c8c9ca ;
+}
+#cost-rate-pop .multiselect-dropdowns 
+{
+  margin-bottom: 10px;
+}
+#cost-rate-pop .inner-iot-label
+{margin-bottom: 10px;}
+#cost-rate-pop .multiselect-dropdowns .btn
+{
+  height:30px;
+  max-width:130px;
+}
+#cost-rate-pop .agree-input
+{
+ height:30px;
+  max-width:88px; 
+}
+#cost-rate-pop .modal-dialog
+{
+  max-width: 429px;
+}
+#cost-rate-pop .inner-iot-box
+{
+  align-items:center;
+}
+.deal-st .operator-tab-choice
+{
+  display: none;
+}
+.deal-st.group-icon-show .operator-tab-choice
+{
+  display: block;
+}
+.tarrif-table-box
+{margin-top:20px
+}
