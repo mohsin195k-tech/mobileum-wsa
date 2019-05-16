@@ -1245,3 +1245,202 @@ left: 0;
 	#graph-popup .modal-dialog { max-width: 880px }
 	.group-lable { font-size: 13px; margin-right: 10px }
 	.align-items { align-items: center; }
+
+	/* summarydashboard css 15/5/2019 */
+	#countryPopup .countryPopupMainDiv {
+		overflow-y: scroll;
+		overflow-x: hidden;
+		flex-direction: column;
+		height: 265px;
+	}
+	#countryPopup .countryPopupMainDiv > div{
+		margin-right: 0;
+		flex-direction: row;
+	}
+	#countryPopup .width15 {
+		margin-right: 30px;
+		max-width: 135px;
+	}
+	#countryPopup .countryPopupMainDiv .d-flex img {
+		margin: 0 auto;
+	}
+	.countryPopupFlag .countryPopupMainDiv,.settlementCountryPopupFlag .countryPopupMainDiv{
+		width: 100%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		flex-direction: column;
+		height: 265px;
+	}
+	.countryPopupFlag .countryPopupMainDiv > div,.settlementCountryPopupFlag .countryPopupMainDiv > div{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-right: 0;
+	}
+	.countryPopupFlag .width15,.settlementCountryPopupFlag .width15{
+		margin-right: 30px;
+	}
+	.countryPopupFlag .width15:last-child,.settlementCountryPopupFlag .width15:last-child{
+		margin-right: 0;
+	}
+
+	.settlementOrangeCountryPopupFlag .gb-horizontal-scroll {
+		width: 100%;
+		overflow-x: hidden;
+		flex-direction: column;
+	}
+	.settlementOrangeCountryPopupFlag .countryPopupMainDiv > div {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-right: 0;
+		flex-wrap: wrap;
+	}
+	.settlementOrangeCountryPopupFlag .width15 {
+		margin-right: 30px;
+		max-width: 175px;
+	}
+	.settlementOrangeCountryPopupFlag  .width15:last-child{
+		margin-right: 0;
+	}
+	.settlementgenerate-graph-wrapper .france-graph {
+		width: 100%;
+	}
+	.settlementgenerate-graph-wrapper .highcharts-container {
+		margin: 0 auto;
+	}
+	.legends{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.legends span{
+		color: #74829c;
+		font-size: 11px;
+		margin: 10px 15px;
+		position: relative;
+	}
+	.legends span:before {
+		content: "";
+		background-color: #f15454;
+		border-radius: 10px;
+		width: 5px;
+		height: 5px;
+		position: absolute;
+		top: 5px;
+		left: -15px;
+	}
+	.legends span+span:before{
+		content: "";
+		background-color: #9de584;
+		border-radius: 10px;
+		width: 5px;
+		height: 5px;
+		position: absolute;
+		top: 5px;
+		left: -15px;
+	}
+	.france-graph-dtls{
+		position: relative;
+	}
+
+	.france-graph{
+		height: 400px;
+	}
+	.servies-tie-wrapper.revenue-budget-map{
+		position: absolute;
+		width: 100%;
+		left: 50%;
+		bottom: -100px;
+		transform: translateX(-50%);
+		margin: 0 auto;
+	}
+	 
+	.servies-tie-wrapper.revenue-budget-map  .statics-reveune {
+		height: auto;
+		border-radius: 0;
+		padding: 0;
+		margin: 0;
+	}
+	.servies-tie-wrapper.revenue-budget-map  .statics-box {
+		display: flex;
+		align-items: center;
+		justify-content: center!important;
+	}
+	.servies-tie-wrapper.revenue-budget-map .statics-box .detail-sect {
+		padding-top: 0;
+		position: relative;
+		padding: 0;
+		width: max-content !important;
+		margin-right: 80px;
+	}
+	.servies-tie-wrapper.revenue-budget-map .statics-box .detail-sect:last-child{
+		margin-right: 0;
+	}
+	.servies-tie-wrapper.revenue-budget-map .detail-sect h3 {
+		font-size: 16px !important;
+		margin: 0;
+		font-family: 'OpenSans-Semibold' !important;
+		color: #2a3541 !important;
+	}
+	
+	.servies-tie-wrapper.revenue-budget-map .detail-sect h5 {
+		font-size: 14px;
+		color: rgba(42, 53, 65, 0.7);
+		padding-top: 0;
+	}
+	.detail-sect.up-green h3.uparrow-green-text{
+		color: #588f27 !important;
+		margin-right: 20px;
+		vertical-align: baseline;
+		font-size: 18px !important;
+	}
+
+	.detail-sect.down-red h3.downarrow-red-text{
+		color: #ef3e0f !important;
+		margin-right: 20px;
+		vertical-align: baseline;
+		display: inline-block;
+		font-size: 18px !important;
+	}
+	.detail-sect.down-red h3.downarrow-red-text .down-arrow {
+		bottom: 10px;
+		left: 45px;
+	}
+	.detail-sect.bottom-red.down-red h3.downarrow-red-text .down-arrow {
+		bottom: 3px;
+		left: 45px;
+	}
+	.servies-tie-wrapper.revenue-budget-map .detail-sect .percentage-dollars{
+		display: inline-block;
+	}
+	.servies-tie-wrapper.revenue-budget-map .grph-notication p {
+		font-size: 12px;
+	}
+	.servies-tie-wrapper.revenue-budget-map .grph-notication {
+		padding: 15px 0 0;
+	}
+	/* .orangeCountryPopupFlag .countryPopupMainDiv{
+		width: 100%;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		flex-direction: column;
+		height: 265px;
+	}
+	.orangeCountryPopupFlag .width15 {
+		max-width: 175px;
+		margin-right: 30px;
+	} 
+	.orangeCountryPopupFlag .countryPopupMainDiv > div{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-right: 0;
+	}
+	.orangeCountryPopupFlag .width15:last-child{
+		margin-right: 0;
+	} */
+
+	/* summarydashboard css 15/5/2019 */
+

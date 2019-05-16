@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <!-- Latest compiled and minified bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css">
     <!-- Latest compiled and minified font awesome CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <!-- fonts css -->
@@ -125,10 +126,12 @@
                                     <img src="images/dashboard_blue.png" class="hide-active">
                                 </span>
                                 <div class="dropdown dropdownPosition">
-                                    <span class="nav-txt dropdown-toggle" data-toggle="dropdown">System Preferences</span>
+                                    <span class="nav-txt dropdown-toggle" data-toggle="dropdown">System
+                                        Preferences</span>
                                     <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
                                         <a class="dropdown-item" href="currency-rate.html">Currency Rates</a>
-                                        <a class="dropdown-item" href="aa-14-configure-rates.html">AA14 Configuration</a>
+                                        <a class="dropdown-item" href="aa-14-configure-rates.html">AA14
+                                            Configuration</a>
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +174,8 @@
                                 </ul>
                                 <ul class="rightTopDropdownUl pull-right">
                                     <li class="active text-center">
-                                        <a href="javascript:void(0)" class="rightTopDropdown">OPCO <span class="badgeIcon">4</span><span class="fa fa-angle-down"></span> </a>
+                                        <a href="javascript:void(0)" class="rightTopDropdown">OPCO <span
+                                                class="badgeIcon">4</span><span class="fa fa-angle-down"></span> </a>
                                     </li>
                                 </ul>
                             </ul>
@@ -189,7 +193,8 @@
                                         <input type="button" value="CANCEL" class="btn whiteButton">
                                     </span>
                                 </div>
-                                <div class="container-fluid d-flex justify-content-between countryPopupMainDiv gb-horizontal-scroll">
+                                <div
+                                    class="container-fluid d-flex justify-content-between countryPopupMainDiv gb-horizontal-scroll">
                                     <!-- first column -->
                                     <div>
                                         <div class="width15 width15Active">
@@ -432,7 +437,8 @@
                                         </div>
                                         <!-- BUTON_GROUP -->
                                         <div class="btn-wrapper btn-group cust-btn">
-                                            <a href="javascript:void(0);" class="btn-div btn-search deal2-btn">Revenue</a>
+                                            <a href="javascript:void(0);"
+                                                class="btn-div btn-search deal2-btn">Revenue</a>
                                             <a href="javascript:void(0);" class="btn-div btn-graph deal2-btn">Cost</a>
                                             <a href="javascript:void(0);" class="btn-div btn-graph deal2-btn">Net</a>
                                         </div>
@@ -444,126 +450,114 @@
                                             <div id="container_map" class="graphs-div getCountry"></div>
                                             <div id="container_map2" class="graphs-div" style="display: none"></div>
                                         </div>
+                                        <div class="legends">
+                                            <span>Revenue</span>
+                                            <span>Budget</span>
+                                        </div>
+                                        <!--Start of the Month position graph div-->
+                                        <div class="servies-tie-wrapper revenue-budget-map" id="box1">
+                                            <div class="ntwrk-dtls-wrapper statics-reveune">
+                                                <div class="statics-box notify-static-box">
+                                                    <div class="detail-sect up-green">
+                                                        <h3 class="uparrow-green-text">10.6% <span class="up-arrow"></span></h3>
+                                                        <div class="percentage-dollars">
+                                                        <h3>$28.59m</h3>
+                                                        <h5>Inbound Revenue</h5>
+                                                    </div>
+                                                    </div>
+                                                    <div class="detail-sect bottom-red down-red">
+                                                        <h3 class="downarrow-red-text">4.5% <span class="down-arrow"></span></h3>
+                                                        <div class="percentage-dollars">
+                                                        <h3>$2.07m</h3>
+                                                        <h5>Outbound Cost</h5>
+                                                    </div>
+                                                    </div>
+                                                    <div class="detail-sect up-green">
+                                                        <h3 class="uparrow-green-text">11.1%<span class="up-arrow"></span></h3>
+                                                        <div class="percentage-dollars">
+                                                        <h3>$26.51m</h3>
+                                                        <h5>Net Revenue</h5>
+                                                    </div>
+                                                    </div>
+                                                    <div class="detail-sect">
+                                                        <h3>205        
+                                                        </h3>
+                                                        <h5>Total Deals</h5>
+                                                    </div>
+                                                    <div class="detail-sect ">
+                                                        <h3>535</h3>
+                                                        <h5>Total partners</h5>
+                                                    </div>
+                                                </div><!-- statics-box -->
+                                                <!-- <div class="statics-box sec-box">
+                                                    <div class="detail-sect">
+                                                       
+                                                    </div>
+                                                    <div class="detail-sect">
+                                                        <h3>535</h3>
+                                                        <p>Total partners</p>
+                                                    </div>
+                                                </div> -->
+                                                <div class="grph-notication text-center" id="graph-fixed-notification">
+                                                    <p>Numbers reflecting here are based on Forecast Value</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="servies-tie-wrapper revenue-budget-map" id="box2"
+                                            style="display:none;">
+                                            <!-- revenue-budget-map -->
+                                            <div class="ntwrk-dtls-wrapper statics-reveune">
+                                                <div
+                                                    class="statics-box flex-wrap justify-content-start notify-static-box">
+                                                    <div class="detail-sect details-sect2  up-green">
+                                                        <h3 class="uparrow-green-text">10.6% <span
+                                                                class="up-arrow"></span></h3>
+                                                        <div class="percentage-dollars">
+                                                            <h3>$28.59m</h3>
+                                                            <h5>I/B Revenue</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="detail-sect details-sect2 down-red">
+                                                        <h3 class="downarrow-red-text">4.5% <span
+                                                                class="down-arrow"></span></h3>
+                                                        <div class="percentage-dollars">
+                                                            <h3>$2.07m</h3>
+                                                            <h5>O/B Cost</h5>
+                                                        </div>
+                                                    </div>                                     
+                                                    <div class="detail-sect details-sect2  up-green">
+                                                        <h3 class="uparrow-green-text">11.1%<span
+                                                                class="up-arrow"></span></h3>
+                                                        <div class="percentage-dollars">
+                                                            <h3>$26.51m</h3>
+                                                            <h5>Net Revenue</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="detail-sect details-sect2">
+                                                        <div class="percentage-dollars">
+                                                            <h3>205</h3>
+                                                            <h5>Total Deals</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="detail-sect details-sect2">
+                                                        <div class="percentage-dollars">
+                                                            <h3>535</h3>
+                                                            <h5>Total partners</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grph-notication graph-nitidication-2 text-center" id="graph-dynamic-notification">
+                                                    <p>Numbers reflecting here are based on Forecast Value</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--End of the Month position graph div-->
                                     </div>
                                 </div>
                                 <!--End of the France graph div-->
-                                <!--Start of the Month position graph div-->
-                                <div class="servies-tie-wrapper" id="box1">
-                                    <div class="ntwrk-dtls-wrapper statics-reveune">
-                                        <div class="statics-box notify-static-box">
-                                            <div class="detail-sect up-green">
-                                                <h3>10.6% <span class="up-arrow"></span></h3>
-                                                <h5>$28.59m</h5>
-                                                <p>Inbound Revenue</p>
-                                            </div>
-                                            <div class="detail-sect bottom-red">
-                                                <h3>4.5% <span class="down-arrow"></span></h3>
-                                                <h5>$2.07m</h5>
-                                                <p>Outbound Cost</p>
-                                            </div>
-                                            <div class="detail-sect up-green">
-                                                <h3>11.1%<span class="up-arrow"></span></h3>
-                                                <h5>$26.51m</h5>
-                                                <p>Net Revenue</p>
-                                            </div>
-                                        </div><!-- statics-box -->
-                                        <div class="statics-box sec-box">
-                                            <div class="detail-sect">
-                                                <h3>205
-                                                    <!-- <span class="down-arrow"></span> -->
-                                                </h3>
-                                                <p>Total Deals</p>
-                                            </div>
-                                            <div class="detail-sect">
-                                                <h3>535</h3>
-                                                <p>Total partners</p>
-                                            </div>
-                                        </div>
-                                        <div class="grph-notication" id="graph-fixed-notification">
-                                            <p>Numbers reflecting here are based on Forecast Value</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="servies-tie-wrapper" id="box2" style="display: none">
-                                    <div class="ntwrk-dtls-wrapper statics-reveune">
-                                        <div class="pt-2 mb-2 ">
-                                            <h2>France</h2>
-                                        </div>
-                                        <div class="statics-box flex-wrap justify-content-start notify-static-box">
-                                            <div class="detail-sect details-sect2">
-                                                <h3>7%
-                                                    <!-- <span class="up-arrow"></span> -->
-                                                </h3>
-                                                <h5>$65.473</h5>
-                                                <p class="text-primary">Orange</p>
-                                            </div>
-                                            <div class="detail-sect details-sect2 w-50">
-                                                <h3>-5%
-                                                    <!-- <span class="down-arrow"></span> -->
-                                                </h3>
-                                                <h5>$23.437</h5>
-                                                <p class="text-primary">SFR</p>
-                                            </div>
-                                            <div class="detail-sect details-sect2">
-                                                <h3>2%
-                                                    <!-- <span class="up-arrow"></span> -->
-                                                </h3>
-                                                <h5>$24.326</h5>
-                                                <p class="text-primary">Bouygues</p>
-                                            </div>
-                                            <div class="detail-sect details-sect2">
-                                                <h3>-12%
-                                                    <!-- <span class="up-arrow"></span> -->
-                                                </h3>
-                                                <h5>$64.53</h5>
-                                                <p class="text-primary">Free</p>
-                                            </div>
-                                            <div class="grph-notication graph-nitidication-2" id="graph-dynamic-notification">
-                                                <p>The values are Budget vs Actual (YTD)</p>
-                                            </div>
-                                        </div><!-- statics-box -->
-                                        <div class="statics-box sec-box" style="display: none">
-                                            <div class="detail-sect">
-                                                <h3>205<span class="down-arrow"></span></h3>
-                                                <p>Total Deals</p>
-                                            </div>
-                                            <div class="detail-sect">
-                                                <h3>535</h3>
-                                                <p>Total partners</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--End of the Month position graph div-->
+
                             </div>
                             <!--End of the France and Month position div-->
-                            <!-- strat of TOP 10 Payable Operators -->
-                            <!--               <div class="opco-revne-volume flex-d">
-                <div class="graph-details-wrapper opco-revenue-cost">
-
-                  <div class="main-grap-wrap network-dash-graph">
-                    <div class="title-with-radio flex-d">
-                      <h3 class="graph-title-txt">TOP 10 Payable Operators</h3>
-                    </div>
-                    <div class="graph-div-wrap">
-                      <div id="container-opco-revencost" class="graphs-div"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="graph-details-wrapper opco-volume-graph">
-
-                  <div class="main-grap-wrap network-dash-graph">
-                    <div class="title-with-radio flex-d">
-                      <h3 class="graph-title-txt">TOP 10 Payable Operators</h3>
-                     </div>
-                    <div class="graph-div-wrap">
-                      <div id="container-opco-volume" class="graphs-div"></div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-                            <!-- end of TOP 10 Payable Operators -->
                             <!--Start of the last year perforamnce graph-->
                             <div class="graph-details-wrapper">
                                 <div class="main-grap-wrap network-dash-graph">
@@ -762,9 +756,12 @@
                                                 </label>
                                             </div>
                                             <div class="btn-wrapper btn-group cust-btn">
-                                                <a href="javascript:void(0);" class="btn-div deal2-btn btn-search">Revenue</a>
-                                                <a href="javascript:void(0);" class="btn-div deal2-btn btn-graph">Cost</a>
-                                                <a href="javascript:void(0);" class="btn-div deal2-btn btn-graph">Net</a>
+                                                <a href="javascript:void(0);"
+                                                    class="btn-div deal2-btn btn-search">Revenue</a>
+                                                <a href="javascript:void(0);"
+                                                    class="btn-div deal2-btn btn-graph">Cost</a>
+                                                <a href="javascript:void(0);"
+                                                    class="btn-div deal2-btn btn-graph">Net</a>
                                             </div>
                                             <!--End of the multiple radio list-->
                                         </div>
@@ -778,7 +775,8 @@
                                         <div class="title-with-radio flex-d">
                                             <h3 class="graph-title-txt">Deals Performance</h3>
                                             <div class="search-box">
-                                                <input type="text" name="" class="form-control" placeholder="Search here...">
+                                                <input type="text" name="" class="form-control"
+                                                    placeholder="Search here...">
                                             </div>
                                         </div>
                                         <div class="usage-distri-table common-table-border">
@@ -810,10 +808,12 @@
                                                         <td>AUTCA</td>
                                                         <td class="diff-td">$449,214</td>
                                                         <td class="diff-td">$399,129</td>
-                                                        <td class="diff-td">-11%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-11%<span class="down-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$1,105</td>
                                                         <td class="diff-td">$1,004</td>
-                                                        <td class="diff-td">-9%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-9%<span class="down-arrow-small"></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>USA</td>
@@ -822,10 +822,12 @@
                                                         <td>USACG</td>
                                                         <td class="diff-td">$861,928</td>
                                                         <td class="diff-td">$820,020</td>
-                                                        <td class="diff-td">-5%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-5%<span class="down-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$22,845</td>
                                                         <td class="diff-td">$21,491</td>
-                                                        <td class="diff-td">-6%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-6%<span class="down-arrow-small"></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>France</td>
@@ -834,10 +836,12 @@
                                                         <td>FRAF3</td>
                                                         <td class="diff-td">$447,556 </td>
                                                         <td class="diff-td">$384,011</td>
-                                                        <td class="diff-td">-14%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-14%<span class="down-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$71,274</td>
                                                         <td class="diff-td">$70,267</td>
-                                                        <td class="diff-td">-1%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-1%<span class="down-arrow-small"></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>United Kingdom</td>
@@ -846,10 +850,12 @@
                                                         <td>GBRME</td>
                                                         <td class="diff-td">$202,228 </td>
                                                         <td class="diff-td">$167,519</td>
-                                                        <td class="diff-td">-17%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-17%<span class="down-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$58</td>
                                                         <td class="diff-td">$54</td>
-                                                        <td class="diff-td">-8%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-8%<span class="down-arrow-small"></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>France</td>
@@ -858,22 +864,28 @@
                                                         <td>FRAF2</td>
                                                         <td class="diff-td">$336,241</td>
                                                         <td class="diff-td">$249,007</td>
-                                                        <td class="diff-td">-13%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-13%<span class="down-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$51,986</td>
                                                         <td class="diff-td">$51,551</td>
-                                                        <td class="diff-td">-1%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-1%<span class="down-arrow-small"></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td><a href="countryDashboard.html" class="link-a">France</a></td>
-                                                        <td><a href="networkDashboard.html" class="link-a">Orange</a></td>
+                                                        <td><a href="countryDashboard.html" class="link-a">France</a>
+                                                        </td>
+                                                        <td><a href="networkDashboard.html" class="link-a">Orange</a>
+                                                        </td>
                                                         <td>78</td>
                                                         <td>FRAF1</td>
                                                         <td class="diff-td">$438,461</td>
                                                         <td class="diff-td">$390,838</td>
-                                                        <td class="diff-td">-11%<span class="up-arrow-small"></span></td>
+                                                        <td class="diff-td">-11%<span class="up-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$82,420</td>
                                                         <td class="diff-td">$114,670</td>
-                                                        <td class="diff-td">39%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">39%<span class="down-arrow-small"></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>Japan</td>
@@ -882,10 +894,12 @@
                                                         <td>JPNJP</td>
                                                         <td class="diff-td">$588,436</td>
                                                         <td class="diff-td">$497,576</td>
-                                                        <td class="diff-td">-15%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-15%<span class="down-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$546 </td>
                                                         <td class="diff-td">$505</td>
-                                                        <td class="diff-td">-7%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-7%<span class="down-arrow-small"></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>Swizerland</td>
@@ -894,10 +908,12 @@
                                                         <td>CHEC1</td>
                                                         <td class="diff-td">$312,206</td>
                                                         <td class="diff-td">$283,410</td>
-                                                        <td class="diff-td">-9%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-9%<span class="down-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$29,035</td>
                                                         <td class="diff-td">$26,398</td>
-                                                        <td class="diff-td">-9%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-9%<span class="down-arrow-small"></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>United Kingdom</td>
@@ -906,7 +922,8 @@
                                                         <td>GBRCN</td>
                                                         <td class="diff-td">$229,857</td>
                                                         <td class="diff-td">$205,679</td>
-                                                        <td class="diff-td">-11%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-11%<span class="down-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$136</td>
                                                         <td class="diff-td">$146</td>
                                                         <td class="diff-td">7%<span class="up-arrow-small"></span></td>
@@ -918,10 +935,12 @@
                                                         <td>NLDPN</td>
                                                         <td class="diff-td">$185,724</td>
                                                         <td class="diff-td">$160,965</td>
-                                                        <td class="diff-td">-13%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-13%<span class="down-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$1,186</td>
                                                         <td class="diff-td">$1,171</td>
-                                                        <td class="diff-td">-1%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-1%<span class="down-arrow-small"></span>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>Netherlands</td>
@@ -930,7 +949,8 @@
                                                         <td>NLDLT</td>
                                                         <td class="diff-td">$161,242</td>
                                                         <td class="diff-td">$149,427</td>
-                                                        <td class="diff-td">-7%<span class="down-arrow-small"></span></td>
+                                                        <td class="diff-td">-7%<span class="down-arrow-small"></span>
+                                                        </td>
                                                         <td class="diff-td">$4,183</td>
                                                         <td class="diff-td">$3,763</td>
                                                         <td class="diff-td">10%<span class="up-arrow-small"></span></td>
@@ -965,7 +985,8 @@
     <!-- Latest compiled and minified bootstrap js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.js"></script>
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/maps/modules/map.js"></script>
     <script src="https://code.highcharts.com/maps/modules/data.js"></script>
@@ -977,515 +998,529 @@
     <!-- custom js -->
     <script src="js/custom.js"></script>
     <script>
-    var data = [
-        ['fr-t', 0],
-        ['fr-h', 1],
-        ['fr-e', 2],
-        ['fr-r', 3],
-        ['fr-u', 4],
-        ['fr-n', 5],
-        ['fr-p', 6],
-        ['fr-o', 7],
-        ['fr-v', 8],
-        ['fr-s', 9],
-        ['fr-g', 10],
-        ['fr-k', 11],
-        ['fr-a', 12],
-        ['fr-c', 13],
-        ['fr-f', 14],
-        ['fr-l', 15],
-        ['fr-d', 16],
-        ['fr-b', 17],
-        ['fr-i', 18],
-        ['fr-q', 19],
-        ['fr-j', 20],
-        ['fr-m', 21],
-        ['fr-re', 22],
-        ['fr-yt', 23],
-        ['fr-gf', 24],
-        ['fr-mq', 25],
-        ['fr-gp', 26],
-        ['undefined', 27]
-    ];
+        var data = [
+            ['fr-t', 0],
+            ['fr-h', 1],
+            ['fr-e', 2],
+            ['fr-r', 3],
+            ['fr-u', 4],
+            ['fr-n', 5],
+            ['fr-p', 6],
+            ['fr-o', 7],
+            ['fr-v', 8],
+            ['fr-s', 9],
+            ['fr-g', 10],
+            ['fr-k', 11],
+            ['fr-a', 12],
+            ['fr-c', 13],
+            ['fr-f', 14],
+            ['fr-l', 15],
+            ['fr-d', 16],
+            ['fr-b', 17],
+            ['fr-i', 18],
+            ['fr-q', 19],
+            ['fr-j', 20],
+            ['fr-m', 21],
+            ['fr-re', 22],
+            ['fr-yt', 23],
+            ['fr-gf', 24],
+            ['fr-mq', 25],
+            ['fr-gp', 26],
+            ['undefined', 27]
+        ];
 
-    $.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/world-population-density.json', function(data) {
+        $.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/world-population-density.json', function (data) {
 
-        // Prevent logarithmic errors in color calulcation
-        $.each(data, function() {
-            this.value = (this.value < 1 ? 1 : this.value);
-        });
+            // Prevent logarithmic errors in color calulcation
+            $.each(data, function () {
+                this.value = (this.value < 1 ? 1 : this.value);
+            });
 
-        // Initiate the chart
-        Highcharts.mapChart('container_map', {
+            // Initiate the chart
+            Highcharts.mapChart('container_map', {
 
-            chart: {
-                map: 'custom/world',
+                chart: {
+                    map: 'custom/world',
+                    
 
-            },
+                },
 
-            title: {
-                text: '',
-                align: 'left'
-            },
+                title: {
+                    text: '',
+                    align: 'left'
+                },
 
-            credits: {
-                enabled: false
-            },
-
-            exporting: { enabled: false },
-
-            legend: {
-                enabled: false
-            },
-
-
-
-            mapNavigation: {
-                enabled: true,
-                buttonOptions: {
-                    verticalAlign: 'bottom'
-                }
-            },
-
-            tooltip: { enabled: false },
-            colorAxis: {
-                min: 1,
-                max: 1000,
-                type: 'logarithmic',
-                minColor: '#f38f9a',
-                maxColor: '#ece193'
-            },
-            plotOptions: {
-                series: {
-                    cursor: 'pointer',
-                    point: {
-                        events: {
-                            click: function(event) {
-
-
-                                document.getElementById("box1").style.display = "none";
-                                document.getElementById("graph-fixed-notification").style.display = "block";
-                                //document.getElementById("container_map").style.display = "none";
-                                document.getElementById("box2").style.display = "block";
-                                //document.getElementById("container_map2").style.display = "block";
-                            }
-                        }
-                    }
-                }
-            },
-
-            series: [{
-                data: data,
-                joinBy: ['iso-a3', 'code3'],
-                name: 'Budget vs Actual ',
-                showInLegend: false,
-                allowPointSelect: true,
-                //enableMouseTracking: false,
-
-                states: {
-                    hover: { color: 'rgb(22,149,163)' },
-                    select: { color: 'rgb(88,143,39)' }
-                }
-            }]
-        });
-
-        /******************************/
-
-        // Initiate the chart
-        Highcharts.mapChart('container_map2', {
-
-            chart: {
-                map: 'custom/world',
-
-            },
-
-            title: {
-                text: '',
-                align: 'left'
-            },
-
-            credits: {
-                enabled: false
-            },
-
-            exporting: { enabled: false },
-
-            legend: {
-                enabled: false
-            },
-
-
-
-            mapNavigation: {
-                enabled: true,
-                buttonOptions: {
-                    verticalAlign: 'bottom'
-                }
-            },
-
-
-            colorAxis: {
-                min: 1,
-                type: 'logarithmic',
-                minColor: '#97b8c9',
-                maxColor: '#97b8c9'
-            },
-            plotOptions: {
-                series: {
-                    cursor: 'pointer',
-                    point: {
-                        events: {
-                            click: function(event) {
-
-                                document.getElementById("box2").style.display = "none";
-                                document.getElementById("container_map2").style.display = "none";
-                                document.getElementById("box1").style.display = "block";
-                                document.getElementById("container_map").style.display = "block";
-                            }
-                        }
-                    }
-                }
-            },
-
-            series: [{
-                data: data,
-                joinBy: ['iso-a3', 'code3'],
-                name: 'Population density',
-                allowPointSelect: true,
-                showInLegend: false,
-
-                states: {
-                    hover: {
-                        color: '#97b8c9'
-                    }
-                }
-            }]
-        });
-    });
-    //container_map chart code starts here
-
-
-    //container_map chart code starts here
-
-
-    //container-perfonce-lstyr chart code starts here
-    Highcharts.chart('container-perfonce-lstyr1', {
-        title: {
-            text: ''
-        },
-        credits: {
-            enabled: false
-        },
-        exporting: { enabled: false },
-        xAxis: {
-            type: 'category',
-            //tickLength: 0,
-            gridLineWidth: 0,
-            minorGridLineWidth: 0,
-            categories: ['<a href="countryDashboard.html">Brazil</a>', '<a href="countryDashboard.html">France</a>', '<a href="countryDashboard.html">USA</a>', '<a href="countryDashboard.html">Malaysia</a>', '<a href="countryDashboard.html">Japan</a>', '<a href="countryDashboard.html">Uk</a>', '<a href="countryDashboard.html">Austria</a>', '<a href="countryDashboard.html">Belgium</a>', '<a href="countryDashboard.html">Netherland</a>', '<a href="countryDashboard.html">Switzerland</a>'],
-            title: {
-                text: 'Numbers are YTD',
-                y: -180,
-                x: 500,
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'OpenSans-regular',
-                    color: '#74829c'
-                }
-            },
-            labels: {
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'OpenSans-regular',
-                    color: '#74829c'
-                }
-            }
-        },
-        yAxis: {
-            min: 0,
-            max: 1600,
-            tickInterval: 200,
-            labels: { format: '{value}K' },
-            gridLineWidth: 0,
-            minorGridLineWidth: 0,
-
-            title: {
-                text: 'USD, Thousands',
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'OpenSans-regular',
-                    color: '#74829c'
-                }
-            },
-            /*  labels: {
-                style: {
-                  fontSize: '10px',
-                  fontFamily: 'OpenSans-regular',
-                  color: '#74829c'
-                }
-              }*/
-        },
-        legend: {
-            itemStyle: {
-                fontSize: '11px',
-                fontFamily: 'OpenSans-regular',
-                color: '#74829c'
-            }
-
-        },
-        plotOptions: {
-            series: {
-                pointPadding: 0
-            }
-        },
-        series: [{
-            type: 'column',
-            name: '2018',
-            data: [1254, 1131, 897, 573, 497, 455, 399, 372, 310, 283],
-            color: '#b5efce',
-            //pointWidth: 25,
-            dataLabels: {
-                enabled: true,
-                fontSize: '12px',
-                fontFamily: 'OpenSans-regular',
-                color: '#74829c',
-                align: 'center',
-                format: '{y}K',
-                y: 0,
-                style: {
-                    fontSize: '11px',
-                    fontFamily: 'Verdana, sans-serif',
-                    color: '#666',
-                    fontWeight: 'normal',
-                }
-            }
-        }, {
-            type: 'column',
-            name: '2019',
-            data: [1382, 1296, 945, 675, 588, 528, 449, 436, 346, 312],
-            color: '#f6d3af',
-            //pointWidth: 25,
-            dataLabels: {
-                enabled: true,
-                fontSize: '12px',
-                fontFamily: 'OpenSans-regular',
-                color: '#74829c',
-                align: 'center',
-                format: '{y}K',
-                y: 0,
-                style: {
-                    fontSize: '11px',
-                    fontFamily: 'Verdana, sans-serif',
-                    color: '#666',
-                    fontWeight: 'normal',
-                }
-            }
-        }]
-    });
-    //container-perfonce-lstyr chart code ends here
-
-
-    //container-perfonce-lstyr chart code starts here
-    Highcharts.chart('container-perfonce-lstyr2', {
-        title: {
-            text: ''
-        },
-        credits: {
-            enabled: false
-        },
-        exporting: { enabled: false },
-        xAxis: {
-            type: 'category',
-            //tickLength: 0,
-            gridLineWidth: 0,
-            minorGridLineWidth: 0,
-            categories: ['<a href="networkDashboard.html">A1 Telekom Austria AG</a>',
-                '<a href="networkDashboard.html">AT&T Mobility</a>',
-                '<a href="networkDashboard.html">Bouygues Telecom</a>',
-                '<a href="networkDashboard.html">Everything Everywhere Limited  </a>',
-                '<a href="networkDashboard.html">SFR</a>',
-                '<a href="networkDashboard.html">Orange France</a>',
-                '<a href="networkDashboard.html">SoftBank Mobile</a>',
-                '<a href="networkDashboard.html">Swisscom (Switzerland) Ltd</a>',
-                '<a href="networkDashboard.html">Telefonica O2 UK Limited</a>',
-                '<a href="networkDashboard.html">T-Mobile Netherlands B.V.</a>',
-            ],
-            title: {
-                text: 'Numbers are YTD',
-                y: -180,
-                x: 500,
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'OpenSans-regular',
-                    color: '#74829c'
-                }
-            },
-            labels: {
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'OpenSans-regular',
-                    color: '#74829c'
-                }
-            }
-        },
-        yAxis: {
-            min: 0,
-            max: 1000,
-            tickInterval: 200,
-            labels: { format: '{value}K' },
-            gridLineWidth: 0,
-            minorGridLineWidth: 0,
-
-            title: {
-                text: 'USD, Thousands',
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'OpenSans-regular',
-                    color: '#74829c'
-                }
-            },
-            /* labels: {
-               style: {
-                 fontSize: '10px',
-                 fontFamily: 'OpenSans-regular',
-                 color: '#74829c'
-               }
-             }*/
-        },
-        legend: {
-            itemStyle: {
-                fontSize: '11px',
-                fontFamily: 'OpenSans-regular',
-                color: '#74829c'
-            }
-
-        },
-        plotOptions: {
-            series: {
-                pointPadding: 0
-            }
-        },
-        series: [{
-            type: 'column',
-            name: 'Actual',
-            data: [399, 820, 384, 167, 294, 390, 497, 283, 205, 160],
-            color: '#ddc6e7',
-            //pointWidth: 25,
-            dataLabels: {
-                enabled: true,
-                fontSize: '12px',
-                fontFamily: 'OpenSans-regular',
-                color: '#74829c',
-                align: 'center',
-                format: '{y}K',
-                y: 0,
-                style: {
-                    fontSize: '11px',
-                    fontFamily: 'Verdana, sans-serif',
-                    color: '#666',
-                    fontWeight: 'normal',
-                }
-            }
-        }, {
-            type: 'column',
-            name: 'Budget',
-            data: [449, 861, 447, 202, 336, 438, 588, 312, 229, 185],
-            color: '#a3d0f4',
-            //pointWidth: 25,
-            dataLabels: {
-                enabled: true,
-                fontSize: '12px',
-                fontFamily: 'OpenSans-regular',
-                color: '#74829c',
-                align: 'center',
-                format: '{y}K',
-                y: 0,
-                style: {
-                    fontSize: '11px',
-                    fontFamily: 'Verdana, sans-serif',
-                    color: '#666',
-                    fontWeight: 'normal',
-                }
-            }
-        }]
-    });
-    //container-perfonce-lstyr chart code ends here
-
-
-    //container-traffic-forecast chart code starts here
-    Highcharts.chart('container-trafficForecast1', {
-        chart: {
-            type: 'line'
-        },
-        title: {
-            text: null
-        },
-        credits: {
-            enabled: false
-        },
-        exporting: { enabled: false },
-        subtitle: {
-            text: ''
-        },
-        xAxis: {
-            //tickLength: 0,
-            gridLineWidth: 0,
-            minorGridLineWidth: 0,
-            categories: ['Jan-18', 'Feb-18', 'Mar-18', 'Apr-18', 'May-18', 'Jun-18', 'Jul-18  ', 'Aug-18', 'Sep-18', 'Oct-18', 'Nov-18', 'Dec-18', 'Jan-19', 'Feb-19', 'Mar-19', 'Apr-19', 'May-19', 'Jun-19', 'Jul-19', 'Aug-19', 'Sep-19', 'Oct-19', 'Nov-19', 'Dec-19'],
-            labels: {
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'OpenSans-regular',
-                    color: '#74829c'
-                }
-            }
-
-        },
-        yAxis: {
-            min: 0,
-            max: 50,
-            tickInterval: 10,
-            gridLineWidth: 0,
-            minorGridLineWidth: 0,
-            title: {
-                text: 'USD, Millions',
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'OpenSans-regular',
-                    color: '#74829c'
-                }
-            },
-            labels: {
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'OpenSans-regular',
-                    color: '#74829c'
-                }
-            },
-        },
-        plotOptions: {
-            line: {
-                dataLabels: {
+                credits: {
                     enabled: false
                 },
-                //enableMouseTracking: false
-            },
-            series: {
-                marker: {
-                    enabled: false
-                }
-            }
-        },
-        legend: {
-            itemStyle: {
-                fontSize: '11px',
-                fontFamily: 'OpenSans-regular',
-                color: '#74829c'
-            },
-            //margin: 60
 
-        },
-        series: [{
+                exporting: { enabled: false },
+
+                legend: {
+                    enabled: false
+                },
+
+
+
+                mapNavigation: {
+                    enabled: true,
+                    buttonOptions: {
+                        verticalAlign: 'bottom'
+                    }
+                },
+
+                tooltip: { enabled: false },
+                
+
+                colorAxis: {
+                    dataClasses: [{
+                        from: 0,
+                        to: 20,
+                        color: '#f15454',
+                        name: 'Clinton'
+                    }, {
+                        from: 17,
+                        color: '#9de584',
+                        name: 'Trump'
+                    }]
+                },
+                // colorAxis: {
+                //     min: 1,
+                //     max: 1000,
+                //     type: 'logarithmic',
+                //     minColor: '#f15454',
+                //     maxColor: '#f15454'
+                // },
+                plotOptions: {
+                    series: {
+                        cursor: 'pointer',
+                        point: {
+                            events: {
+                                click: function (event) {
+
+
+                                    document.getElementById("box1").style.display = "none";
+                                    document.getElementById("graph-fixed-notification").style.display = "block";
+                                    //document.getElementById("container_map").style.display = "none";
+                                    document.getElementById("box2").style.display = "block";
+                                    //document.getElementById("container_map2").style.display = "block";
+                                }
+                            }
+                        }
+                    }
+                },
+
+                series: [{
+                    data: data,
+                    joinBy: ['iso-a3', 'code3'],
+                    name: 'Budget vs Actual ',
+                    showInLegend: false,
+                    allowPointSelect: true,
+                    //enableMouseTracking: false,
+
+                    states: {
+                         select: { color:undefined ,borderColor:"grey" }
+                    }
+                }]
+            });
+
+            /******************************/
+
+            // Initiate the chart
+            Highcharts.mapChart('container_map2', {
+
+                chart: {
+                    map: 'custom/world',
+
+                },
+
+                title: {
+                    text: '',
+                    align: 'left'
+                },
+
+                credits: {
+                    enabled: false
+                },
+
+                exporting: { enabled: false },
+
+                legend: {
+                    enabled: false
+                },
+
+
+
+                mapNavigation: {
+                    enabled: true,
+                    buttonOptions: {
+                        verticalAlign: 'bottom'
+                    }
+                },
+
+
+                colorAxis: {
+                    min: 1,
+                    type: 'logarithmic',
+                    minColor: '#97b8c9',
+                    maxColor: '#97b8c9'
+                },
+                plotOptions: {
+                    series: {
+                        cursor: 'pointer',
+                        point: {
+                            events: {
+                                click: function (event) {
+
+                                    document.getElementById("box2").style.display = "none";
+                                    document.getElementById("container_map2").style.display = "none";
+                                    document.getElementById("box1").style.display = "block";
+                                    document.getElementById("container_map").style.display = "block";
+                                }
+                            }
+                        }
+                    }
+                },
+
+                series: [{
+                    data: data,
+                    joinBy: ['iso-a3', 'code3'],
+                    name: 'Population density',
+                    allowPointSelect: true,
+                    showInLegend: false,
+
+                    states: {
+                        hover: {
+                            color: '#97b8c9'
+                        }
+                    }
+                }]
+            });
+        });
+        //container_map chart code starts here
+
+
+        //container_map chart code starts here
+
+
+        //container-perfonce-lstyr chart code starts here
+        Highcharts.chart('container-perfonce-lstyr1', {
+            title: {
+                text: ''
+            },
+            credits: {
+                enabled: false
+            },
+            exporting: { enabled: false },
+            xAxis: {
+                type: 'category',
+                //tickLength: 0,
+                gridLineWidth: 0,
+                minorGridLineWidth: 0,
+                categories: ['<a href="countryDashboard.html">Brazil</a>', '<a href="countryDashboard.html">France</a>', '<a href="countryDashboard.html">USA</a>', '<a href="countryDashboard.html">Malaysia</a>', '<a href="countryDashboard.html">Japan</a>', '<a href="countryDashboard.html">Uk</a>', '<a href="countryDashboard.html">Austria</a>', '<a href="countryDashboard.html">Belgium</a>', '<a href="countryDashboard.html">Netherland</a>', '<a href="countryDashboard.html">Switzerland</a>'],
+                title: {
+                    text: 'Numbers are YTD',
+                    y: -180,
+                    x: 500,
+                    style: {
+                        fontSize: '10px',
+                        fontFamily: 'OpenSans-regular',
+                        color: '#74829c'
+                    }
+                },
+                labels: {
+                    style: {
+                        fontSize: '10px',
+                        fontFamily: 'OpenSans-regular',
+                        color: '#74829c'
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                max: 1600,
+                tickInterval: 200,
+                labels: { format: '{value}K' },
+                gridLineWidth: 0,
+                minorGridLineWidth: 0,
+
+                title: {
+                    text: 'USD, Thousands',
+                    style: {
+                        fontSize: '10px',
+                        fontFamily: 'OpenSans-regular',
+                        color: '#74829c'
+                    }
+                },
+                /*  labels: {
+                    style: {
+                      fontSize: '10px',
+                      fontFamily: 'OpenSans-regular',
+                      color: '#74829c'
+                    }
+                  }*/
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '11px',
+                    fontFamily: 'OpenSans-regular',
+                    color: '#74829c'
+                }
+
+            },
+            plotOptions: {
+                series: {
+                    pointPadding: 0
+                }
+            },
+            series: [{
+                type: 'column',
+                name: '2018',
+                data: [1254, 1131, 897, 573, 497, 455, 399, 372, 310, 283],
+                color: '#b5efce',
+                //pointWidth: 25,
+                dataLabels: {
+                    enabled: true,
+                    fontSize: '12px',
+                    fontFamily: 'OpenSans-regular',
+                    color: '#74829c',
+                    align: 'center',
+                    format: '{y}K',
+                    y: 0,
+                    style: {
+                        fontSize: '11px',
+                        fontFamily: 'Verdana, sans-serif',
+                        color: '#666',
+                        fontWeight: 'normal',
+                    }
+                }
+            }, {
+                type: 'column',
+                name: '2019',
+                data: [1382, 1296, 945, 675, 588, 528, 449, 436, 346, 312],
+                color: '#f6d3af',
+                //pointWidth: 25,
+                dataLabels: {
+                    enabled: true,
+                    fontSize: '12px',
+                    fontFamily: 'OpenSans-regular',
+                    color: '#74829c',
+                    align: 'center',
+                    format: '{y}K',
+                    y: 0,
+                    style: {
+                        fontSize: '11px',
+                        fontFamily: 'Verdana, sans-serif',
+                        color: '#666',
+                        fontWeight: 'normal',
+                    }
+                }
+            }]
+        });
+        //container-perfonce-lstyr chart code ends here
+
+
+        //container-perfonce-lstyr chart code starts here
+        Highcharts.chart('container-perfonce-lstyr2', {
+            title: {
+                text: ''
+            },
+            credits: {
+                enabled: false
+            },
+            exporting: { enabled: false },
+            xAxis: {
+                type: 'category',
+                //tickLength: 0,
+                gridLineWidth: 0,
+                minorGridLineWidth: 0,
+                categories: ['<a href="networkDashboard.html">A1 Telekom Austria AG</a>',
+                    '<a href="networkDashboard.html">AT&T Mobility</a>',
+                    '<a href="networkDashboard.html">Bouygues Telecom</a>',
+                    '<a href="networkDashboard.html">Everything Everywhere Limited  </a>',
+                    '<a href="networkDashboard.html">SFR</a>',
+                    '<a href="networkDashboard.html">Orange France</a>',
+                    '<a href="networkDashboard.html">SoftBank Mobile</a>',
+                    '<a href="networkDashboard.html">Swisscom (Switzerland) Ltd</a>',
+                    '<a href="networkDashboard.html">Telefonica O2 UK Limited</a>',
+                    '<a href="networkDashboard.html">T-Mobile Netherlands B.V.</a>',
+                ],
+                title: {
+                    text: 'Numbers are YTD',
+                    y: -180,
+                    x: 500,
+                    style: {
+                        fontSize: '10px',
+                        fontFamily: 'OpenSans-regular',
+                        color: '#74829c'
+                    }
+                },
+                labels: {
+                    style: {
+                        fontSize: '10px',
+                        fontFamily: 'OpenSans-regular',
+                        color: '#74829c'
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                max: 1000,
+                tickInterval: 200,
+                labels: { format: '{value}K' },
+                gridLineWidth: 0,
+                minorGridLineWidth: 0,
+
+                title: {
+                    text: 'USD, Thousands',
+                    style: {
+                        fontSize: '10px',
+                        fontFamily: 'OpenSans-regular',
+                        color: '#74829c'
+                    }
+                },
+                /* labels: {
+                   style: {
+                     fontSize: '10px',
+                     fontFamily: 'OpenSans-regular',
+                     color: '#74829c'
+                   }
+                 }*/
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '11px',
+                    fontFamily: 'OpenSans-regular',
+                    color: '#74829c'
+                }
+
+            },
+            plotOptions: {
+                series: {
+                    pointPadding: 0
+                }
+            },
+            series: [{
+                type: 'column',
+                name: 'Actual',
+                data: [399, 820, 384, 167, 294, 390, 497, 283, 205, 160],
+                color: '#ddc6e7',
+                //pointWidth: 25,
+                dataLabels: {
+                    enabled: true,
+                    fontSize: '12px',
+                    fontFamily: 'OpenSans-regular',
+                    color: '#74829c',
+                    align: 'center',
+                    format: '{y}K',
+                    y: 0,
+                    style: {
+                        fontSize: '11px',
+                        fontFamily: 'Verdana, sans-serif',
+                        color: '#666',
+                        fontWeight: 'normal',
+                    }
+                }
+            }, {
+                type: 'column',
+                name: 'Budget',
+                data: [449, 861, 447, 202, 336, 438, 588, 312, 229, 185],
+                color: '#a3d0f4',
+                //pointWidth: 25,
+                dataLabels: {
+                    enabled: true,
+                    fontSize: '12px',
+                    fontFamily: 'OpenSans-regular',
+                    color: '#74829c',
+                    align: 'center',
+                    format: '{y}K',
+                    y: 0,
+                    style: {
+                        fontSize: '11px',
+                        fontFamily: 'Verdana, sans-serif',
+                        color: '#666',
+                        fontWeight: 'normal',
+                    }
+                }
+            }]
+        });
+        //container-perfonce-lstyr chart code ends here
+
+
+        //container-traffic-forecast chart code starts here
+        Highcharts.chart('container-trafficForecast1', {
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: null
+            },
+            credits: {
+                enabled: false
+            },
+            exporting: { enabled: false },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+                //tickLength: 0,
+                gridLineWidth: 0,
+                minorGridLineWidth: 0,
+                categories: ['Jan-18', 'Feb-18', 'Mar-18', 'Apr-18', 'May-18', 'Jun-18', 'Jul-18  ', 'Aug-18', 'Sep-18', 'Oct-18', 'Nov-18', 'Dec-18', 'Jan-19', 'Feb-19', 'Mar-19', 'Apr-19', 'May-19', 'Jun-19', 'Jul-19', 'Aug-19', 'Sep-19', 'Oct-19', 'Nov-19', 'Dec-19'],
+                labels: {
+                    style: {
+                        fontSize: '10px',
+                        fontFamily: 'OpenSans-regular',
+                        color: '#74829c'
+                    }
+                }
+
+            },
+            yAxis: {
+                min: 0,
+                max: 50,
+                tickInterval: 10,
+                gridLineWidth: 0,
+                minorGridLineWidth: 0,
+                title: {
+                    text: 'USD, Millions',
+                    style: {
+                        fontSize: '10px',
+                        fontFamily: 'OpenSans-regular',
+                        color: '#74829c'
+                    }
+                },
+                labels: {
+                    style: {
+                        fontSize: '10px',
+                        fontFamily: 'OpenSans-regular',
+                        color: '#74829c'
+                    }
+                },
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: false
+                    },
+                    //enableMouseTracking: false
+                },
+                series: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            },
+            legend: {
+                itemStyle: {
+                    fontSize: '11px',
+                    fontFamily: 'OpenSans-regular',
+                    color: '#74829c'
+                },
+                //margin: 60
+
+            },
+            series: [{
                 name: 'Budget',
                 dashStyle: 'shortDash',
                 data: [17.1, 14.4, 11.1, 8.0, 5.3, 4.8, 9.4, 9.4, 8.4, 11.7, 15.7, 18.8, 18.8, 15.8, 12.2, 8.8, 5.9, 5.3, 10.3, 10.3, 9.3, 12.8, 17.3, 20.7],
@@ -1522,42 +1557,42 @@
                 }],
                 color: '#c0f270',
             }
-        ]
-    });
-    //container-traffic-forecast chart code starts here
-
-    //Multi select dropdownlist
-    $(document).ready(function() {
-        $('#multi-dropdown-list').multiselect({
-            includeSelectAllOption: true,
-            numberDisplayed: 1,
-            templates: { // Use the Awesome Bootstrap Checkbox structure
-                li: '<li class="checkList"><a tabindex="0"><div class="aweCheckbox aweCheckbox-danger"><label for=""></label></div></a></li>'
-            }
+            ]
         });
-        $('.multiselect-container div.aweCheckbox').each(function(index) {
+        //container-traffic-forecast chart code starts here
 
-            var id = 'multiselect-' + index,
-                $input = $(this).find('input');
+        //Multi select dropdownlist
+        $(document).ready(function () {
+            $('#multi-dropdown-list').multiselect({
+                includeSelectAllOption: true,
+                numberDisplayed: 1,
+                templates: { // Use the Awesome Bootstrap Checkbox structure
+                    li: '<li class="checkList"><a tabindex="0"><div class="aweCheckbox aweCheckbox-danger"><label for=""></label></div></a></li>'
+                }
+            });
+            $('.multiselect-container div.aweCheckbox').each(function (index) {
 
-            // Associate the label and the input
-            $(this).find('label').attr('for', id);
-            $input.attr('id', id);
+                var id = 'multiselect-' + index,
+                    $input = $(this).find('input');
 
-            // Remove the input from the label wrapper
-            $input.detach();
+                // Associate the label and the input
+                $(this).find('label').attr('for', id);
+                $input.attr('id', id);
 
-            // Place the input back in before the label
-            $input.prependTo($(this));
+                // Remove the input from the label wrapper
+                $input.detach();
 
-            $(this).click(function(e) {
-                // Prevents the click from bubbling up and hiding the dropdown
-                e.stopPropagation();
+                // Place the input back in before the label
+                $input.prependTo($(this));
+
+                $(this).click(function (e) {
+                    // Prevents the click from bubbling up and hiding the dropdown
+                    e.stopPropagation();
+                });
+
             });
 
         });
-
-    });
     </script>
 </body>
 

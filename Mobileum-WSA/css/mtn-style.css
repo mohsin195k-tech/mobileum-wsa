@@ -2012,3 +2012,162 @@ margin-bottom: 10px;
 {
   margin-left:20px;
 }
+
+/*MONTH_VIEW START*/
+
+.mtn-month .page-breadcrumb > li:not(:last-child)::after
+{
+  content: none;
+}
+.mtn-month .page-breadcrumb
+{
+ padding:0;
+}
+
+.mtn-month .hoverSlideUl,
+.mtn-month .hoverSlideUIActive
+{
+  margin-bottom: 0;
+    justify-content: space-between;
+    width: auto;
+    padding:0;
+}
+.mtn-month .rightTopDropdownUl
+{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: baseline;
+  font-size:12px;
+}
+.mtn-month .hoverSlideUIActive .rightTopDropdown1 > span
+{
+    font-size: 12px;
+}
+.mtn-month .hoverSlideUIActive > li,
+.mtn-month .hoverSlideUl > li
+{
+    padding: 8px 18px;
+        margin-right: 10px;
+}
+.mtn-month .opco-drp
+{
+    border: 1px solid lightgrey;
+    padding: 4px 20px;
+}
+.mtn-month .rightTopDropdownUl
+{
+  border: none;
+    padding: 0;
+    position: relative;
+}
+.mtn-month .rightTopDropdownUl:hover .mtn-month .hoverSlideUl,
+.mtn-month .rightTopDropdownUl:hover .mtn-month .hoverSlideUIActive:hover
+{   
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;  
+}
+.mtn-month .main-grap-wrap
+{
+  height: 100%;
+      padding: 25px 20px 45px 20px;
+}
+.mtn-month .nest-tab.common-small-table thead tr th.diff-tab-1,
+.mtn-month .nest-tab.common-small-table thead tr th.diff-tab-4
+{
+  display: table-cell;
+  width: auto;
+}
+.mtn-month .white-bg
+{
+  padding: 15px 15px 25px 10px;
+}
+.mtn-month .red-txt
+{
+ color: #d90f0f;
+ font-size: 12px;
+}
+.mtn-month .green-txt
+{
+color: #00b60d;
+ font-size: 12px;
+
+}
+.moModal .modal-dialog
+{
+  max-width: 325px;
+}
+.moModal .modal-title
+{
+  text-align: center;
+  width:100%;
+}
+/*MONTH_VIEW END*/
+.date-left-box
+{
+  text-align: center;
+      width: 50%;
+}
+.vol-head
+{
+  margin-bottom:15px;
+  text-align: center;
+}
+.mo-pop,.mt-pop,.sms-pop,.data-pop
+{
+  cursor: pointer;
+}
+.mtn-month .cust-tool-tip
+{
+         max-width: 122px;
+    width: 122px;
+    background: #fff;
+    padding: 10px;
+    position: absolute;
+    top: -55px;
+    left: -7px;
+    z-index: 1;
+    border-radius: 10px;
+    height: 63px;
+    box-shadow: 0px 0px 6px 0px grey;
+    display: none;
+}
+.mtn-month .cust-tool-tip::after
+{
+  position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: -6px;
+    left: 25px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 6px solid #fff;
+
+}
+
+.diff-td
+{
+  position: relative;
+}
+.tool-p
+{
+  font-size: 12px;
+  text-align: left;
+  margin-bottom:10px;
+}
+.diff-td:hover .cust-tool-tip
+{
+  display: block;
+}
+.mtn-month #countryPopup
+{
+    min-width: 740px;
+    top: 58px;
+    right: 0;
+}

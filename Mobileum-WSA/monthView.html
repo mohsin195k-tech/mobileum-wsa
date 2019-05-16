@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mobileum - Network Dashboard</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- Latest compiled and minified bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- Latest compiled and minified font awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- fonts css -->
+  <link href="css/fonts.css" rel="stylesheet" />
+  <!-- style css -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/mtn-style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header-main-wrapper">
+      <img src="images/header/header-img.png" class="header-img" alt="header-img">
+    </div>
+    <!--End of the header main wrapper-->
+  </header>
+  <main class="mtn mtn-month">
+    <!--Start of the main section wrapper-->
+    <div class="main-section-wrapper">
+      <!--Start of the inner section wrapper-->
+      <div class="inner-section-wrapper">
+        <div class="dashboard-main-wrapper position-relative">
+          <!--Start of the dashboard navbar wrapper-->
+          <div class="dasboard-navbar flex-d">
+            <div class="dasboard-nav-left">
+              <p class="navbar-head-txt">Wholesale Analytics</p>
+            </div>
+            <div class="dasboard-nav-right flex-d">
+              <div class="menuboard-wrap flex-d align-items-center  active">
+                <span class="menu-icon">
+                  <img src="images/Dashboard grey.png" class="hide-gray-icon">
+                  <img src="images/dashboard_blue.png" class="hide-activex">
+                </span>
+                <div class="dropdown dropdownPosition">
+                  <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Dashboard</span>
+                  <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                    <a class="dropdown-item" href="summaryDashboard.html">Summary View</a>
+                    <a class="dropdown-item" href="networkDashboard.html">Network View</a>
+                    <a class="dropdown-item" href="countryDashboard.html">Country View</a>
+                    <!-- <a class="dropdown-item" href="reports.html">Reports</a> -->
+                  </div>
+                </div>
+              </div>
+              <div class="menuboard-wrap flex-d align-items-center ">
+                <span class="menu-icon">
+                  <img src="images/Dashboard grey.png" class="hide-gray-iconx">
+                  <img src="images/dashboard_blue.png" class="hide-active">
+                </span>
+                <div class="dropdown dropdownPosition">
+                  <span class="nav-txt dropdown-toggle" data-toggle="dropdown">Report</span>
+                  <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                    <a class="dropdown-item" href="#!">Month View</a>
+                  </div>
+                </div>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="dealCreation.html">
+                  <span class="menu-icon">
+                    <img src="images/deal builder grey.png" class="hide-gray-iconx">
+                    <img src="images/deal builder blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Deal Builder</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="budgetSimulation.html">
+                  <span class="menu-icon">
+                    <img src="images/Budget Simulation grey.png" class="hide-gray-iconx">
+                    <img src="images/Budget Simulation blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Budget Simulation</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap">
+                <a href="settlementGenerate.html">
+                  <span class="menu-icon">
+                    <img src="images/settlement grey.png" class="hide-gray-iconx">
+                    <img src="images/settlement blue.png" class="hide-active">
+                  </span>
+                  <span class="nav-txt">Settlement</span>
+                </a>
+              </div>
+              <div class="menuboard-wrap flex-d align-items-center ">
+                <span class="menu-icon">
+                  <img src="images/Dashboard grey.png" class="hide-gray-iconx">
+                  <img src="images/dashboard_blue.png" class="hide-active">
+                </span>
+                <div class="dropdown dropdownPosition">
+                  <span class="nav-txt dropdown-toggle" data-toggle="dropdown">System Preferences</span>
+                  <div class="dropdown-menu openSansR fontSize13" id="dropdownMenu">
+                    <a class="dropdown-item" href="currency-rate.html">Currency Rates</a>
+                    <a class="dropdown-item" href="aa-14-configure-rates.html">AA14 Configuration</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--dasboard-nav-right-->
+            <div class="menu-filter-box">
+              <img src="images/filter.png">
+              <img src="images/setting.png">
+            </div>
+          </div>
+          <!--End of the dashboard navbar wrapper-->
+          <div class="dashboard-all-content network-dashboard-wrap">
+            <div class="dashboard-navigation d-flex justify-content-between">
+              <ul class="page-breadcrumb flex-d">
+                <li class="active mr-auto"><a href="javascript:void(0)">Dashboard</a></li>
+                <!-- on hover slide left -->
+              </ul>
+              <div class="rightTopDropdownUl pull-right">
+                <ul class="hoverSlideUl">
+                  <li class="active text-center">
+                    <a href="javascript:void(0)" class="rightTopDropdown1">
+                      <span>AFGAR</span>
+                      <img src="images/blueCross.png" class="crossIcon">
+                    </a>
+                  </li>
+                  <li class="active text-center">
+                    <a href="javascript:void(0)" class="rightTopDropdown1"><span>BENSP</span>
+                      <img src="images/blueCross.png" class="crossIcon">
+                    </a>
+                  </li>
+                  <li class="active text-center">
+                    <a href="javascript:void(0)" class="rightTopDropdown1">
+                      <span>CYPOC</span>
+                      <img src="images/blueCross.png" class="crossIcon">
+                    </a>
+                  </li>
+                  <li class="active text-center">
+                    <a href="javascript:void(0)" class="rightTopDropdown1"><span> GHASC</span>
+                      <img src="images/blueCross.png" class="crossIcon">
+                    </a>
+                  </li>
+                </ul>
+                <div class="active text-center opco-drp">
+                  <a href="javascript:void(0)" class="rightTopDropdown">OPCO <span class="badgeIcon">4</span><span class="fa fa-angle-down"></span> </a>
+                </div>
+                <!-- dropdown popup on click of OPCO  -->
+              <div class="container-fluid" id="countryPopup">
+                <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <span class="searchOperator">
+                      <input type="text" placeholder="Search operator" class="mr-auto">
+                      <img src="images/search.png" class="pr-1">
+                    </span>
+                    <span class="pull-right">
+                      <input type="button" value="APPLY" class="btn blueButton">
+                      <input type="button" value="CANCEL" class="btn whiteButton">
+                    </span>
+                  </div>
+                  <div class="container-fluid d-flex justify-content-between countryPopupMainDiv">
+                    <!-- first column -->
+                    <div>
+                      <div class="width15 width15Active">
+                        <div class="d-flex align-items-center" title="Afghanistan">
+                          <img src="images/flags/afghanistan.png" class="mr-3">
+                          <span class="mr-auto">AFGAR</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15 width15Active">
+                        <div class="d-flex align-items-center" title="Benin">
+                          <img src="images/flags/benin.png" class="mr-3">
+                          <span class="mr-auto">BENSP</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Botswana">
+                          <img src="images/flags/botswana.png" class="mr-3">
+                          <span class="mr-auto">BWAGA</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Cameroon">
+                          <img src="images/flags/cameroon.png" class="mr-3">
+                          <span class="mr-auto">CMRMT</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center">
+                          <img src="images/flags/democratic-republic-of-congo.png" class="mr-3">
+                          <span class="mr-auto">COGLB</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 2nd column -->
+                    <div>
+                      <div class="width15 width15Active">
+                        <div class="d-flex align-items-center" title="Cyprus">
+                          <img src="images/flags/cyprus.png" class="mr-3">
+                          <span class="mr-auto">CYPOC</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15 width15Active">
+                        <div class="d-flex align-items-center" title="Ghana">
+                          <img src="images/flags/ghana.png" class="mr-3">
+                          <span class="mr-auto">GHASC</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Guinea-bissau">
+                          <img src="images/flags/guinea-bissau.png" class="mr-3">
+                          <span class="mr-auto">GNBSB</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Guinea">
+                          <img src="images/flags/guinea.png" class="mr-3">
+                          <span class="mr-auto">GINAG</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Ivory-coast">
+                          <img src="images/flags/ivory-coast.png" class="mr-3">
+                          <span class="mr-auto">CIVTL</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 3rd column -->
+                    <div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Liberia">
+                          <img src="images/flags/liberia.png" class="mr-3">
+                          <span class="mr-auto">LBRLC</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15 ">
+                        <div class="d-flex align-items-center" title="Nigeria">
+                          <img src="images/flags/nigeria.png" class="mr-3">
+                          <span class="mr-auto">NGAMN</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Rwanda">
+                          <img src="images/flags/rwanda.png" class="mr-3">
+                          <span class="mr-auto">RWAMN</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Sudan">
+                          <img src="images/flags/sudan.png" class="mr-3">
+                          <span class="mr-auto">SDNBT</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="South-africa">
+                          <img src="images/flags/south-africa.png" class="mr-3">
+                          <span class="mr-auto">ZAFMN</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 4th column -->
+                    <div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="South-africa">
+                          <img src="images/flags/south-africa.png" class="mr-3">
+                          <span class="mr-auto">ZAFMM</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="South-sudan">
+                          <img src="images/flags/south-sudan.png" class="mr-3">
+                          <span class="mr-auto">SSDMN</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Swaziland">
+                          <img src="images/flags/swaziland.png" class="mr-3">
+                          <span class="mr-auto">SWZMN</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Uganda">
+                          <img src="images/flags/uganda.png" class="mr-3">
+                          <span class="mr-auto">UGAMN</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Zambia">
+                          <img src="images/flags/zambia.png" class="mr-3">
+                          <span class="mr-auto">ZMB02</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 5th column -->
+                    <div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Yemen">
+                          <img src="images/flags/yemen.png" class="mr-3">
+                          <span class="mr-auto">YEMSP</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15 ">
+                        <div class="d-flex align-items-center" title="Iran">
+                          <img src="images/flags/iran.png" class="mr-3">
+                          <span class="mr-auto">IRNMI</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                      <div class="width15">
+                        <div class="d-flex align-items-center" title="Syria">
+                          <img src="images/flags/syria.png" class="mr-3">
+                          <span class="mr-auto">SYRSP</span>
+                          <!-- <img src="images/cross.png" class="crossIcon"> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- dropdown popup of countries with flag on click of OPCO  -->
+              </div>
+              
+            </div>
+            <div class="container-fluid countryPopupFlag">
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <span class="searchOperator">
+                    <input type="text" placeholder="Search operator" class="mr-auto">
+                    <img src="images/search.png" class="pr-1">
+                  </span>
+                  <span class="pull-right">
+                    <input type="button" value="APPLY" class="btn blueButton">
+                    <input type="button" value="CANCEL" class="btn whiteButton whiteCountryFlag">
+                  </span>
+                </div>
+                <div class="container-fluid d-flex justify-content-between countryPopupMainDiv countryFlagDiv">
+                  <!-- first column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/spain.png" class="mr-3">
+                        <span class="mr-auto">Spain</span>
+                        <img src="images/cross.png" class="crossIcon">
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/germany.png" class="mr-3">
+                        <span class="mr-auto">Germany</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15 width15Active">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/france.png" class="mr-3">
+                        <span class="mr-auto">France</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/russia.png" class="mr-3">
+                        <span class="mr-auto">Russia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/united-kingdom.png" class="mr-3">
+                        <span class="mr-auto">UK</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/united-nations.png" class="mr-3">
+                        <span class="mr-auto">US</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/italy.png" class="mr-3">
+                        <span class="mr-auto">Italy</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2nd column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/china.png" class="mr-3">
+                        <span class="mr-auto">Afghanistan</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/thailand.png" class="mr-3">
+                        <span class="mr-auto">Albania</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/belgium.png" class="mr-3">
+                        <span class="mr-auto">Algeria</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/south-africa.png" class="mr-3">
+                        <span class="mr-auto">Andorra</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/afghanistan.png" class="mr-3">
+                        <span class="mr-auto">Angola</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/abkhazia.png" class="mr-3">
+                        <span class="mr-auto">Anguilla</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/kuwait.png" class="mr-3">
+                        <span class="mr-auto">Kuwait</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3rd column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/argentina.png" class="mr-3">
+                        <span class="mr-auto">Argentina</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/armenia.png" class="mr-3">
+                        <span class="mr-auto">Armenia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/aruba.png" class="mr-3">
+                        <span class="mr-auto">Aruba</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/australia.png" class="mr-3">
+                        <span class="mr-auto">Australia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/austria.png" class="mr-3">
+                        <span class="mr-auto">Austria</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/azerbaijan.png" class="mr-3">
+                        <span class="mr-auto">Azerbaijan</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/bahamas.png" class="mr-3">
+                        <span class="mr-auto">Bahamas</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 4th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/bahrain.png" class="mr-3">
+                        <span class="mr-auto">Bahrain</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/bangladesh.png" class="mr-3">
+                        <span class="mr-auto">Bangladesh</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/barbados.png" class="mr-3">
+                        <span class="mr-auto">Barbados</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/belarus.png" class="mr-3">
+                        <span class="mr-auto">Belarus</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/belgium.png" class="mr-3">
+                        <span class="mr-auto">Belgium</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/belize.png" class="mr-3">
+                        <span class="mr-auto">Belize</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/benin.png" class="mr-3">
+                        <span class="mr-auto">Benin</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 5th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/bermuda.png" class="mr-3">
+                        <span class="mr-auto">Bermuda</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/bhutan.png" class="mr-3">
+                        <span class="mr-auto">Bhutan</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/bolivia.png" class="mr-3">
+                        <span class="mr-auto">Bolivia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/bosnia-and-herzegovina.png" class="mr-3">
+                        <span class="mr-auto">Bosnia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/botswana.png" class="mr-3">
+                        <span class="mr-auto">Botswana</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/brazil.png" class="mr-3">
+                        <span class="mr-auto">Brazil</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/kuwait.png" class="mr-3">
+                        <span class="mr-auto">Kuwait</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 6th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/brunei.png" class="mr-3">
+                        <span class="mr-auto">Brunei</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/bulgaria.png" class="mr-3">
+                        <span class="mr-auto">Bulgaria</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/kyrgyzstan.png" class="mr-3">
+                        <span class="mr-auto">Kyrgyz</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/burundi.png" class="mr-3">
+                        <span class="mr-auto">Burundi</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/cambodia.png" class="mr-3">
+                        <span class="mr-auto">Cambodia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/cameroon.png" class="mr-3">
+                        <span class="mr-auto">Cameroon</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/canada.png" class="mr-3">
+                        <span class="mr-auto">Canada</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 7th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/laos.png" class="mr-3">
+                        <span class="mr-auto">Laos</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/latvia.png" class="mr-3">
+                        <span class="mr-auto">Latvia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/lebanon.png" class="mr-3">
+                        <span class="mr-auto">Lebanon</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <!-- <div class="width15">
+                                            <div class="d-flex align-items-center">
+                                                <img src="images/flags/republic-of-macedonia.png" class="mr-3">
+                                                <span class="mr-auto">Republic</span>
+                                                <img src="images/cross.png" class="crossIcon">
+                                            </div>
+                                        </div> -->
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/chad.png" class="mr-3">
+                        <span class="mr-auto">Chad</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/chile.png" class="mr-3">
+                        <span class="mr-auto">Chile</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/china.png" class="mr-3">
+                        <span class="mr-auto">China</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/colombia.png" class="mr-3">
+                        <span class="mr-auto">Colombia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 8th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/comoros.png" class="mr-3">
+                        <span class="mr-auto">Comoros</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/republic-of-the-congo.png" class="mr-3">
+                        <span class="mr-auto">Congo</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/lesotho.png" class="mr-3">
+                        <span class="mr-auto">Lesotho</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/liberia.png" class="mr-3">
+                        <span class="mr-auto">Liberia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/croatia.png" class="mr-3">
+                        <span class="mr-auto">Croatia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/cuba.png" class="mr-3">
+                        <span class="mr-auto">Cuba</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/cyprus.png" class="mr-3">
+                        <span class="mr-auto">Cyprus</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 9th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/libya.png" class="mr-3">
+                        <span class="mr-auto">Libya</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/liechtenstein.png" class="mr-3">
+                        <span class="mr-auto">Liechtenstein</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/denmark.png" class="mr-3">
+                        <span class="mr-auto">Denmark</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/djibouti.png" class="mr-3">
+                        <span class="mr-auto">Djibouti</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/dominica.png" class="mr-3">
+                        <span class="mr-auto">Dominica</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/lithuania.png" class="mr-3">
+                        <span class="mr-auto">Lithuania</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/ecuador.png" class="mr-3">
+                        <span class="mr-auto">Ecuador</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 10th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/luxembourg.png" class="mr-3">
+                        <span class="mr-auto">Luxembourg</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/macao.png" class="mr-3">
+                        <span class="mr-auto">Macau</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/republic-of-macedonia.png" class="mr-3">
+                        <span class="mr-auto">Macedonia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/madagascar.png" class="mr-3">
+                        <span class="mr-auto">Madagascar</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/malawi.png" class="mr-3">
+                        <span class="mr-auto">Malawi</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/malaysia.png" class="mr-3">
+                        <span class="mr-auto">Malaysia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/maldives.png" class="mr-3">
+                        <span class="mr-auto">Maldives</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 11th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/finland.png" class="mr-3">
+                        <span class="mr-auto">Finland</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/france.png" class="mr-3">
+                        <span class="mr-auto">France</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/mali.png" class="mr-3">
+                        <span class="mr-auto">Mali</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/gabon.png" class="mr-3">
+                        <span class="mr-auto">Gabon</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/gambia.png" class="mr-3">
+                        <span class="mr-auto">Gambia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/georgia.png" class="mr-3">
+                        <span class="mr-auto">Georgia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/germany.png" class="mr-3">
+                        <span class="mr-auto">Germany</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 12th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/ghana.png" class="mr-3">
+                        <span class="mr-auto">Ghana</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/gibraltar.png" class="mr-3">
+                        <span class="mr-auto">Gibraltar</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/greece.png" class="mr-3">
+                        <span class="mr-auto">Greece</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/greenland.png" class="mr-3">
+                        <span class="mr-auto">Greenland</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/grenada.png" class="mr-3">
+                        <span class="mr-auto">Grenada</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/guam.png" class="mr-3">
+                        <span class="mr-auto">Guam</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/guatemala.png" class="mr-3">
+                        <span class="mr-auto">Guatemala</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 13th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/guinea.png" class="mr-3">
+                        <span class="mr-auto">Guinea</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/malta.png" class="mr-3">
+                        <span class="mr-auto">Malta</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/guyana.png" class="mr-3">
+                        <span class="mr-auto">Guyana</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/honduras.png" class="mr-3">
+                        <span class="mr-auto">Honduras</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/mauritius.png" class="mr-3">
+                        <span class="mr-auto">Mauritius</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/hungary.png" class="mr-3">
+                        <span class="mr-auto">Hungary</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/iceland.png" class="mr-3">
+                        <span class="mr-auto">Iceland</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 13th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/india.png" class="mr-3">
+                        <span class="mr-auto">India</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/indonesia.png" class="mr-3">
+                        <span class="mr-auto">Indonesia</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/iran.png" class="mr-3">
+                        <span class="mr-auto">Iran</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/iraq.png" class="mr-3">
+                        <span class="mr-auto">Iraq</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/ireland.png" class="mr-3">
+                        <span class="mr-auto">Ireland</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/israel.png" class="mr-3">
+                        <span class="mr-auto">Israel</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/italy.png" class="mr-3">
+                        <span class="mr-auto">Italy</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 14th column -->
+                  <div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/ivory-coast.png" class="mr-3">
+                        <span class="mr-auto">Ivory Coast</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/jamaica.png" class="mr-3">
+                        <span class="mr-auto">Jamaica</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/japan.png" class="mr-3">
+                        <span class="mr-auto">Japan</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/jordan.png" class="mr-3">
+                        <span class="mr-auto">Jordan</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/kazakhstan.png" class="mr-3">
+                        <span class="mr-auto">Kazakhstan</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/kenya.png" class="mr-3">
+                        <span class="mr-auto">Kenya</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                    <div class="width15">
+                      <div class="d-flex align-items-center">
+                        <img src="images/flags/kiribati.png" class="mr-3">
+                        <span class="mr-auto">Kiribati</span>
+                        <!-- <img src="images/cross.png" class="crossIcon"> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Start of the search filter div-->
+            <div class="search-filters flex-d">
+              <div class="search-list-left flex-d">
+                <div class="filter-list-items list-1">
+                  <select class="list-partner">
+                    <option value="individual_partner" selected="selected">Country</option>
+                    <option value="group_partner">AED</option>
+                  </select>
+                </div>
+                <div class="filter-list-items list-1">
+                  <select class="list-partner">
+                    <option value="individual_partner" selected="selected">Network</option>
+                    <option value="group_partner">AED</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!--End of the search filter div-->
+            <!-- dropdown ORANGE popup of countries  -->
+            <div class="container-fluid white-bg">
+              <div class="main-grap-wrap revenu-contribtn-graph">
+                <div class="title-with-radio flex-d">
+                  <h3 class="graph-title-txt">Month View</h3>
+                </div>
+                <div class="usage-distri-table common-table-border">
+                  <table class="common-small-table nest-tab">
+                    <thead>
+                      <tr class="diff-tr">
+                        <th colspan="4"></th>
+                        <th colspan="6">INBOUND</th>
+                        <th colspan="6">OUTBOUND</th>
+                      </tr>
+                      <tr class="br-less">
+                        <th>Country</th>
+                        <th>Network</th>
+                        <th>TADIG</th>
+                        <th>Observed/Projected</th>
+                        <th class="diff-tab-1 diff-tab">MO</th>
+                        <th class="diff-tab-2 diff-tab">MT</th>
+                        <th class="diff-tab-2 diff-tab">SMS</th>
+                        <th class="diff-tab-2 diff-tab">Data</th>
+                        <th class="diff-tab-2 diff-tab">Cost</th>
+                        <th class="diff-tab-3 diff-tab">Unique subscribe</th>
+
+
+                        <th class="diff-tab-4 diff-tab">MO</th>
+                        <th class="diff-tab-5 diff-tab">MT</th>
+                        <th class="diff-tab-5 diff-tab">SMS</th>
+                        <th class="diff-tab-5 diff-tab">Data</th>
+                        <th class="diff-tab-5 diff-tab">Revenue</th>
+                        <th class="diff-tab-6 diff-tab">Unique subscribe</th>
+
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Austria</td>
+                        <td>A1 Telekom</td>
+                        <td>AUTCA</td>
+                        <td>3500/4500<br>Delta -10</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                      <tr>
+                        <td>USA</td>
+                        <td>AT&amp;T Mobility</td>
+                        <td>USACG</td>
+                        <td>3500/4500<br>Delta -10</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                      <tr>
+                        <td>France</td>
+                        <td>Bouygues Telecom</td>
+                        <td>FRAF3</td>
+                        <td>3500/4500<br>Delta -10</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                      <tr>
+                        <td>United Kingdom</td>
+                        <td>Everything Everywhere</td>
+                        <td>GBRME</td>
+                        <td>3500/4500<br>Delta -10</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                      <tr>
+                        <td>France</td>
+                        <td>SFR</td>
+                        <td>FRAF2</td>
+                        <td>3500/4500<br>Delta -10</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                      <tr>
+                        <td><a href="countryDashboard.html" class="link-a">France</a></td>
+                        <td><a href="networkDashboard.html" class="link-a">Orange</a></td>
+                        <td>FRAF1</td>
+                        <td>3500/4500<br>Delta -10</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                      <tr>
+                        <td>Japan</td>
+                        <td>SoftBank Mobile</td>
+                        <td>JPNJP</td>
+                        <td>3500/4500<br>Delta -10</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                      <tr>
+                        <td>Swizerland</td>
+                        <td>Swisscom</td>
+                        <td>CHEC1</td>
+                        <td>3500/4500<br>Delta -10</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                      <tr>
+                        <td>United Kingdom</td>
+                        <td>O2</td>
+                        <td>GBRCN</td>
+                        <td>3500/4500<br>Delta -10</td>
+                       <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                      <tr>
+                        <td>Netherlands</td>
+                        <td>T-Mobile</td>
+                        <td>NLDPN</td>
+                        <td>3500/4500<br>Delta -10</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                      <tr>
+                        <td>Netherlands</td>
+                        <td>Vodafone</td>
+                        <td>NLDLT</td>
+                        <td>3500/4500<br>Delta -10</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                        <td class="diff-td green-txt mo-pop">100%</td>
+                        <td class="diff-td red-txt mt-pop">40%</td>
+                        <td class="diff-td red-txt sms-pop">50%</td>
+                        <td class="diff-td red-txt data-pop">50%</td>
+                        <td class="diff-td">2500
+                            <div class="cust-tool-tip">
+                                <p class="tool-p">Cost+ Interaction</p>
+                                <p class="tool-p">$69,000</p>
+                            </div>
+                        </td>
+                        <td class="diff-td">5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div><!-- odb-landing-table  -->
+                <div class="t-box">
+                  <span class="t-span">T</span>= In TAP
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of the inner section wrapper-->
+    </div>
+    <!--End of the main section wrapper-->
+  </main>
+  <footer>
+    <div class="footer-main-wrapper">
+    </div>
+    <!--End of the footer main wrapper-->
+  </footer>
+  <!--Start of the modal popup-->
+  <!-- The Modal -->
+  <!-- The Modal -->
+  <!-- moModalSTART -->
+<div class="modal moModal" id="moModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title f-sz-13 bold">MO</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h3 class="f-sz-12 s-bold vol-head">Volume 80 Mins</h3>
+        <div class="expdate-box d-flex justify-content-between">
+            <div class="date-left-box">
+                <h3 class="f-sz-13">Feb 2019</h3>
+                <p class="f-sz-13">80%</p>
+            </div>
+            <div class="date-left-box">
+                <h3 class="f-sz-13">Feb 2018</h3>
+                <p class="f-sz-13">80%</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- moModalEND -->
+
+  <!-- mtModalSTART -->
+<div class="modal moModal" id="mtModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title f-sz-13 bold">MT</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h3 class="f-sz-12 s-bold vol-head">Volume 80 Mins</h3>
+        <div class="expdate-box d-flex justify-content-between">
+            <div class="date-left-box">
+                <h3 class="f-sz-13">Feb 2019</h3>
+                <p class="f-sz-13">80%</p>
+            </div>
+            <div class="date-left-box">
+                <h3 class="f-sz-13">Feb 2018</h3>
+                <p class="f-sz-13">80%</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- mtModalEND -->
+<!-- smsModalSTART -->
+<div class="modal moModal" id="smsModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title f-sz-13 bold">SMS</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h3 class="f-sz-12 s-bold vol-head">Volume 80 Mins</h3>
+        <div class="expdate-box d-flex justify-content-between">
+            <div class="date-left-box">
+                <h3 class="f-sz-13">Feb 2019</h3>
+                <p class="f-sz-13">80%</p>
+            </div>
+            <div class="date-left-box">
+                <h3 class="f-sz-13">Feb 2018</h3>
+                <p class="f-sz-13">80%</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- smsModalEND -->
+
+  <!-- dataModalSTART -->
+<div class="modal moModal" id="dataModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title f-sz-13 bold">DATA</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h3 class="f-sz-12 s-bold vol-head">Volume 80 Mins</h3>
+        <div class="expdate-box d-flex justify-content-between">
+            <div class="date-left-box">
+                <h3 class="f-sz-13">Feb 2019</h3>
+                <p class="f-sz-13">80%</p>
+            </div>
+            <div class="date-left-box">
+                <h3 class="f-sz-13">Feb 2018</h3>
+                <p class="f-sz-13">80%</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- dataModalEND -->
+  <!--End of the modal popup-->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified bootstrap js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/maps/modules/map.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+  <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <script>
+  // popup
+  $(".mo-pop").click(function(){
+    $("#moModal").modal();
+  });
+
+  $(".mt-pop").click(function(){
+    $("#mtModal").modal();
+  });
+
+  $(".sms-pop").click(function(){
+    $("#smsModal").modal();
+  });
+
+  $(".data-pop").click(function(){
+    $("#dataModal").modal();
+  });
+
+  </script>
+</body>
+
+</html>

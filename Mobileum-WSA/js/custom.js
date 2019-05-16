@@ -183,16 +183,45 @@ $("tr th .checkbox-container .custom-check").click(function(){
 	
 	}
 });
+
 $("tr td .checkbox-container .custom-check").click(function(){
+
+	var checkStatus = false;
+	$( ".commonbudget-tableinner tr" ).each(function( index ) {
+		if($(this).find('.custom-check').prop( "checked" ))
+		{			
+			checkStatus=true;
+		}
+		else{
+			if(checkStatus!=true)
+			{
+				checkStatus=false;
+			}
+		}
+	});
+
+	if(checkStatus)
+	{
+		$(".budgetsave-btn1").removeClass("disabled");
+	}
+	else
+	{
+		$(".budgetsave-btn1").addClass("disabled");
+	}
+
+	
+
+
 	if($(this).prop( "checked" ))
 	{
 		$(this).prop("checked", true);
 	}
 	else if(!$(this).prop( "checked" ))
 	{
-
 		$(this).prop("checked",false);
 	}
+
+	
 });
 
     
