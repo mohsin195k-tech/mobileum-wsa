@@ -417,6 +417,7 @@ a.pos-lnk {
   position: absolute;
   left: 20px;
   top: -35px;
+  display: none;
 }
 
 .back-link:before {
@@ -885,6 +886,9 @@ margin-bottom: 10px;
   max-width: 75px;
   font-size: 12px;
   padding:0 16px;
+  border: 1px solid #cfd0d2;
+  color: #888888;
+      border-radius: 3px;
 }
 
 .flat-table table,
@@ -1011,6 +1015,10 @@ margin-bottom: 10px;
 .general-data-box.data-box.slide-select .tiered-table {
   display: table;
 }
+.general-data-box.data-box.flat-select .r-cur-box
+{
+  display: none;
+}
 
 .define-check {
   display: none;
@@ -1039,7 +1047,7 @@ margin-bottom: 10px;
 
 }*/
 .opco-right-box {
-  max-width: 290px;
+  max-width: 350px;
   width: 100%;
   position: relative;
 }
@@ -1437,11 +1445,17 @@ margin-bottom: 10px;
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-}
 
+  padding:0;/*20-may*/
+}
+.deal-st .countryFlagDiv .mCSB_container
+{
+  width: 100% !important;
+}
 .deal-st .countryPopupMainDiv {
   overflow: hidden;
-  height: 200px;
+  height: 215px;
+      width: 765px;
 }
 
 .deal-st .countryFlagDiv .mCSB_container>div {
@@ -2171,3 +2185,43 @@ color: #00b60d;
     top: 58px;
     right: 0;
 }
+
+/*balanced-table-box*/
+.balanced-table-box tr td:first-child
+{
+  width:349px;
+}
+
+/*settlementOrangeCountryPopupFlag WIDTH*/
+.deal-st .settlementOrangeCountryPopupFlag
+{
+  width: 585px;
+}
+#countryPopup .countryPopupMainDiv {
+    height: 215px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.deal-st .settlementOrangeCountryPopupFlag .mCSB_scrollTools.mCSB_scrollTools_horizontal
+{
+     bottom: -6px;
+    background: #fff;
+}
+
+/*SAVED_SCNARIOS START*/
+
+.saved-scene,
+.saved-scene:focus,
+.saved-scene:hover,
+.saved-scene:active
+
+{
+  color:#277cf6;
+}
+.scenario-anch-box
+{
+  position: relative;
+}
+
+/*SAVED_SCNARIOS END*/
